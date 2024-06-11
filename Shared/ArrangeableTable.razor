@@ -1,0 +1,58 @@
+@inject HttpClient HttpClient
+
+@code {
+    private List<PageData> pageDataList = new List<PageData>();
+
+    protected override async Task OnInitializedAsync()
+    {
+        try
+        {
+            string json = await HttpClient.GetStringAsync("/data/futurePages.json");
+            pageDataList = JsonSerializer.Deserialize<List<PageData>>(json);
+        }
+        catch (Exception ex)
+        {
+            Console.WriteLine($"Error loading seed data: {ex.Message}");
+        }
+    }
+}
+
+<div class="table-responsive small">
+    <table class="table table-borderless table-sm text-light">
+        <thead>
+            <tr>
+                <th>ID</th>
+                 <th>URL</th>
+                <th>Description</th>
+               @*  <th>Page Name</th> *@
+               
+                <!-- <th>Razor Page File Name</th> -->
+            </tr>
+        </thead>
+        <tbody>
+        @if (pageDataList.Count == 0)
+        {
+            <tr>
+                <td colspan="4" class="text-center">
+                    <div class="spinner-border" role="status">
+                        <span class="sr-only">Loading...</span>
+                    </div>
+                </td>
+            </tr>
+        }
+        else
+        {
+            @foreach (var pageData in pageDataList)
+            {
+                <tr>
+                    <td>@pageData.Id</td>
+                    <td><p class="text-info">@pageData.Url</p></td>
+                    @* <td>@pageData.PageName</td> *@
+                    <td>@pageData.Description</td>
+                    
+                    @* <td>@pageData.RazorPageFileName</td>*@
+                </tr> 
+            }}
+        </tbody>
+    </table>
+</div>

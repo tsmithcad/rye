@@ -1,0 +1,45 @@
+﻿@code {
+    private List<DataItem> items = new List<DataItem>();
+    private decimal total = 0;
+
+    protected override void OnInitialized()
+    {
+        // Seed data for demo purpose
+        for (int i = 1; i <= 58; i++)
+        {
+            items.Add(new DataItem { ID = i, PageName = $"Page {i}", Description = $"Description for Page {i}", URL = $"/page-{i}" });
+        }
+    }
+
+    private void CalculateTotal()
+    {
+        total = items.Where(i => i.ShowPrice).Sum(i => i.Price ?? 0);
+    }
+
+    private void OnCheckboxChanged(DataItem item)
+    {
+        if (!item.ShowPrice)
+        {
+            item.Price = null;
+        }
+        StateHasChanged();
+    }
+}
+
+<table class="table">
+    <!-- Table headers, etc ... (as before) -->
+</table>
+
+<button class="btn btn-primary" @onclick="CalculateTotal">Submit</button>
+
+<div class="card mt-4">
+    <div class="card-header">Checkout</div>
+    <div class="card-body">
+        @foreach (var item in items.Where(i => i.ShowPrice && i.Price.HasValue))
+        {
+            <p>@item.PageName: $@item.Price</p>
+        }
+        <hr />
+        <p><strong>Total:</strong> $@total</p>
+    </div>
+</div>

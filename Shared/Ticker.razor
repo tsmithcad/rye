@@ -1,0 +1,18 @@
+<div class="ticker-container">
+    @foreach (var release in SortedReleases)
+    {
+        <div class="ticker-item">
+            <span class="ticker-text">@release.Date.ToString("MMM dd, yyyy") - @release.FeatureName - @release.Description</span>
+        </div>
+    }
+</div>
+
+<style>
+    
+</style>
+
+@code {
+    [Parameter] public List<FeatureRelease>? Releases { get; set; }
+
+    private List<FeatureRelease>? SortedReleases => Releases.OrderByDescending(r => r.Date).ToList();
+}

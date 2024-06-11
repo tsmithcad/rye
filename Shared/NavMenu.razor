@@ -1,0 +1,137 @@
+﻿<div class="top-row ps-3 navbar navbar-dark">
+    <div class="container-fluid">
+        <a class="navbar-brand" href="">Rhyme Engine <small class="text-warning">Demo</small></a>
+        <button title="Navigation menu" class="navbar-toggler" @onclick="ToggleNavMenu">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+    </div>
+</div>
+
+<div class="@NavMenuCssClass nav-scrollable" @onclick="ToggleNavMenu">
+    <nav class="flex-column">
+        <!-- <div class="nav-item px-3">
+        <NavLink class="nav-link" href="getting-started">
+            <span class="oi oi-aperture" aria-hidden="true"></span> Getting Started
+        </NavLink>
+    </div> -->
+
+        @* <div class="nav-item px-3">
+            <NavLink class="nav-link" href="about">
+                <span class="oi oi-star" aria-hidden="true"></span> About
+            </NavLink>
+        </div>
+
+        <div class="nav-item px-3">
+            <NavLink class="nav-link" href="/intellectual-property">
+                <span class="oi oi-shield" aria-hidden="true"></span> IP Protection
+            </NavLink>
+        </div> *@
+
+        <div class="nav-item px-3">
+            <NavLink class="nav-link" href="/data-roadmap">
+                <span class="oi oi-transfer" aria-hidden="true"></span> Data Roadmap
+            </NavLink>
+        </div>
+
+        <div class="nav-item px-3">
+            <NavLink class="nav-link" href="/team">
+                <span class="oi oi-people" aria-hidden="true"></span> Team
+            </NavLink>
+        </div>
+
+        <div class="nav-item px-3">
+            <NavLink class="nav-link" href="/updates">
+                <span class="oi oi-bell" aria-hidden="true"></span> Updates
+            </NavLink>
+        </div>
+
+        <div class="nav-item px-3">
+            <NavLink class="nav-link" href="music-production">
+                <span class="oi oi-audio-spectrum" aria-hidden="true"></span>  Music Production
+            </NavLink>
+        </div>
+
+        <div class="nav-item px-3">
+            <NavLink class="nav-link" href="song-writing">
+                <span class="oi oi-pencil" aria-hidden="true"></span> Songwriting
+            </NavLink>
+        </div>
+
+       <div class="nav-item px-3">
+        <NavLink class="nav-link" href="artists">
+            <span class="oi oi-sun" aria-hidden="true"></span> Artists
+        </NavLink>
+    </div>
+    <div class="nav-item px-3">
+        <NavLink class="nav-link" href="producers">
+            <span class="oi oi-battery-full" aria-hidden="true"></span> Producers
+        </NavLink>
+    </div>
+
+    <div class="nav-item px-3">
+        <NavLink class="nav-link" href="copyright">
+            <span class="oi oi-shield" aria-hidden="true"></span> Copyright Reg.
+        </NavLink>
+    </div>
+    <div class="nav-item px-3">
+        <NavLink class="nav-link" href="publishing">
+            <span class="oi oi-book" aria-hidden="true"></span> Music Publishing
+        </NavLink>
+    </div>
+    <div class="nav-item px-3">
+        <NavLink class="nav-link" href="artwork">
+            <span class="oi oi-image" aria-hidden="true"></span> Artwork
+        </NavLink>
+    </div>
+
+        <div class="nav-item px-3">
+            <NavLink class="nav-link" href="legal">
+                <span class="oi oi-document" aria-hidden="true"></span> Legal Process
+            </NavLink>
+        </div>
+       <div class="nav-item px-3">
+        <NavLink class="nav-link" href="performance">
+            <spans class="oi oi-microphone" aria-hidden="true"></spans> Performance (PRO)
+        </NavLink>
+    </div>
+    <div class="nav-item px-3">
+        <NavLink class="nav-link" href="distribution">
+            <span class="oi oi-share" aria-hidden="true"></span>Distribution
+        </NavLink>
+    </div>
+    <div class="nav-item px-3">
+        <NavLink class="nav-link" href="events">
+            <span class="oi oi-calendar" aria-hidden="true"></span> Events
+        </NavLink>
+    </div>
+    <div class="nav-item px-3">
+        <NavLink class="nav-link" href="brand">
+            <span class="oi oi-tag" aria-hidden="true"></span> Brand
+        </NavLink>
+    </div>
+    <div class="nav-item px-3">
+        <NavLink class="nav-link" href="survey">
+            <span class="oi oi-question-mark" aria-hidden="true"></span> Survey
+        </NavLink>
+    </div>
+    <div class="nav-item px-3">
+        <NavLink class="nav-link" href="content">
+            <span class="oi oi-media-play" aria-hidden="true"></span> Content
+        </NavLink>
+    </div>
+
+    </nav>
+</div>
+
+@code {
+    private bool collapseNavMenu = true;
+
+    private string? NavMenuCssClass => collapseNavMenu ? "collapse" : null;
+    
+
+    private void ToggleNavMenu()
+    {
+        collapseNavMenu = !collapseNavMenu;
+    }
+}
+

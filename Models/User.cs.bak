@@ -1,0 +1,30 @@
+﻿using MongoDB.Bson;
+using MongoDB.Bson.Serialization.Attributes;
+using System.Collections.Generic;
+
+public class User
+{
+    // MongoDB specific field for unique identifier
+    [BsonId]
+    [BsonRepresentation(BsonType.ObjectId)]
+    public string Id { get; set; }
+
+    [BsonElement("Email")]
+    [BsonRequired]
+    public string Email { get; set; }
+
+    [BsonElement("PasswordHash")]
+    [BsonRequired]
+    public string PasswordHash { get; set; }
+
+    // Using a list of strings to represent roles; this allows a user to have multiple roles
+    [BsonElement("Roles")]
+    public List<string> Roles { get; set; } = new List<string>();
+
+    // You can expand this model with other fields as required, e.g.:
+    // [BsonElement("FirstName")]
+    // public string FirstName { get; set; }
+    // [BsonElement("LastName")]
+    // public string LastName { get; set; }
+    // etc.
+}

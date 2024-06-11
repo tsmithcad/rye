@@ -1,0 +1,48 @@
+<Project Sdk="Microsoft.NET.Sdk.BlazorWebAssembly">
+
+  <PropertyGroup>
+    <TargetFramework>net7.0</TargetFramework>
+    <RuntimeIdentifier>browser-wasm</RuntimeIdentifier>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <UserSecretsId>4fccfb38-a439-4e71-a055-1762058efabe</UserSecretsId>
+  </PropertyGroup>
+
+  <PropertyGroup Condition=" '$(RunConfiguration)' == 'https' ">
+    <ExternalConsole>true</ExternalConsole>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(RunConfiguration)' == 'http' ">
+    <ExternalConsole>true</ExternalConsole>
+  </PropertyGroup>
+  <ItemGroup>
+    <PackageReference Include="Blazored.LocalStorage" Version="4.4.0" />
+    <PackageReference Include="Microsoft.AspNetCore.Components.WebAssembly" Version="7.0.12" />
+    <PackageReference Include="Microsoft.AspNetCore.Components.WebAssembly.Authentication" Version="7.0.12" />
+    <PackageReference Include="Microsoft.AspNetCore.Components.WebAssembly.DevServer" Version="7.0.12" PrivateAssets="all" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Remove="wwwroot\.gitignore" />
+    <Content Remove="Pages\ECommerce\ProductDetails.razor" />
+    <Content Remove="Shared\ParticleBackground.razor" />
+    <Content Remove="wwwroot\js\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Remove="Pages\ECommerce\" />
+    <None Remove="Properties\PublishProfiles\FolderProfile 2.pubxml" />
+    <None Remove="Properties\PublishProfiles\FolderProfile.pubxml" />
+    <None Remove="Properties\PublishProfiles\FolderProfile 1.pubxml" />
+    <None Remove="Controllers\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="wwwroot\.gitignore" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Pages\ECommerce\" />
+    <Folder Include="Controllers\" />
+    <Folder Include="wwwroot\js\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Remove="Controllers\GoogleDriveController.cs" />
+  </ItemGroup>
+</Project>

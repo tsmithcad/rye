@@ -1,0 +1,29 @@
+@* @inject GoogleDriveService GoogleDrive
+@code {
+    private IList<object> Mp3Files { get; set; }
+    private int CurrentIndex { get; set; } = 0;
+    private string CurrentMp3Url => Mp3Files?[CurrentIndex]?.WebViewLink;
+
+    protected override async Task OnInitializedAsync()
+    {
+        // Replace with your folder ID and API Key
+        Mp3Files = await GoogleDrive.GetMp3FilesAsync("YourFolderId");
+        return base.OnInitializedAsync();
+    }
+
+    private void Next()
+    {
+        CurrentIndex = (CurrentIndex + 1) % Mp3Files.Count;
+    }
+
+    private void Previous()
+    {
+        CurrentIndex = (CurrentIndex - 1 + Mp3Files.Count) % Mp3Files.Count;
+    }
+}
+
+<footer>
+    <audio controls src="@CurrentMp3Url"></audio>
+    <button @onclick="Previous">Previous</button>
+    <button @onclick="Next">Next</button>
+</footer> *@

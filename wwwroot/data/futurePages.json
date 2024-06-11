@@ -1,0 +1,415 @@
+[
+  {
+    "Id": 1,
+    "PageName": "Producers",
+    "Description": "Producers' related information",
+    "Url": "/producers",
+    "RazorPageFileName": "Producers.razor"
+  },
+  {
+    "Id": 2,
+    "PageName": "Beat Libraries",
+    "Description": "Library of available beats",
+    "Url": "/beat-libraries",
+    "RazorPageFileName": "BeatLibraries.razor"
+  },
+  {
+    "Id": 3,
+    "PageName": "Purchased",
+    "Description": "Purchased beat records",
+    "Url": "/purchased",
+    "RazorPageFileName": "Purchased.razor"
+  },
+  {
+    "Id": 4,
+    "PageName": "Leased",
+    "Description": "Leased beat records",
+    "Url": "/leased",
+    "RazorPageFileName": "Leased.razor"
+  },
+  {
+    "Id": 5,
+    "PageName": "Originals",
+    "Description": "Original compositions and tracks",
+    "Url": "/originals",
+    "RazorPageFileName": "Originals.razor"
+  },
+  {
+    "Id": 6,
+    "PageName": "Projects",
+    "Description": "Music production projects",
+    "Url": "/projects",
+    "RazorPageFileName": "Projects.razor"
+  },
+  {
+    "Id": 7,
+    "PageName": "Invoices & Contracts",
+    "Description": "Invoices and legal agreements",
+    "Url": "/invoices-contracts",
+    "RazorPageFileName": "InvoicesContracts.razor"
+  },
+  {
+    "Id": 8,
+    "PageName": "Artists / Songwriters",
+    "Description": "Artists and songwriters profiles",
+    "Url": "/artists-songwriters",
+    "RazorPageFileName": "ArtistsSongwriters.razor"
+  },
+  {
+    "Id": 9,
+    "PageName": "Discographies",
+    "Description": "Discography records",
+    "Url": "/discographies",
+    "RazorPageFileName": "Discographies.razor"
+  },
+  {
+    "Id": 10,
+    "PageName": "Vocals",
+    "Description": "Vocal recordings and tracks",
+    "Url": "/vocals",
+    "RazorPageFileName": "Vocals.razor"
+  },
+  {
+    "Id": 11,
+    "PageName": "Raw",
+    "Description": "Raw audio recordings",
+    "Url": "/raw",
+    "RazorPageFileName": "Raw.razor"
+  },
+  {
+    "Id": 12,
+    "PageName": "Edited",
+    "Description": "Edited audio tracks",
+    "Url": "/edited",
+    "RazorPageFileName": "Edited.razor"
+  },
+  {
+    "Id": 13,
+    "PageName": "Contracts & Agreements",
+    "Description": "Legal contracts and agreements",
+    "Url": "/contracts-agreements",
+    "RazorPageFileName": "ContractsAgreements.razor"
+  },
+  {
+    "Id": 14,
+    "PageName": "Music Production",
+    "Description": "Music production-related records",
+    "Url": "/music-production",
+    "RazorPageFileName": "MusicProduction.razor"
+  },
+  {
+    "Id": 15,
+    "PageName": "Final Tracks",
+    "Description": "Finalized music tracks",
+    "Url": "/final-tracks",
+    "RazorPageFileName": "FinalTracks.razor"
+  },
+  {
+    "Id": 16,
+    "PageName": "Demos",
+    "Description": "Demo versions of tracks",
+    "Url": "/demos",
+    "RazorPageFileName": "Demos.razor"
+  },
+  {
+    "Id": 17,
+    "PageName": "Backing Tracks & Instrumentals",
+    "Description": "Instrumental tracks for compositions",
+    "Url": "/backing-tracks",
+    "RazorPageFileName": "BackingTracksInstrumentals.razor"
+  },
+  {
+    "Id": 18,
+    "PageName": "MIDI Files",
+    "Description": "MIDI files for music creation",
+    "Url": "/midi-files",
+    "RazorPageFileName": "MidiFiles.razor"
+  },
+  {
+    "Id": 19,
+    "PageName": "Plugins & Presets",
+    "Description": "Music production plugins and presets",
+    "Url": "/plugins-presets",
+    "RazorPageFileName": "PluginsPresets.razor"
+  },
+  {
+    "Id": 20,
+    "PageName": "Recording and Mastering",
+    "Description": "Recording and mastering-related records",
+    "Url": "/recording-mastering",
+    "RazorPageFileName": "RecordingMastering.razor"
+  },
+  {
+    "Id": 21,
+    "PageName": "Sessions",
+    "Description": "Recording and mastering sessions",
+    "Url": "/sessions",
+    "RazorPageFileName": "Sessions.razor"
+  },
+  {
+    "Id": 22,
+    "PageName": "Master Tracks",
+    "Description": "Mastered music tracks",
+    "Url": "/master-tracks",
+    "RazorPageFileName": "MasterTracks.razor"
+  },
+  {
+    "Id": 23,
+    "PageName": "Studio Bookings & Invoices",
+    "Description": "Bookings and invoices for studio sessions",
+    "Url": "/studio-bookings-invoices",
+    "RazorPageFileName": "StudioBookingsInvoices.razor"
+  },
+  {
+    "Id": 24,
+    "PageName": "Copyright Registration",
+    "Description": "Copyright registration and records",
+    "Url": "/copyright-registration",
+    "RazorPageFileName": "CopyrightRegistration.razor"
+  },
+  {
+    "Id": 25,
+    "PageName": "Submitted",
+    "Description": "Submitted copyright applications",
+    "Url": "/submitted",
+    "RazorPageFileName": "Submitted.razor"
+  },
+  {
+    "Id": 26,
+    "PageName": "Pending",
+    "Description": "Pending copyright applications",
+    "Url": "/pending",
+    "RazorPageFileName": "Pending.razor"
+  },
+  {
+    "Id": 27,
+    "PageName": "Approved",
+    "Description": "Approved copyright registrations",
+    "Url": "/approved",
+    "RazorPageFileName": "Approved.razor"
+  },
+  {
+    "Id": 28,
+    "PageName": "Certificates",
+    "Description": "Copyright certificates",
+    "Url": "/certificates",
+    "RazorPageFileName": "Certificates.razor"
+  },
+  {
+    "Id": 29,
+    "PageName": "Music Publishing",
+    "Description": "Music publishing-related records",
+    "Url": "/music-publishing",
+    "RazorPageFileName": "MusicPublishing.razor"
+  },
+  {
+    "Id": 30,
+    "PageName": "Published Works",
+    "Description": "Published musical compositions",
+    "Url": "/published-works",
+    "RazorPageFileName": "PublishedWorks.razor"
+  },
+  {
+    "Id": 31,
+    "PageName": "Royalty Statements",
+    "Description": "Royalty statements and earnings",
+    "Url": "/royalty-statements",
+    "RazorPageFileName": "RoyaltyStatements.razor"
+  },
+  {
+    "Id": 32,
+    "PageName": "Album Artwork and Packaging",
+    "Description": "Album artwork and packaging-related records",
+    "Url": "/album-artwork-packaging",
+    "RazorPageFileName": "AlbumArtworkPackaging.razor"
+  },
+  {
+    "Id": 33,
+    "PageName": "Drafts",
+    "Description": "Draft versions of artwork and packaging",
+    "Url": "/drafts",
+    "RazorPageFileName": "Drafts.razor"
+  },
+  {
+    "Id": 34,
+    "PageName": "Final Versions",
+    "Description": "Finalized versions of artwork and packaging",
+    "Url": "/final-versions",
+    "RazorPageFileName": "FinalVersions.razor"
+  },
+  {
+    "Id": 35,
+    "PageName": "Legal Advisories",
+    "Description": "Legal advisories and guidance",
+    "Url": "/legal-advisories",
+    "RazorPageFileName": "LegalAdvisories.razor"
+  },
+  {
+    "Id": 36,
+    "PageName": "Case Files",
+    "Description": "Legal case files",
+    "Url": "/case-files",
+    "RazorPageFileName": "CaseFiles.razor"
+  },
+  {
+    "Id": 37,
+    "PageName": "Disputes & Resolutions",
+    "Description": "Disputes and legal resolutions",
+    "Url": "/disputes-resolutions",
+    "RazorPageFileName": "DisputesResolutions.razor"
+  },
+  {
+    "Id": 38,
+    "PageName": "Registrations",
+    "Description": "Performance rights organizations registrations",
+    "Url": "/registrations",
+    "RazorPageFileName": "Registrations.razor"
+  },
+  {
+    "Id": 39,
+    "PageName": "Events & Performances",
+    "Description": "Music events and performances",
+    "Url": "/events-performances",
+    "RazorPageFileName": "EventsPerformances.razor"
+  },
+  {
+    "Id": 40,
+    "PageName": "Royalty Collections",
+    "Description": "Royalty collections and earnings",
+    "Url": "/royalty-collections",
+    "RazorPageFileName": "RoyaltyCollections.razor"
+  },
+  {
+    "Id": 41,
+    "PageName": "Distributed Tracks",
+    "Description": "Distributed music tracks",
+    "Url": "/distributed-tracks",
+    "RazorPageFileName": "DistributedTracks.razor"
+  },
+  {
+    "Id": 42,
+    "PageName": "Licensing Agreements",
+    "Description": "Licensing agreements for tracks",
+    "Url": "/licensing-agreements",
+    "RazorPageFileName": "LicensingAgreements.razor"
+  },
+  {
+    "Id": 43,
+    "PageName": "Platforms & Services",
+    "Description": "Online platforms and services",
+    "Url": "/platforms-services",
+    "RazorPageFileName": "PlatformsServices.razor"
+  },
+  {
+    "Id": 44,
+    "PageName": "Online Video Distribution",
+    "Description": "Online video distribution-related records",
+    "Url": "/online-video-distribution",
+    "RazorPageFileName": "OnlineVideoDistribution.razor"
+  },
+  {
+    "Id": 45,
+    "PageName": "Video Files",
+    "Description": "Video files for distribution",
+    "Url": "/video-files",
+    "RazorPageFileName": "VideoFiles.razor"
+  },
+  {
+    "Id": 46,
+    "PageName": "Thumbnails & Artworks",
+    "Description": "Thumbnails and artworks for videos",
+    "Url": "/thumbnails-artworks",
+    "RazorPageFileName": "ThumbnailsArtworks.razor"
+  },
+  {
+    "Id": 47,
+    "PageName": "Monetization Reports",
+    "Description": "Monetization reports and earnings",
+    "Url": "/monetization-reports",
+    "RazorPageFileName": "MonetizationReports.razor"
+  },
+  {
+    "Id": 48,
+    "PageName": "Social Media Content",
+    "Description": "Social media content and posts",
+    "Url": "/social-media-content",
+    "RazorPageFileName": "SocialMediaContent.razor"
+  },
+  {
+    "Id": 49,
+    "PageName": "Campaigns",
+    "Description": "Marketing campaigns and promotions",
+    "Url": "/campaigns",
+    "RazorPageFileName": "Campaigns.razor"
+  },
+  {
+    "Id": 50,
+    "PageName": "Analytics & Insights",
+    "Description": "Analytics and insights for campaigns",
+    "Url": "/analytics-insights",
+    "RazorPageFileName": "AnalyticsInsights.razor"
+  },
+  {
+    "Id": 51,
+    "PageName": "Promotions & Marketing",
+    "Description": "Promotions and marketing-related records",
+    "Url": "/promotions-marketing",
+    "RazorPageFileName": "PromotionsMarketing.razor"
+  },
+  {
+    "Id": 52,
+    "PageName": "Brand Development",
+    "Description": "Brand development-related records",
+    "Url": "/brand-development",
+    "RazorPageFileName": "BrandDevelopment.razor"
+  },
+  {
+    "Id": 53,
+    "PageName": "Logos & Branding",
+    "Description": "Logos and branding assets",
+    "Url": "/logos-branding",
+    "RazorPageFileName": "LogosBranding.razor"
+  },
+  {
+    "Id": 54,
+    "PageName": "Merchandise",
+    "Description": "Merchandise and product-related records",
+    "Url": "/merchandise",
+    "RazorPageFileName": "Merchandise.razor"
+  },
+  {
+    "Id": 55,
+    "PageName": "Brand Guidelines",
+    "Description": "Brand guidelines and documentation",
+    "Url": "/brand-guidelines",
+    "RazorPageFileName": "BrandGuidelines.razor"
+  },
+  {
+    "Id": 56,
+    "PageName": "Trademarks",
+    "Description": "Trademarks and intellectual property",
+    "Url": "/trademarks",
+    "RazorPageFileName": "Trademarks.razor"
+  },
+  {
+    "Id": 57,
+    "PageName": "Marketing",
+    "Description": "Marketing-related records",
+    "Url": "/marketing",
+    "RazorPageFileName": "Marketing.razor"
+  },
+  {
+    "Id": 58,
+    "PageName": "Ad Copies & Creatives",
+    "Description": "Advertising copies and creatives",
+    "Url": "/ad-copies-creatives",
+    "RazorPageFileName": "AdCopiesCreatives.razor"
+  },
+  {
+    "Id": 59,
+    "PageName": "Marketing Reports",
+    "Description": "Marketing reports and analytics",
+    "Url": "/marketing-reports",
+    "RazorPageFileName": "MarketingReports.razor"
+  }
+]

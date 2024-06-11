@@ -1,0 +1,19 @@
+@page "/product/{Id}"
+@inject IProductService ProductService
+
+<h3>Product Details</h3>
+
+<ProductDetailComponent Product="Product" />
+
+@code {
+    [Parameter]
+    public int Id { get; set; }
+
+    public Product Product { get; private set; }
+
+    protected override async Task OnInitializedAsync()
+    {
+        Product = await ProductService.GetProductById(Id);
+        return base.OnInitializedAsync();
+    }
+}

@@ -1,0 +1,101 @@
+﻿using Microsoft.AspNetCore.Mvc;
+using Microsoft.AspNetCore.Identity;
+using System.Threading.Tasks;
+using System.Linq;
+using Microsoft.Extensions.Configuration;
+using Microsoft.IdentityModel.Tokens;
+using System.IdentityModel.Tokens.Jwt;
+using System.Text;
+using System;
+using MongoDB.Driver;
+using RhymeEngine.V1.Models;
+
+[ApiController]
+[Route("[controller]")]
+public class UserController : ControllerBase
+{
+    private readonly AppDbContext _context;
+    private readonly IConfiguration _configuration;
+
+    public UserController(AppDbContext context, IConfiguration configuration)
+    {
+        _context = context;
+        _configuration = configuration;
+    }
+
+    // Registration
+    [HttpPost("register")]
+    public async Task<IActionResult> Register(UserRegistrationDto model)
+    {
+        if (ModelState.IsValid)
+        {
+            var userExists = await _context.Users.Find(u => u.Email == model.Email).FirstOrDefaultAsync();
+            if (userExists != null)
+                return StatusCode(StatusCodes.Status500InternalServerError,
+                                  new Response { Status = "Error", Message = "User already exists!" });
+
+            var user = new User
+            {
+                Email = model.Email,
+                PasswordHash = BCrypt.Net.BCrypt.HashPassword(model.Password) // Use BCrypt for hashing
+            };
+
+            await _context.Users.InsertOneAsync(user);
+
+            return Ok(new Response { Status = "Success", Message = "User registration successful!" });
+        }
+
+        return BadRequest(new Response { Status = "Error", Message = "User registration failed!" });
+    }
+
+    // Login
+    [HttpPost("login")]
+    public async Task<IActionResult> Login(UserLoginDto model)
+    {
+        var user = await _context.Users.Find(u => u.Email == model.Email).FirstOrDefaultAsync();
+        if (user == null || !BCrypt.Net.BCrypt.Verify(model.Password, user.PasswordHash))
+            return Unauthorized(new Response { Status = "Error", Message = "Invalid credentials!" });
+
+        var token = GenerateJWTToken(user);
+        return Ok(new { Token = token });
+    }
+
+    private string GenerateJWTToken(User userInfo)
+    {
+        var securityKey = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(_configuration["JWT:Secret"]));
+        var credentials = new SigningCredentials(securityKey, SecurityAlgorithms.HmacSha256);
+
+        var claims = new[] {
+            new Claim(JwtRegisteredClaimNames.Sub, userInfo.Email),
+            new Claim(JwtRegisteredClaimNames.Jti, Guid.NewGuid().ToString()),
+        };
+
+        var token = new JwtSecurityToken(
+            issuer: _configuration["JWT:Issuer"],
+            audience: _configuration["JWT:Audience"],
+            claims: claims,
+            expires: DateTime.Now.AddHours(3),
+            signingCredentials: credentials
+        );
+
+        return new JwtSecurityTokenHandler().WriteToken(token);
+    }
+}
+
+public class UserRegistrationDto
+{
+    public string Email { get; set; }
+    public string Password { get; set; }
+}
+
+public class UserLoginDto
+{
+    public string Email { get; set; }
+    public string Password { get; set; }
+}
+
+public class Response
+{
+    public string Status { get; set; }
+    public string Message { get; set; }
+}

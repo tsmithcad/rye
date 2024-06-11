@@ -1,0 +1,83 @@
+@page "/createsong"
+@using System.Collections.Generic
+
+<h3>Create Song</h3>
+
+<EditForm Model="@song" OnSubmit="Save">
+    <DataAnnotationsValidator />
+
+   <div class="form-group">
+    <label for="songName">Song Name:</label>
+    <InputText id="songName" @bind-Value="song.SongName" class="form-control" />
+</div>
+
+<div class="form-group">
+    <label for="lyrics">Lyrics:</label>
+    <InputTextArea id="lyrics" @bind-Value="song.Lyrics" class="form-control" />
+</div>
+
+<div class="form-group">
+    <label for="songwriters">Song Writers:</label>
+    <InputText id="songwriters" @bind-Value="song.Songwriters" class="form-control" />
+</div>
+
+<div class="form-group">
+    <label for="artist">Artist:</label>
+    <InputText id="artist" @bind-Value="song.Artist" class="form-control" />
+</div>
+
+<div class="form-group">
+    <label for="feature">Feature:</label>
+    <InputText id="feature" @bind-Value="song.Feature" class="form-control" />
+</div>
+
+<div class="form-group">
+    <label for="producer">Producer:</label>
+    <InputText id="producer" @bind-Value="song.Producer" class="form-control" />
+</div>
+
+<div class="form-group">
+    <label for="instrumental">Instrumental:</label>
+    <InputText id="instrumental" @bind-Value="song.Instrumental" class="form-control" />
+</div>
+
+<div class="form-group">
+    <label for="splitsheet">Split Sheet:</label>
+    <InputText id="splitsheet" @bind-Value="song.SplitSheet" class="form-control" />
+</div>
+
+<div class="form-group">
+    <label for="tempo">Tempo:</label>
+    <InputNumber id="tempo" @bind-Value="song.Tempo" class="form-control" />
+</div>
+
+<div class="form-group">
+    <label for="key">Key:</label>
+    <InputText id="key" @bind-Value="song.Key" class="form-control" />
+</div>
+
+<div class="form-group">
+    <label for="loudness">Loudness LFU:</label>
+    <InputNumber id="loudness" @bind-Value="song.LoudnessLFU" class="form-control" />
+</div>
+
+<div class="form-group">
+    <label for="songFilePath">Song Filepath:</label>
+    <InputText id="songFilePath" @bind-Value="song.SongFilePath" class="form-control" />
+</div>
+
+<!-- Continue adding more input fields for the other attributes -->
+
+    <div class="form-group">
+        <button type="submit" class="btn btn-primary">Create Song</button>
+    </div>
+</EditForm>
+
+@code {
+    private CreateSongModel song = new CreateSongModel();
+
+    private void Save()
+    {
+        // Perform logic to save the song data to the database
+    }
+}

@@ -1,0 +1,25 @@
+.ticker-container {
+    background-image: linear-gradient(90deg, #3e0b6f 0%, #3a24b9  70%);
+    /* Bootstrap dark background color */
+    color: #ffffff; /* Bootstrap dark text color */
+    padding: 15px;
+    overflow: hidden;
+    white-space: nowrap;
+    display: flex;
+}
+
+.ticker-item {
+    display: inline-block;
+    margin-right: 20px;
+    animation: ticker-scroll 20s linear infinite;
+
+}
+
+@keyframes ticker-scroll {
+    0% {
+        transform: translateX(100%);
+    }
+    100% {
+        transform: translateX(-100%);
+    }
+}

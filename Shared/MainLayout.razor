@@ -1,0 +1,54 @@
+﻿@inherits LayoutComponentBase
+@inject NavigationManager Navigation
+
+<div class="page">
+    <div class="sidebar">
+        <NavMenu />
+    </div>
+    
+    <main>
+        <!-- <div class="login top-row px-4">
+            <LoginDisplay />
+        </div> -->
+        <Ticker Releases="@releaseData" />
+        
+        <article class="content px-4">
+            <Breadcrumb Items="@GetBreadcrumbItems()" />
+            @Body
+        </article>
+        
+        <footer class="m-5 text-center">
+            Complimentary Intelligence &copy; 2023
+        </footer>
+    </main>
+</div>
+
+
+@code {
+    private List<FeatureRelease> releaseData = new List<FeatureRelease>
+    {
+        new FeatureRelease { Date = DateTime.Now, FeatureName = "CNN style ticker ", Description = "for feature updates" },
+        // Add more releases here
+    };
+
+    private List<BreadcrumbItem> GetBreadcrumbItems()
+    {
+        var breadcrumbItems = new List<BreadcrumbItem>();
+        var segments = Navigation.ToBaseRelativePath(Navigation.Uri).Split('/'); // Use ToBaseRelativePath
+
+        var path = "/";
+        foreach (var segment in segments)
+        {
+            if (!string.IsNullOrEmpty(segment))
+            {
+                path += segment + "/";
+                breadcrumbItems.Add(new BreadcrumbItem
+                {
+                    Label = segment,
+                    Url = path.TrimEnd('/')
+                });
+            }
+        }
+        return breadcrumbItems;
+    }
+}

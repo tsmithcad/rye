@@ -1,0 +1,23 @@
+﻿<nav aria-label="breadcrumb">
+    <ol class="breadcrumb">
+        <li class="breadcrumb-item"><NavLink href="/">Home</NavLink></li>
+        @foreach (var item in Items)
+        {
+            <li class="breadcrumb-item">
+                @if (!string.IsNullOrEmpty(item.Url))
+                {
+                    <NavLink href="@item.Url">@item.Label</NavLink>
+                }
+                else
+                {
+                    <span>@item.Label</span>
+                }
+            </li>
+        }
+    </ol>
+</nav>
+
+@code {
+    [Parameter]
+    public List<BreadcrumbItem> Items { get; set; } = new List<BreadcrumbItem>();
+}

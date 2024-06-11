@@ -1,0 +1,178 @@
+@page "/contracts/recording"
+
+<title>Recording Contract</title>
+
+<body>
+    <h1>Recording Contract</h1>
+
+    <EditForm Model="@model" OnValidSubmit="model.GenerateContract">
+        <DataAnnotationsValidator />
+        <ValidationSummary />
+
+        <div class="form-group">
+            <label for="model.ContractDate">Contract Date:</label>
+            <input type="date" id="contract-date" @model.bind-Value="model.ContractDate" required="true" class="form-control" />
+            <ValidationMessage For="@(() => model.ContractDate)" />
+        </div>
+
+        <div class="form-group">
+            <label for="model.LabelName">Label Name:</label>
+            <input type="text" id="label-name" @model.bind-Value="model.LabelName" required="true" class="form-control" />
+            <ValidationMessage For="@(() => model.LabelName)" />
+
+        </div>
+
+        <div class="form-group">
+            <label for="@model.ArtistName">Artist Name:</label>
+            <input type="text" id="artist-name" @model.bind-Value="model.ArtistName" required="true" class="form-control" />
+            <ValidationMessage For="@(() => model.ArtistName)" />
+
+        </div>
+
+        <div class="form-group">
+            <label for="@model.NumberOfSongs">Number of Songs:</label>
+            <input type="nummber" id="number-of-songs" @model.bind-Value="model.NumberOfSongs" required="true" class="form-control" />
+            <ValidationMessage For="@(() => model.NumberOfSongs)" />
+        </div>
+
+        <div class="form-group">
+            <label for="@model.StartDate">Start Date:</label>
+            <input type="date" id="start-date" @model.bind-Value="model.StartDate" required="true" class="form-control" />
+            <ValidationMessage For="@(() => model.StartDate)" />
+        </div>
+
+        <div class="form-group">
+            <label for="@model.DeliveryDate">Delivery Date:</label>
+            <input type="date" id="delivery-date" @model.bind-Value="model.DeliveryDate" required="true" class="form-control" />
+            <ValidationMessage For="@(() => model.DeliveryDate)" />
+        </div>
+
+        <div class="form-group">
+            <label for="@model.AdvanceAmount">Advance Amount:</label>
+            <input type="number" id="advance-amount" @model.bind-Value="model.AdvanceAmount" required="true" class="form-control" />
+            <ValidationMessage For="@(() => model.AdvanceAmount)" />
+        </div>
+
+        <div class="form-group">
+            <label for="@model.RoyaltyPercentage">Royalty Percentage:</label>
+            <input type="number" id="royalty-percentage" @model.bind-Value="model.RoyaltyPercentage" required="true" class="form-control" />
+            <ValidationMessage For="@(() => model.RoyaltyPercentage)" />
+        </div>
+
+        <div class="form-group">
+            <label for="@model.Jurisdiction">Jurisdiction:</label>
+            <input type="text" id="jurisdiction" @model.bind-Value="model.Jurisdiction" required="true" class="form-control" />
+            <ValidationMessage For="@(() => model.Jurisdiction)" />
+        </div>
+
+        <div class="form-group">
+            <label for="@model.LabelSignature">Label Signature:</label>
+            <input type="text" id="label-signature" @model.bind-Value="model.LabelSignature" required="true" class="form-control" />
+            <ValidationMessage For="@(() => model.LabelSignature)" />
+        </div>
+
+        <div class="form-group">
+            <label for="@model.ArtistSignature">Artist Signature:</label>
+            <input type="text" id="artist-name" @model.bind-Value="model.ArtistSignature" required="true" class="form-control" />
+            <ValidationMessage For="@(() => model.ArtistSignature)" />
+        </div>
+
+        <br>
+
+        <div class="form-group">
+            <button type="submit" class="btn btn-primary text-light">Create Recording Contract</button>
+        </div>
+    </EditForm>
+
+    <br>
+    <br>
+    <br>
+
+    <div class="card-body bg-light text-dark">
+    @if(FormComplete){
+        <h1 class="text-center">Recording Contract</h1>
+
+        <p>This Recording Contract (the &quot;Contract&quot;) is made and entered into on @model.ContractDate, by and between @model.LabelName, hereinafter referred to as the &quot;Label,&quot; and @model.ArtistName, hereinafter referred to as the &quot;Artist.&quot;</p>
+
+        <h3 class="text-center">Agreement Terms</h3>
+
+        <ol>
+        <li><p><strong>Scope of Work:</strong> The Artist agrees to record and deliver @model.NumberOfSongs original musical compositions to the Label.</p></li>
+        <li><p><strong>Recording Schedule:</strong> The Artist will commence recording by @model.StartDate and deliver the finished recordings to the Label by @model.DeliveryDate.</p></li>
+        <li><p><strong>Compensation:</strong> The Label shall pay the Artist a one-time advance payment of @model.AdvanceAmount upon signing this Contract, to be recouped from future royalties.</p></li>
+        <li><p><strong>Royalties:</strong> The Artist shall receive a royalty rate of @model.RoyaltyPercentage on net sales revenue generated from the exploitation of the recorded music.</p></li>
+        <li><p><strong>Ownership:</strong> The Artist grants the Label the exclusive rights to distribute, license, and exploit the recorded music during the Contract period.</p></li>
+        <li><p><strong>Expenses:</strong> The Label shall be responsible for all recording, production, and marketing expenses.</p></li>
+        </ol>
+
+        <h3 class="text-center">Intellectual Property</h3>
+
+        <ol>
+        <li><p><strong>Ownership of Masters:</strong> The Label shall own all master recordings and shall have the right to reproduce, distribute, and sublicense them.</p></li>
+        <li><p><strong>Songwriting Credits:</strong> The Artist shall receive proper songwriting credits for each composition delivered under this Contract.</p></li>
+        </ol>
+
+        <h3 class="text-center">Termination</h3>
+
+        <ol>
+        <li><p><strong>Termination Clause:</strong> Either party may terminate this Contract in the event of a material breach by the other party.</p></li>
+        <li><p><strong>Effect of Termination:</strong> Upon termination, all rights granted under this Contract shall revert to the respective parties.</p></li>
+        </ol>
+
+        <h3 class="text-center">General</h3>
+
+        <ol>
+        <li><p><strong>Governing Law:</strong> This Contract shall be governed by and construed in accordance with the laws of @model.Jurisdiction.</p></li>
+        <li><p><strong>Entire Agreement:</strong> This Contract constitutes the entire agreement between the parties and supersedes any prior agreements.</p></li>
+        </ol>
+
+        <h3 class="text-center">Signatures</h3>
+
+        <p>In witness whereof, the parties have executed this Recording Contract as of the date first above written.</p>
+
+        <hr>
+
+        <h3 class="text-center">Terms:</h3>
+
+        <ul>
+        <li>@model.ContractDate: The date when the contract is signed.</li>
+        <li>@model.LabelName: The name of the recording label.</li>
+        <li>@model.ArtistName: The name of the artist.</li>
+        <li>@model.NumberOfSongs: The number of songs the artist agrees to record.</li>
+        <li>@model.StartDate: The start date for recording.</li>
+        <li>@model.DeliveryDate: The date by which the artist must deliver finished recordings.</li>
+        <li>@model.AdvanceAmount: The advance payment amount.</li>
+        <li>@model.RoyaltyPercentage: The percentage of royalties the artist will receive.</li>
+        <li>@model.Jurisdiction: The legal jurisdiction governing the contract.</li>
+        <li>@model.LabelSignature: Placeholder for the label&#39;s signature.</li>
+        <li>@model.ArtistSignature: Placeholder for the artist&#39;s signature.</li>
+        <li>@model.ContractDate: Date when the contract is signed by each party.</li>
+        </ul>
+    }else{
+        <p>Complete form to generate recording contract.</p> 
+    }
+    </div>
+
+</body>
+
+
+@code{
+    RecordingContractModel model = new RecordingContractModel(){
+        ContractDate = DateTime.Today,
+        LabelName = "Billianos",
+        ArtistName = "Thrizz13",
+        NumberOfSongs = 20,
+        StartDate = DateTime.Today,
+        DeliveryDate = DateTime.Today,
+        AdvanceAmount = 100,
+        RoyaltyPercentage = 20,
+        Jurisdiction = "Universe",
+        LabelSignature = "Billianos Official",
+        ArtistSignature = "Thrizz13 Official"
+    };
+    bool FormComplete { get; set; } = true;
+    public void GenerateContract(){
+        FormComplete = true;
+        Console.WriteLine("Form Complete");
+    }
+}
