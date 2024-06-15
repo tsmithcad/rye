@@ -1,5 +1,4 @@
 ﻿@page "/catalog-enhancements"
-@using RhymeEngine.V1.Shared
 
 <PageTitle>Catalog Enhancements</PageTitle>
 

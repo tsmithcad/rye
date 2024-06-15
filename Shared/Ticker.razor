@@ -12,7 +12,7 @@
 </style>
 
 @code {
-    [Parameter] public List<FeatureRelease>? Releases { get; set; }
+    [Parameter] public List<FeatureRelease> Releases { get; set; }
 
-    private List<FeatureRelease>? SortedReleases => Releases.OrderByDescending(r => r.Date).ToList();
+    private List<FeatureRelease> SortedReleases => Releases.OrderByDescending(r => r.Date).ToList();
 }
