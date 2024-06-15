@@ -17,9 +17,20 @@
             @Body
         </article>
         
-        <footer class="m-5 text-center">
-            Complimentary Intelligence &copy; 2023
-        </footer>
+        <footer class="text-body-secondary py-5 text-center">
+  <div class="container">
+    <p class="float-end mb-1">
+      <!-- <a class="text-light" href="#">Back to top</a> -->
+    </p>
+    <p><a href="mailto:tsmithcad@gmail.com">tsmithcad@gmail.com</a></p>
+
+    <!-- <p >Access, sync and secure catalog from a variety of devices </p>
+    <p>📱💻🖥️ 🎮🕹️ 📺🖥️ 💽📀🌐📦 🛍️💻 📡🔌 🎧📷</p> -->
+    <p>Complimentary Intelligence &copy; 2023</p>
+  </div>
+</footer>
+
+        
     </main>
 </div>
 
@@ -27,7 +38,7 @@
 @code {
     private List<FeatureRelease> releaseData = new List<FeatureRelease>
     {
-        new FeatureRelease { Date = DateTime.Now, FeatureName = "CNN style ticker ", Description = "for feature updates" },
+        new FeatureRelease { Date = DateTime.Now, FeatureName = "Daily updates!", Description = " " },
         // Add more releases here
     };
 
