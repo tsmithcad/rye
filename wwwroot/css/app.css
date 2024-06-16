@@ -4,7 +4,7 @@
 /* Brand Colors */
 /* Define dark mode colors inspired by Apple and Facebook */
 :root {
-    /* Primary color (Apple's Dark Gray) */
+    /* Primary color (Rhyme Engiine Purple) */
     --primary-color: #3e0b6f;
 
     /* Secondary color (Facebook's Blue) */
@@ -19,6 +19,12 @@
     /* Text color (Facebook's White) */
     --text-color: #FFFFFF;
 }
+
+/* #ff91fd
+#fbd7fc
+#e0dac5 */
+
+.border-primary{border-color:var(--secondary-color)!important}
 
 
 /* General Styles */

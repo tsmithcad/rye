@@ -1,167 +1,118 @@
 @page "/data-roadmap"
+@inject LocalDataService DataService
 
+<head>
+    <style>
+    .bg-dark {
+        background-color: #0e0222 !important;
+    }
 
+    .bg-light {
+        background-color: #3a24b9 !important;
+    }
+    </style>
+</head>
 
 <header>
-<h2 id="toc_1"><span class="oi oi-transfer mx-2" aria-hidden="true"></span> Data Roadmap</h2>
+<h1 id="toc_1"><span class="oi oi-transfer mx-2 text-warning" aria-hidden="true"></span> Data Roadmap</h1>
 
-<p>Come together to create, protect, and propel your creations. This page provides a glossary of terms to align and empower collaborators.</p>
+<!-- <p>Come together to create, protect, and propel your creations.</p> -->
+
+ <div class="container mt-3">
+       
+        <div class="collapse" id="collapseContent">
+            <div class="container mt-5">
+            <h2 class="text-info">Getting Started</h2>
+            <p>Welcome to the Data Roadmap page! This comprehensive guide is crafted to ensure you navigate and manage every facet of your creative journey with ease and efficiency. Whether you are a producer, artist, or any other role in the music industry, this roadmap will:</p>
+            <ul>
+                <li><strong>Empower Your Creativity</strong>: Access resources for creating, protecting, and propelling your music projects.</li>
+                <li><strong>Streamline Your Workflow</strong>: Find essential tools and documentation for every stage of your work.</li>
+                <li><strong>Enhance Collaboration</strong>: Discover best practices and insights to foster effective collaboration within your team.</li>
+                <li><strong>Maximize Your Potential</strong>: Utilize our extensive library of guides and tutorials to elevate your skills and productivity.</li>
+            </ul>
+            <p>Expect 100% satisfaction as this resource brings unparalleled value, simplifying complex processes and supporting your success at every step. Dive in and let us help you achieve your musical aspirations!</p>
+
+        <div class="album py-5">
+            <div class="container">
+                <h5 class="text-info">The Power of Knowing File Extensions</h5>
+                <p>Understanding and recognizing file extensions is crucial for any professional in the music industry. On this page, you'll find:</p>
+                <ul>
+                    <li><strong>Efficiency</strong>: Quickly identify the right file types for your needs, reducing time spent on conversions and compatibility issues.</li>
+                    <li><strong>Quality Control</strong>: Ensure you're using the highest quality formats for production, recording, and distribution.</li>
+                    <li><strong>Professionalism</strong>: Maintain industry standards by using the correct file types, impressing collaborators and clients alike.</li>
+                    <li><strong>Organization</strong>: Keep your projects organized by correctly categorizing files, making it easier to manage and retrieve them when needed.</li>
+                </ul>
+                <p>Expect 100% satisfaction as this resource brings unparalleled value, simplifying complex processes and supporting your success at every step. Dive in and let us help you achieve your musical aspirations!</p>
+            </div>
+        </div>
+    </div>
+        </div>
+        <a class="read-more text-primary" data-bs-toggle="collapse" href="#collapseContent" role="button" aria-expanded="false" aria-controls="collapseContent">Value Summary</a>
+    </div>
+
 </header>
 
-<div>
-    <div class="list-unstyled">
 
-        <li class="fs-5">
-            <h2 class="py-4 text-warning">🎧 Producers</h2>
-            <ul class="list-unstyled">
-            <li class="fs-5">🎹 Beat Libraries</li>
-            <li class="fs-5">🛒 Purchased</li>
-            <li class="fs-5">📃 Leased</li>
-            <li class="fs-5">🌟 Originals</li>
-            <li class="fs-5">🎚️ Projects</li>
-            <li class="fs-5">💼 Invoices &amp; Contracts</li>
-        </ul>
-        </li>
-
-        <li class="fs-5">
-            <h2 class="py-4 text-warning">🎤 Artists</h2>
-            <ul class="list-unstyled">
-                <li class="fs-5">🖼️ Profiles</li>
-                <li class="fs-5">💿 Discographies</li>
-                <li class="fs-5">🗣️ Vocals</li>
-                <li class="fs-5">🔊 Raw</li>
-                <li class="fs-5">✂️ Edited</li>
-                <li class="fs-5">📜 Contracts &amp; Agreements</li>
-            </ul>
-        </li>
-
-        <li class="fs-5">
-             <h2 class="py-4 text-warning">🎚️ Music Production</h2>
-            <ul class="list-unstyled">
-                <li class="fs-5">📁 Projects</li>
-                <li class="fs-5">🎉 Final Tracks</li>
-                <li class="fs-5">🧪 Demos</li>
-                <li class="fs-5">🎵 Backing Tracks &amp; Instrumentals</li>
-                <li class="fs-5">💻 MIDI Files</li>
-                <li class="fs-5">🔌 Plugins &amp; Presets</li>
-            </ul>
-            
-        </li>
-        <li class="fs-5">
-             <h2 class="py-4 text-warning">🎙️ Recording and Mastering</h2>
-
-            <ul class="list-unstyled">
-                <li class="fs-5">📆 Sessions</li>
-                <li class="fs-5">💎 Master Tracks</li>
-                <li class="fs-5">📝 Studio Bookings &amp; Invoices</li>
-            </ul>
-        </li>
-        <li class="fs-5">
-             <h2 class="py-4 text-warning">©️ Copyright Registration</h2>
-
-            <ul class="list-unstyled">
-                <li class="fs-5">📬 Submitted</li>
-                <li class="fs-5">⏳ Pending</li>
-                <li class="fs-5">✅ Approved</li>
-                <li class="fs-5">🎖️ Certificates</li>
-            </ul>
-        </li>
-        <li class="fs-5">
-            <h2 class="py-4 text-warning">📚  Music Publishing</h2>
-
-            <ul class="list-unstyled">
-                <li class="fs-5">📖 Published Works</li>
-                <li class="fs-5">💰 Royalty Statements</li>
-                <li class="fs-5">📄 Contracts &amp; Agreements</li>
-            </ul>
-        </li>
-        <li class="fs-5">
-            <h2 class="py-4 text-warning">🎨  Album Artwork and Packaging</h2>
-
-            <ul class="list-unstyled">
-                <li class="fs-5">✏️ Drafts</li>
-                <li class="fs-5">🏆 Final Versions</li>
-                <li class="fs-5">💾 Source Files</li>
-                <li class="fs-5">🖨️ Print Ready</li>
-            </ul>
-        </li>
-        <li class="fs-5">
-            <h2 class="py-4 text-warning">⚖️ Music Legal Process</h2>
-
-            <ul class="list-unstyled">
-                <li class="fs-5">📜 Legal Advisories</li>
-                <li class="fs-5">📁 Case Files</li>
-                <li class="fs-5">📃 Contracts</li>
-                <li class="fs-5">🥊 Disputes &amp; Resolutions</li>
-            </ul>
-        </li>
-        <li class="fs-5">
-             <h2 class="py-4 text-warning">🎉 Performance Rights Organizations</h2>
-
-            <ul class="list-unstyled">
-                <li class="fs-5">✍️ Registrations</li>
-                <li class="fs-5">🎟️ Events &amp; Performances</li>
-                <li class="fs-5">💸 Royalty Collections</li>
-            </ul>
-        </li>
-        <li class="fs-5">
-             <h2 class="py-4 text-warning">📢 Audio Distribution and Licensing</h2>
-
-            <ul class="list-unstyled">
-                <li class="fs-5">📀 Distributed Tracks</li>
-                <li class="fs-5">📝 Licensing Agreements</li>
-                <li class="fs-5">🌐 Platforms &amp; Services</li>
-            </ul>
-        </li>
-        <li class="fs-5">
-            <h2 class="py-4 text-warning">🎥 Online Video Distribution</h2>
-
-            <ul class="list-unstyled">
-                <li class="fs-5">📼 Video Files</li>
-                <li class="fs-5">🖼️ Thumbnails &amp; Artworks</li>
-                <li class="fs-5">💵 Monetization Reports</li>
-            </ul>
-        </li>
-        <li class="fs-5">
-            <h2 class="py-4 text-warning">📱 Social Media Content</h2>
-
-            <ul class="list-unstyled">
-                <li class="fs-5">🖼️ Posts &amp; Images</li>
-                <li class="fs-5">📊 Campaigns</li>
-                <li class="fs-5">📈 Analytics &amp; Insights</li>
-            </ul>
-        </li>
-        <li class="fs-5">
-            <h2 class="py-4 text-warning">🎟️ Music Events</h2>
-
-            <ul class="list-unstyled">
-                <li class="fs-5">📅 Upcoming</li>
-                <li class="fs-5">🗓️ Past Events</li>
-                <li class="fs-5">🎫 Tickets &amp; Bookings</li>
-                <li class="fs-5">📣 Promotions &amp; Marketing</li>
-            </ul>
-        </li>
-        <li class="fs-5">
-            <h2 class="py-4 text-warning">🎨 Brand Development</h2>
-
-            <ul class="list-unstyled">
-                <li class="fs-5">🛍️ Logos &amp; Branding</li>
-                <li class="fs-5">🎽 Merchandise</li>
-                <li class="fs-5">📘 Brand Guidelines</li>
-                <li class="fs-5">™️ Trademarks</li>
-                <li class="fs-5">Product Endorsements</li>
-                <li class="fs-5">🤝 Brand Partnerships</li>
-            </ul>
-        </li>
-        <li class="fs-5">
-             <h2 class="py-4 text-warning">📢 Marketing</h2>
-
-            <ul class="list-unstyled">
-                <li class="fs-5">🚀 Campaigns</li>
-                <li class="fs-5">🎨 Ad Copies &amp; Creatives</li>
-                <li class="fs-5">📊 Marketing Reports</li>
-                <li class="fs-5">💼 Collaborations &amp; Partnerships</li>
-            </ul>
-        </li>
+<div class="album py-4">
+    <div class="container">
+        <div class="row row-cols-1 row-cols-sm-1 row-cols-md-1 row-cols-lg-2 row-cols-xxl-3 g-1">
+            @if (dataCategories != null)
+            {
+                @foreach (var category in dataCategories)
+                {
+                    <div class="col">
+                        <div class="card bg-dark text-light shadow-sm">
+                            <div class="card-body">
+                                <h5 class="card-title text-info">@GetCategoryIcon(category.Category) @category.Category</h5>
+                                <ul class="list-unstyled">
+                                    @foreach (var source in category.DataSources)
+                                    {
+                                        <li>@source.SourceName: @string.Join(", ", source.FileExtensions)</li>
+                                    }
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                }
+            }
+            else
+            {
+                <div class="col-12">
+                    <p>Loading data...</p>
+                </div>
+            }
+        </div>
     </div>
 </div>
+
+@code {
+    private List<DataCategory> dataCategories;
+
+    protected override async Task OnInitializedAsync()
+    {
+        dataCategories = await DataService.GetDataCategoriesAsync();
+    }
+
+    private string GetCategoryIcon(string category)
+    {
+        return category switch
+        {
+            "Album Artwork and Packaging" => "🎨",
+            "Artists" => "🎤",
+            "Audio Distribution and Licensing" => "📢",
+            "Brand Development" => "🎨",
+            "Copyright Registration" => "©️",
+            "Marketing" => "📢",
+            "Music Events" => "🎟️",
+            "Music Legal Process" => "⚖️",
+            "Music Production" => "🎚️",
+            "Music Publishing" => "📚",
+            "Online Video Distribution" => "🎥",
+            "Performance Rights Organizations" => "🎉",
+            "Producers" => "🎧",
+            "Recording and Mastering" => "🎙️",
+            "Social Media Content" => "📱",
+            _ => ""
+        };
+    }
+}

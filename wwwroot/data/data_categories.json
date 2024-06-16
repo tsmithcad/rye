@@ -1,0 +1,140 @@
+[
+    {
+      "Category": "Album Artwork and Packaging",
+      "DataSources": [
+        { "SourceName": "Drafts", "FileExtensions": ["PSD", "AI"] },
+        { "SourceName": "Final Versions", "FileExtensions": ["JPG", "PNG", "PDF"] },
+        { "SourceName": "Source Files", "FileExtensions": ["PSD", "AI"] },
+        { "SourceName": "Print Ready", "FileExtensions": ["PDF", "JPG", "PNG"] }
+      ]
+    },
+    {
+      "Category": "Artists",
+      "DataSources": [
+        { "SourceName": "Profiles", "FileExtensions": ["JPG", "PNG", "GIF"] },
+        { "SourceName": "Discographies", "FileExtensions": ["MP3", "FLAC", "WAV"] },
+        { "SourceName": "Vocals", "FileExtensions": ["WAV", "MP3", "AIFF"] },
+        { "SourceName": "Raw", "FileExtensions": ["WAV", "AIFF"] },
+        { "SourceName": "Edited", "FileExtensions": ["WAV", "MP3", "AIFF"] },
+        { "SourceName": "Contracts & Agreements", "FileExtensions": ["PDF", "DOCX"] }
+      ]
+    },
+    {
+      "Category": "Audio Distribution and Licensing",
+      "DataSources": [
+        { "SourceName": "Distributed Tracks", "FileExtensions": ["MP3", "WAV", "FLAC"] },
+        { "SourceName": "Licensing Agreements", "FileExtensions": ["PDF", "DOCX"] },
+        { "SourceName": "Platforms & Services", "FileExtensions": ["HTML", "JSON", "XML"] }
+      ]
+    },
+    {
+      "Category": "Brand Development",
+      "DataSources": [
+        { "SourceName": "Logos & Branding", "FileExtensions": ["JPG", "PNG", "AI"] },
+        { "SourceName": "Merchandise", "FileExtensions": ["JPG", "PNG", "AI"] },
+        { "SourceName": "Brand Guidelines", "FileExtensions": ["PDF", "DOCX"] },
+        { "SourceName": "Trademarks", "FileExtensions": ["PDF", "DOCX"] },
+        { "SourceName": "Product Endorsements", "FileExtensions": ["PDF", "DOCX"] },
+        { "SourceName": "Brand Partnerships", "FileExtensions": ["PDF", "DOCX"] }
+      ]
+    },
+    {
+      "Category": "Copyright Registration",
+      "DataSources": [
+        { "SourceName": "Submitted", "FileExtensions": ["PDF", "DOCX"] },
+        { "SourceName": "Pending", "FileExtensions": ["PDF", "DOCX"] },
+        { "SourceName": "Approved", "FileExtensions": ["PDF", "DOCX"] },
+        { "SourceName": "Certificates", "FileExtensions": ["PDF", "DOCX"] }
+      ]
+    },
+    {
+      "Category": "Marketing",
+      "DataSources": [
+        { "SourceName": "Campaigns", "FileExtensions": ["PDF", "DOCX", "XLSX"] },
+        { "SourceName": "Ad Copies & Creatives", "FileExtensions": ["JPG", "PNG", "PDF"] },
+        { "SourceName": "Marketing Reports", "FileExtensions": ["PDF", "XLSX"] },
+        { "SourceName": "Collaborations & Partnerships", "FileExtensions": ["PDF", "DOCX"] }
+      ]
+    },
+    {
+      "Category": "Music Events",
+      "DataSources": [
+        { "SourceName": "Upcoming", "FileExtensions": ["PDF", "DOCX"] },
+        { "SourceName": "Past Events", "FileExtensions": ["PDF", "DOCX"] },
+        { "SourceName": "Tickets & Bookings", "FileExtensions": ["PDF", "DOCX"] },
+        { "SourceName": "Promotions & Marketing", "FileExtensions": ["PDF", "DOCX", "XLSX"] }
+      ]
+    },
+    {
+      "Category": "Music Legal Process",
+      "DataSources": [
+        { "SourceName": "Legal Advisories", "FileExtensions": ["PDF", "DOCX"] },
+        { "SourceName": "Case Files", "FileExtensions": ["PDF", "DOCX"] },
+        { "SourceName": "Contracts", "FileExtensions": ["PDF", "DOCX"] },
+        { "SourceName": "Disputes & Resolutions", "FileExtensions": ["PDF", "DOCX"] }
+      ]
+    },
+    {
+      "Category": "Music Production",
+      "DataSources": [
+        { "SourceName": "Projects", "FileExtensions": ["PRJ", "AUP", "SESX"] },
+        { "SourceName": "Final Tracks", "FileExtensions": ["MP3", "WAV", "FLAC"] },
+        { "SourceName": "Demos", "FileExtensions": ["MP3", "WAV", "AIFF"] },
+        { "SourceName": "Backing Tracks & Instrumentals", "FileExtensions": ["MP3", "WAV", "AIFF"] },
+        { "SourceName": "MIDI Files", "FileExtensions": ["MIDI"] },
+        { "SourceName": "Plugins & Presets", "FileExtensions": ["VST", "AUPRESET", "FXP"] }
+      ]
+    },
+    {
+      "Category": "Music Publishing",
+      "DataSources": [
+        { "SourceName": "Published Works", "FileExtensions": ["PDF", "DOCX"] },
+        { "SourceName": "Royalty Statements", "FileExtensions": ["PDF", "XLSX"] },
+        { "SourceName": "Contracts & Agreements", "FileExtensions": ["PDF", "DOCX"] }
+      ]
+    },
+    {
+      "Category": "Online Video Distribution",
+      "DataSources": [
+        { "SourceName": "Video Files", "FileExtensions": ["MP4", "MOV", "AVI"] },
+        { "SourceName": "Thumbnails & Artworks", "FileExtensions": ["JPG", "PNG", "GIF"] },
+        { "SourceName": "Monetization Reports", "FileExtensions": ["PDF", "XLSX"] }
+      ]
+    },
+    {
+      "Category": "Performance Rights Organizations",
+      "DataSources": [
+        { "SourceName": "Registrations", "FileExtensions": ["PDF", "DOCX"] },
+        { "SourceName": "Events & Performances", "FileExtensions": ["PDF", "DOCX"] },
+        { "SourceName": "Royalty Collections", "FileExtensions": ["PDF", "DOCX", "XLSX"] }
+      ]
+    },
+    {
+      "Category": "Producers",
+      "DataSources": [
+        { "SourceName": "Beat Libraries", "FileExtensions": ["WAV", "MP3", "AIFF"] },
+        { "SourceName": "Purchased", "FileExtensions": ["PDF", "DOCX"] },
+        { "SourceName": "Leased", "FileExtensions": ["PDF", "DOCX"] },
+        { "SourceName": "Originals", "FileExtensions": ["WAV", "MP3", "AIFF"] },
+        { "SourceName": "Projects", "FileExtensions": ["PRJ", "AUP", "SESX"] },
+        { "SourceName": "Invoices & Contracts", "FileExtensions": ["PDF", "DOCX", "XLSX"] }
+      ]
+    },
+    {
+      "Category": "Recording and Mastering",
+      "DataSources": [
+        { "SourceName": "Sessions", "FileExtensions": ["SESX", "AUP"] },
+        { "SourceName": "Master Tracks", "FileExtensions": ["WAV", "FLAC", "MP3"] },
+        { "SourceName": "Studio Bookings & Invoices", "FileExtensions": ["PDF", "DOCX", "XLSX"] }
+      ]
+    },
+    {
+      "Category": "Social Media Content",
+      "DataSources": [
+        { "SourceName": "Posts & Images", "FileExtensions": ["JPG", "PNG", "GIF"] },
+        { "SourceName": "Campaigns", "FileExtensions": ["PDF", "DOCX", "XLSX"] },
+        { "SourceName": "Analytics & Insights", "FileExtensions": ["PDF", "XLSX"] }
+      ]
+    }
+  ]
+  
