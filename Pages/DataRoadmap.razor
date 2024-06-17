@@ -51,11 +51,12 @@
                     <div class="col">
                         <div class="card bg-dark text-light shadow-sm h-100">
                             <div class="card-body">
-                                <h5 class="card-title">@GetCategoryIcon(category.Category) @category.Category</h5>
+                                <h5 class="card-title text-info"> @category.Category 
+                                @GetCategoryIcon(category.Category)</h5>
                                 <ul class="list-unstyled">
                                     @foreach (var source in category.DataSources)
                                     {
-                                        <li class="mx-4">@source.SourceName: @string.Join(", ", source.FileExtensions)</li>
+                                        <li class="mx-4 small">@source.SourceName: @string.Join(", ", source.FileExtensions)</li>
                                     }
                                 </ul>
                             </div>

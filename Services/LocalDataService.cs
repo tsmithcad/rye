@@ -35,4 +35,16 @@ public class LocalDataService
         var response = await _httpClient.GetStringAsync("Data/digital_service_providers.json");
         return JsonSerializer.Deserialize<List<ContentCategory>>(response);
     }
+
+    public async Task<List<ContentCategory>> GetPerformanceRightsOrganizationsAsync()
+    {
+        var response = await _httpClient.GetStringAsync("Data/performance_rights_organizations.json");
+        return JsonSerializer.Deserialize<List<ContentCategory>>(response);
+    }
+
+    public async Task<List<ContentCategory>> GetEventPlatformsAsync()
+    {
+        var response = await _httpClient.GetStringAsync("Data/event_platforms.json");
+        return JsonSerializer.Deserialize<List<ContentCategory>>(response);
+    }
 }

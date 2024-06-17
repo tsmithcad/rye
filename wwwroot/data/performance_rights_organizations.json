@@ -1,0 +1,59 @@
+[
+    {
+        "Title": "United States",
+        "Description": "Organizations for managing performance rights in the US.",
+        "Enabled": true,
+        "Platforms": [
+            { "Name": "ASCAP", "Url": "https://www.ascap.com", "Description": "American Society of Composers, Authors, and Publishers" },
+            { "Name": "BMI", "Url": "https://www.bmi.com", "Description": "Broadcast Music, Inc." },
+            { "Name": "SESAC", "Url": "https://www.sesac.com", "Description": "Society of European Stage Authors and Composers" },
+            { "Name": "SoundExchange", "Url": "https://www.soundexchange.com", "Description": "Digital performance royalties" }
+        ]
+    },
+    {
+        "Title": "United Kingdom",
+        "Description": "Organizations for managing performance rights in the UK.",
+        "Enabled": true,
+        "Platforms": [
+            { "Name": "PRS for Music", "Url": "https://www.prsformusic.com", "Description": "Performing Right Society" },
+            { "Name": "PPL", "Url": "https://www.ppluk.com", "Description": "Phonographic Performance Limited" }
+        ]
+    },
+    {
+        "Title": "Canada",
+        "Description": "Organizations for managing performance rights in Canada.",
+        "Enabled": true,
+        "Platforms": [
+            { "Name": "SOCAN", "Url": "https://www.socan.com", "Description": "Society of Composers, Authors and Music Publishers of Canada" },
+            { "Name": "Re:Sound", "Url": "https://www.re-sound.ca", "Description": "Music licensing company" }
+        ]
+    },
+    {
+        "Title": "Australia",
+        "Description": "Organizations for managing performance rights in Australia.",
+        "Enabled": true,
+        "Platforms": [
+            { "Name": "APRA AMCOS", "Url": "https://www.apraamcos.com.au", "Description": "Australasian Performing Right Association" },
+            { "Name": "PPCA", "Url": "https://www.ppca.com.au", "Description": "Phonographic Performance Company of Australia" }
+        ]
+    },
+    {
+        "Title": "Europe",
+        "Description": "Organizations for managing performance rights in Europe.",
+        "Enabled": true,
+        "Platforms": [
+            { "Name": "GEMA", "Url": "https://www.gema.de", "Description": "Germany" },
+            { "Name": "SACEM", "Url": "https://www.sacem.fr", "Description": "France" },
+            { "Name": "SGAE", "Url": "https://www.sgae.es", "Description": "Spain" },
+            { "Name": "SIAE", "Url": "https://www.siae.it", "Description": "Italy" }
+        ]
+    },
+    {
+        "Title": "Global",
+        "Description": "International organizations for managing performance rights.",
+        "Enabled": true,
+        "Platforms": [
+            { "Name": "CISAC", "Url": "https://www.cisac.org", "Description": "International Confederation of Societies of Authors and Composers" }
+        ]
+    }
+]

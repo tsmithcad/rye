@@ -3,7 +3,7 @@
         "Title": "Video",
         "Description": "Manage your video content across multiple platforms.",
         "Enabled": true,
-        "DigitalServiceProviders": [
+        "Platforms": [
             { "Name": "YouTube", "Url": "https://www.youtube.com", "Description": "Video sharing platform." },
             { "Name": "Vimeo", "Url": "https://www.vimeo.com", "Description": "High-quality video hosting." },
             { "Name": "Dailymotion", "Url": "https://www.dailymotion.com", "Description": "Global video-sharing site." },
@@ -15,7 +15,7 @@
         "Title": "Audio",
         "Description": "Manage your audio content across multiple platforms.",
         "Enabled": true,
-        "DigitalServiceProviders": [
+        "Platforms": [
             { "Name": "Spotify", "Url": "https://www.spotify.com", "Description": "Music streaming service." },
             { "Name": "Apple Music", "Url": "https://www.apple.com/music", "Description": "Music streaming by Apple." },
             { "Name": "SoundCloud", "Url": "https://www.soundcloud.com", "Description": "Platform for music sharing." },
@@ -27,7 +27,7 @@
         "Title": "Podcast",
         "Description": "Manage your podcast content across multiple platforms.",
         "Enabled": true,
-        "DigitalServiceProviders": [
+        "Platforms": [
             { "Name": "Apple Podcasts", "Url": "https://www.apple.com/apple-podcasts/", "Description": "Podcast service by Apple." },
             { "Name": "Google Podcasts", "Url": "https://podcasts.google.com", "Description": "Podcast platform by Google." },
             { "Name": "Spotify Podcasts", "Url": "https://www.spotify.com/podcasts", "Description": "Podcast service by Spotify." },
@@ -39,7 +39,7 @@
         "Title": "Blogging/Writing",
         "Description": "Manage your written content across multiple platforms.",
         "Enabled": true,
-        "DigitalServiceProviders": [
+        "Platforms": [
             { "Name": "Medium", "Url": "https://www.medium.com", "Description": "Online publishing platform." },
             { "Name": "Substack", "Url": "https://www.substack.com", "Description": "Newsletter platform." },
             { "Name": "WordPress", "Url": "https://www.wordpress.com", "Description": "Website and blog hosting." },
@@ -51,7 +51,7 @@
         "Title": "Social Media",
         "Description": "Manage your social media content across multiple platforms.",
         "Enabled": true,
-        "DigitalServiceProviders": [
+        "Platforms": [
             { "Name": "Instagram", "Url": "https://www.instagram.com", "Description": "Photo and video sharing app." },
             { "Name": "Facebook", "Url": "https://www.facebook.com", "Description": "Social networking service." },
             { "Name": "Twitter", "Url": "https://www.twitter.com", "Description": "Microblogging and social networking service." },
@@ -63,7 +63,7 @@
         "Title": "Photography",
         "Description": "Manage your photography content across multiple platforms.",
         "Enabled": true,
-        "DigitalServiceProviders": [
+        "Platforms": [
             { "Name": "Flickr", "Url": "https://www.flickr.com", "Description": "Image and video hosting service." },
             { "Name": "500px", "Url": "https://www.500px.com", "Description": "Online photo sharing service." },
             { "Name": "SmugMug", "Url": "https://www.smugmug.com", "Description": "Image sharing and storage." },
@@ -74,7 +74,7 @@
         "Title": "Livestreaming",
         "Description": "Manage your live streaming content across multiple platforms.",
         "Enabled": true,
-        "DigitalServiceProviders": [
+        "Platforms": [
             { "Name": "YouTube Live", "Url": "https://www.youtube.com/live", "Description": "Live streaming on YouTube." },
             { "Name": "Facebook Live", "Url": "https://www.facebook.com/live", "Description": "Live streaming on Facebook." },
             { "Name": "Twitch", "Url": "https://www.twitch.tv", "Description": "Live streaming for gamers." },
@@ -86,7 +86,7 @@
         "Title": "Courses/Education",
         "Description": "Manage your educational content across multiple platforms.",
         "Enabled": true,
-        "DigitalServiceProviders": [
+        "Platforms": [
             { "Name": "Udemy", "Url": "https://www.udemy.com", "Description": "Online learning platform." },
             { "Name": "Coursera", "Url": "https://www.coursera.org", "Description": "Online courses from top universities." },
             { "Name": "Teachable", "Url": "https://www.teachable.com", "Description": "Create and sell online courses." },
@@ -98,7 +98,7 @@
         "Title": "Art/Design",
         "Description": "Manage your art and design content across multiple platforms.",
         "Enabled": true,
-        "DigitalServiceProviders": [
+        "Platforms": [
             { "Name": "Behance", "Url": "https://www.behance.net", "Description": "Showcase and discover creative work." },
             { "Name": "Dribbble", "Url": "https://www.dribbble.com", "Description": "Showcase your design work." },
             { "Name": "DeviantArt", "Url": "https://www.deviantart.com", "Description": "Online community for artists." },
@@ -110,7 +110,7 @@
         "Title": "News/Journalism",
         "Description": "Manage your news and journalism content across multiple platforms.",
         "Enabled": true,
-        "DigitalServiceProviders": [
+        "Platforms": [
             { "Name": "Medium", "Url": "https://www.medium.com", "Description": "Online publishing platform." },
             { "Name": "Substack", "Url": "https://www.substack.com", "Description": "Newsletter platform." },
             { "Name": "WordPress", "Url": "https://www.wordpress.com", "Description": "Website and blog hosting." },

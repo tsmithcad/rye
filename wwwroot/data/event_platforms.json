@@ -1,0 +1,317 @@
+[
+    {
+        "Title": "Video",
+        "Description": "Platforms for sharing and streaming video content.",
+        "Enabled": true,
+        "Platforms": [
+            {
+                "Name": "YouTube",
+                "Url": "https://www.youtube.com",
+                "Description": "The largest video-sharing platform."
+            },
+            {
+                "Name": "Vimeo",
+                "Url": "https://www.vimeo.com",
+                "Description": "A platform for high-quality video content."
+            },
+            {
+                "Name": "Dailymotion",
+                "Url": "https://www.dailymotion.com",
+                "Description": "A popular video-sharing website."
+            },
+            {
+                "Name": "Twitch",
+                "Url": "https://www.twitch.tv",
+                "Description": "A live streaming platform for gamers."
+            },
+            {
+                "Name": "TikTok",
+                "Url": "https://www.tiktok.com",
+                "Description": "A platform for short-form mobile videos."
+            }
+        ]
+    },
+    {
+        "Title": "Audio",
+        "Description": "Platforms for streaming and sharing audio content.",
+        "Enabled": true,
+        "Platforms": [
+            {
+                "Name": "Spotify",
+                "Url": "https://www.spotify.com",
+                "Description": "A music streaming service."
+            },
+            {
+                "Name": "Apple Music",
+                "Url": "https://www.apple.com/music",
+                "Description": "Apple's music streaming service."
+            },
+            {
+                "Name": "SoundCloud",
+                "Url": "https://www.soundcloud.com",
+                "Description": "A platform for sharing and discovering music."
+            },
+            {
+                "Name": "Tidal",
+                "Url": "https://www.tidal.com",
+                "Description": "A high-fidelity music streaming service."
+            },
+            {
+                "Name": "Deezer",
+                "Url": "https://www.deezer.com",
+                "Description": "A music streaming service with a large catalog."
+            }
+        ]
+    },
+    {
+        "Title": "Podcast",
+        "Description": "Platforms for listening to and sharing podcasts.",
+        "Enabled": true,
+        "Platforms": [
+            {
+                "Name": "Apple Podcasts",
+                "Url": "https://www.apple.com/apple-podcasts/",
+                "Description": "Apple's podcast platform."
+            },
+            {
+                "Name": "Google Podcasts",
+                "Url": "https://podcasts.google.com",
+                "Description": "Google's podcast service."
+            },
+            {
+                "Name": "Spotify Podcasts",
+                "Url": "https://www.spotify.com/podcasts",
+                "Description": "Spotify's podcast service."
+            },
+            {
+                "Name": "Stitcher",
+                "Url": "https://www.stitcher.com",
+                "Description": "A podcast app with a large selection."
+            },
+            {
+                "Name": "Pocket Casts",
+                "Url": "https://www.pocketcasts.com",
+                "Description": "A podcast app for discovering and managing podcasts."
+            }
+        ]
+    },
+    {
+        "Title": "Blogging/Writing",
+        "Description": "Platforms for blogging and writing.",
+        "Enabled": true,
+        "Platforms": [
+            {
+                "Name": "Medium",
+                "Url": "https://www.medium.com",
+                "Description": "A platform for publishing and reading articles."
+            },
+            {
+                "Name": "Substack",
+                "Url": "https://www.substack.com",
+                "Description": "A platform for writing and sending newsletters."
+            },
+            {
+                "Name": "WordPress",
+                "Url": "https://www.wordpress.com",
+                "Description": "A popular content management system."
+            },
+            {
+                "Name": "Ghost",
+                "Url": "https://www.ghost.org",
+                "Description": "A professional publishing platform."
+            },
+            {
+                "Name": "Blogger",
+                "Url": "https://www.blogger.com",
+                "Description": "Google's blogging platform."
+            }
+        ]
+    },
+    {
+        "Title": "Social Media",
+        "Description": "Platforms for social networking and media sharing.",
+        "Enabled": true,
+        "Platforms": [
+            {
+                "Name": "Instagram",
+                "Url": "https://www.instagram.com",
+                "Description": "A social network for sharing photos and videos."
+            },
+            {
+                "Name": "Facebook",
+                "Url": "https://www.facebook.com",
+                "Description": "A social networking site."
+            },
+            {
+                "Name": "Twitter",
+                "Url": "https://www.twitter.com",
+                "Description": "A microblogging and social networking service."
+            },
+            {
+                "Name": "Snapchat",
+                "Url": "https://www.snapchat.com",
+                "Description": "A multimedia messaging app."
+            },
+            {
+                "Name": "LinkedIn",
+                "Url": "https://www.linkedin.com",
+                "Description": "A professional networking site."
+            }
+        ]
+    },
+    {
+        "Title": "Photography",
+        "Description": "Platforms for sharing and hosting photos.",
+        "Enabled": true,
+        "Platforms": [
+            {
+                "Name": "Flickr",
+                "Url": "https://www.flickr.com",
+                "Description": "An image and video hosting service."
+            },
+            {
+                "Name": "500px",
+                "Url": "https://www.500px.com",
+                "Description": "A community for photographers."
+            },
+            {
+                "Name": "SmugMug",
+                "Url": "https://www.smugmug.com",
+                "Description": "A platform for photo sharing and hosting."
+            },
+            {
+                "Name": "Unsplash",
+                "Url": "https://www.unsplash.com",
+                "Description": "A website for free high-resolution photos."
+            }
+        ]
+    },
+    {
+        "Title": "Livestreaming",
+        "Description": "Platforms for live streaming content.",
+        "Enabled": true,
+        "Platforms": [
+            {
+                "Name": "YouTube Live",
+                "Url": "https://www.youtube.com/live",
+                "Description": "YouTube's live streaming service."
+            },
+            {
+                "Name": "Facebook Live",
+                "Url": "https://www.facebook.com/live",
+                "Description": "Facebook's live streaming service."
+            },
+            {
+                "Name": "Twitch",
+                "Url": "https://www.twitch.tv",
+                "Description": "A platform for live streaming, primarily for gamers."
+            },
+            {
+                "Name": "Instagram Live",
+                "Url": "https://www.instagram.com/live",
+                "Description": "Instagram's live streaming service."
+            },
+            {
+                "Name": "Periscope",
+                "Url": "https://www.pscp.tv",
+                "Description": "Twitter's live streaming app."
+            }
+        ]
+    },
+    {
+        "Title": "Courses/Education",
+        "Description": "Platforms for online learning and courses.",
+        "Enabled": true,
+        "Platforms": [
+            {
+                "Name": "Udemy",
+                "Url": "https://www.udemy.com",
+                "Description": "A platform for online courses."
+            },
+            {
+                "Name": "Coursera",
+                "Url": "https://www.coursera.org",
+                "Description": "An online learning platform offering courses."
+            },
+            {
+                "Name": "Teachable",
+                "Url": "https://www.teachable.com",
+                "Description": "A platform for creating and selling online courses."
+            },
+            {
+                "Name": "Skillshare",
+                "Url": "https://www.skillshare.com",
+                "Description": "An online learning community."
+            },
+            {
+                "Name": "Thinkific",
+                "Url": "https://www.thinkific.com",
+                "Description": "A platform for creating and selling online courses."
+            }
+        ]
+    },
+    {
+        "Title": "Art/Design",
+        "Description": "Platforms for sharing and discovering art and design work.",
+        "Enabled": true,
+        "Platforms": [
+            {
+                "Name": "Behance",
+                "Url": "https://www.behance.net",
+                "Description": "A platform to showcase and discover creative work."
+            },
+            {
+                "Name": "Dribbble",
+                "Url": "https://www.dribbble.com",
+                "Description": "A community for designers to share their work."
+            },
+            {
+                "Name": "DeviantArt",
+                "Url": "https://www.deviantart.com",
+                "Description": "An online community for artists and art enthusiasts."
+            },
+            {
+                "Name": "ArtStation",
+                "Url": "https://www.artstation.com",
+                "Description": "A platform for artists to showcase their work."
+            },
+            {
+                "Name": "Society6",
+                "Url": "https://www.society6.com",
+                "Description": "A marketplace for independent artists."
+            }
+        ]
+    },
+    {
+        "Title": "News/Journalism",
+        "Description": "Platforms for news and journalism.",
+        "Enabled": true,
+        "Platforms": [
+            {
+                "Name": "Medium",
+                "Url": "https://www.medium.com",
+                "Description": "A platform for writers to share their stories."
+            },
+            {
+                "Name": "Substack",
+                "Url": "https://www.substack.com",
+                "Description": "A platform for writing and sending email newsletters."
+            },
+            {
+                "Name": "WordPress",
+                "Url": "https://www.wordpress.com",
+                "Description": "A platform for creating websites and blogs."
+            },
+            {
+                "Name": "LinkedIn Pulse",
+                "Url": "https://www.linkedin.com/pulse",
+                "Description": "LinkedIn's publishing platform."
+            },
+            {
+                "Name": "Blogger",
+                "Url": "https://www.blogger.com",
+                "Description": "Google's blogging platform."
+            }
+        ]
+    }
+]

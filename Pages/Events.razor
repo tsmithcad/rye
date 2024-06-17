@@ -1,98 +1,17 @@
 ﻿@page "/events"
+@inject LocalDataService DataService
 
-<h2 id="toc_1"><span class="oi oi-calendar mx-2 text-warning" aria-hidden="true"></span>Events</h2>
-
-
-<div class="container mt-4">
-    
-    <div class="row row-cols-1 row-cols-md-2 g-4">
-        <!-- Livestreaming Events -->
-        <div class="col">
-            <div class="h-100">
-                <div class="card-body bg-dark">
-                    <h5 class="card-title">Livestreaming Events</h5>
-                    
-                    <ul class="list-unstyled small">
-                        <li><a href="https://www.twitch.tv" target="_blank">Twitch</a></li>
-                        <li><a href="https://www.youtube.com/live" target="_blank">YouTube Live</a></li>
-                        <li><a href="https://www.facebook.com/live" target="_blank">Facebook Live</a></li>
-                        <li><a href="https://www.instagram.com/live" target="_blank">Instagram Live</a></li>
-                        <li><a href="https://www.pscp.tv" target="_blank">Periscope</a></li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-
-        <!-- Webinars -->
-        <div class="col">
-            <div class="h-100">
-                <div class="card-body bg-dark">
-                    <h5 class="card-title">Webinars</h5>
-                    
-                    <ul class="list-unstyled small">
-                        <li><a href="https://www.zoom.us" target="_blank">Zoom</a></li>
-                        <li><a href="https://www.webex.com" target="_blank">Webex</a></li>
-                        <li><a href="https://www.gotomeeting.com" target="_blank">GoToMeeting</a></li>
-                        <li><a href="https://www.microsoft.com/en-us/microsoft-teams/group-chat-software" target="_blank">Microsoft Teams</a></li>
-                        <li><a href="https://www.clickmeeting.com" target="_blank">ClickMeeting</a></li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-
-        <!-- Virtual Conferences -->
-        <div class="col">
-            <div class="h-100">
-                <div class="card-body bg-dark">
-                    <h5 class="card-title">Virtual Conferences</h5>
-                    
-                    <ul class="list-unstyled small">
-                        <li><a href="https://hopin.com" target="_blank">Hopin</a></li>
-                        <li><a href="https://www.airmeet.com" target="_blank">Airmeet</a></li>
-                        <li><a href="https://www.bizzabo.com" target="_blank">Bizzabo</a></li>
-                        <li><a href="https://www.vfairs.com" target="_blank">vFairs</a></li>
-                        <li><a href="https://www.on24.com" target="_blank">ON24</a></li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-
-        <!-- Workshops and Classes -->
-        <div class="col">
-            <div class="h-100">
-                <div class="card-body bg-dark">
-                    <h5 class="card-title">Workshops and Classes</h5>
-                    
-                    <ul class="list-unstyled small">
-                        <li><a href="https://www.skillshare.com" target="_blank">Skillshare</a></li>
-                        <li><a href="https://www.udemy.com" target="_blank">Udemy</a></li>
-                        <li><a href="https://www.teachable.com" target="_blank">Teachable</a></li>
-                        <li><a href="https://www.coursera.org" target="_blank">Coursera</a></li>
-                        <li><a href="https://www.thinkific.com" target="_blank">Thinkific</a></li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-
-        <!-- Networking Events -->
-        <div class="col">
-            <div class="h-100">
-                <div class="card-body bg-dark">
-                    <h5 class="card-title">Networking Events</h5>
-                    
-                    <ul class="list-unstyled small">
-                        <li><a href="https://www.linkedin.com" target="_blank">LinkedIn Events</a></li>
-                        <li><a href="https://www.meetup.com" target="_blank">Meetup</a></li>
-                        <li><a href="https://www.shindig.com" target="_blank">Shindig</a></li>
-                        <li><a href="https://www.eventbrite.com" target="_blank">Eventbrite</a></li>
-                        <li><a href="https://www.braindate.com" target="_blank">Braindate</a></li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
+<ContentCategoryDisplay Title="Events" ContentCategories="@eventPlatforms" />
 
 <p><strong>Roles</strong>: Artists, Performers, Event Organizers, Promoters, Booking Agents, Venue Owners, Production Crew, Security Personnel, Sponsors, Ticketing Agencies, Vendors, Legal Representatives</p>
 
 <p><strong>Documents:</strong> Performance Agreements, Venue Contracts, Artist Riders, Sponsorship Agreements, Ticketing Agreements, Insurance Documents, Licensing Permits (e.g., Alcohol, Noise), Safety Compliance Certifications, Vendor Contracts</p>
+
+@code {
+    private List<ContentCategory> eventPlatforms;
+
+    protected override async Task OnInitializedAsync()
+    {
+        eventPlatforms = await DataService.GetEventPlatformsAsync();
+    }
+}

@@ -2,44 +2,11 @@
 @inject LocalDataService DataService
 
 <header>
-    <h2 id="toc_1"><span class="oi oi-media-play mx-2 text-warning" aria-hidden="true"></span> Content</h2>
     <p>Manage your accounts on each Digital Service Provider (DSP) to maximize your content.</p>
 </header>
 
-<div class="album py-2">
-    <div class="row py-2">
-        <div class="col-lg-6 col-md-8 mx-auto">
-        </div>
-    </div>
-    <div class="container">
-        <div class="row row-cols-1 row-cols-md-1 row-cols-lg-2 row-cols-xxl-3 g-3">
-            @if (contentCategories != null)
-            {
-                @foreach (var category in contentCategories.Where(c => c.Enabled))
-                {
-                    <div class="col g-4">
-                        <h5>@category.Title</h5>
-                        <ul class="list-unstyled small">
-                            @foreach (var dataSource in category.DigitalServiceProviders)
-                            {
-                                <li>
-                                    <a href="@dataSource.Url" target="_blank">@dataSource.Name</a>
-                                    <span class="text-muted">- @dataSource.Description</span>
-                                </li>
-                            }
-                        </ul>
-                    </div>
-                }
-            }
-            else
-            {
-                <div class="col">
-                    <p>Loading content...</p>
-                </div>
-            }
-        </div>
-    </div>
-</div>
+<ContentCategoryDisplay Title="Content" ContentCategories="@contentCategories" />
+
 
 @code {
     private List<ContentCategory> contentCategories;
