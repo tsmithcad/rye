@@ -1,0 +1,72 @@
+@inject LocalDataService DataService
+
+<head>
+    <!-- Other head content -->
+    <style>
+        .nav-scrollable {
+            overflow-x: scroll;
+            scrollbar-width: none; /* For Firefox */
+        }
+        
+        .nav-scrollable::-webkit-scrollbar {
+            display: none; /* For Chrome, Safari, and Opera */
+        }
+        
+        .d-flex {
+            display: flex;
+        }
+        
+        .overflow-auto {
+            overflow: hidden;
+            overflow-x: auto;
+            -ms-overflow-style: none;  /* for Internet Explorer, Edge */
+            scrollbar-width: none;  /* for Firefox */
+        }
+        
+        .overflow-auto::-webkit-scrollbar {
+            display: none;  /* for Chrome, Safari, and Opera */
+        }
+        
+        .nav-item {
+            white-space: nowrap;
+        }
+    </style>
+</head>
+
+<nav class="navbar bg-dark d-lg-none">
+    <div class="container">
+        <div class="d-flex overflow-auto" id="navbarNav" style="white-space: nowrap;">
+            <ul class="navbar-nav flex-row">
+                @if (navMenuItems != null)
+                {
+                    @foreach (var item in navMenuItems.Where(i => i.Enabled))
+                    {
+                        <li class="nav-item">
+                            <NavLink class="nav-link px-3 mx-1 small my-1" style="max-width: 100px;" href="@item.Url" title="@item.Title">@GetAbbreviatedTitle(item.Title)</NavLink>
+                        </li>
+                    }
+                }
+                else
+                {
+                    <li class="nav-item">
+                        <span class="nav-link">Loading...</span>
+                    </li>
+                }
+            </ul>
+        </div>
+    </div>
+</nav>
+
+@code {
+    private List<NavMenuItem> navMenuItems;
+
+    protected override async Task OnInitializedAsync()
+    {
+        navMenuItems = await DataService.GetNavMenuItemsAsync();
+    }
+
+    private string GetAbbreviatedTitle(string title)
+    {
+        return title.Length > 9 ? title.Substring(0, 6) + "…" : title;
+    }
+}

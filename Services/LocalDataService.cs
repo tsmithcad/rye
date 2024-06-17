@@ -23,4 +23,16 @@ public class LocalDataService
         var response = await _httpClient.GetStringAsync("Data/data_categories.json");
         return JsonSerializer.Deserialize<List<DataCategory>>(response);
     }
+
+    public async Task<List<NavMenuItem>> GetNavMenuItemsAsync()
+    {
+        var response = await _httpClient.GetStringAsync("Data/nav_menu_items.json");
+        return JsonSerializer.Deserialize<List<NavMenuItem>>(response);
+    }
+
+    public async Task<List<ContentCategory>> GetContentCategoriesAsync()
+    {
+        var response = await _httpClient.GetStringAsync("Data/digital_service_providers.json");
+        return JsonSerializer.Deserialize<List<ContentCategory>>(response);
+    }
 }

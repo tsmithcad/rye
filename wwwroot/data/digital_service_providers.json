@@ -1,0 +1,121 @@
+[
+    {
+        "Title": "Video",
+        "Description": "Manage your video content across multiple platforms.",
+        "Enabled": true,
+        "DigitalServiceProviders": [
+            { "Name": "YouTube", "Url": "https://www.youtube.com", "Description": "Video sharing platform." },
+            { "Name": "Vimeo", "Url": "https://www.vimeo.com", "Description": "High-quality video hosting." },
+            { "Name": "Dailymotion", "Url": "https://www.dailymotion.com", "Description": "Global video-sharing site." },
+            { "Name": "Twitch", "Url": "https://www.twitch.tv", "Description": "Live streaming for gamers." },
+            { "Name": "TikTok", "Url": "https://www.tiktok.com", "Description": "Short-form mobile videos." }
+        ]
+    },
+    {
+        "Title": "Audio",
+        "Description": "Manage your audio content across multiple platforms.",
+        "Enabled": true,
+        "DigitalServiceProviders": [
+            { "Name": "Spotify", "Url": "https://www.spotify.com", "Description": "Music streaming service." },
+            { "Name": "Apple Music", "Url": "https://www.apple.com/music", "Description": "Music streaming by Apple." },
+            { "Name": "SoundCloud", "Url": "https://www.soundcloud.com", "Description": "Platform for music sharing." },
+            { "Name": "Tidal", "Url": "https://www.tidal.com", "Description": "High-fidelity music streaming." },
+            { "Name": "Deezer", "Url": "https://www.deezer.com", "Description": "Music streaming service." }
+        ]
+    },
+    {
+        "Title": "Podcast",
+        "Description": "Manage your podcast content across multiple platforms.",
+        "Enabled": true,
+        "DigitalServiceProviders": [
+            { "Name": "Apple Podcasts", "Url": "https://www.apple.com/apple-podcasts/", "Description": "Podcast service by Apple." },
+            { "Name": "Google Podcasts", "Url": "https://podcasts.google.com", "Description": "Podcast platform by Google." },
+            { "Name": "Spotify Podcasts", "Url": "https://www.spotify.com/podcasts", "Description": "Podcast service by Spotify." },
+            { "Name": "Stitcher", "Url": "https://www.stitcher.com", "Description": "Podcast streaming service." },
+            { "Name": "Pocket Casts", "Url": "https://www.pocketcasts.com", "Description": "Podcast management app." }
+        ]
+    },
+    {
+        "Title": "Blogging/Writing",
+        "Description": "Manage your written content across multiple platforms.",
+        "Enabled": true,
+        "DigitalServiceProviders": [
+            { "Name": "Medium", "Url": "https://www.medium.com", "Description": "Online publishing platform." },
+            { "Name": "Substack", "Url": "https://www.substack.com", "Description": "Newsletter platform." },
+            { "Name": "WordPress", "Url": "https://www.wordpress.com", "Description": "Website and blog hosting." },
+            { "Name": "Ghost", "Url": "https://www.ghost.org", "Description": "Publishing platform for professionals." },
+            { "Name": "Blogger", "Url": "https://www.blogger.com", "Description": "Blog-publishing service." }
+        ]
+    },
+    {
+        "Title": "Social Media",
+        "Description": "Manage your social media content across multiple platforms.",
+        "Enabled": true,
+        "DigitalServiceProviders": [
+            { "Name": "Instagram", "Url": "https://www.instagram.com", "Description": "Photo and video sharing app." },
+            { "Name": "Facebook", "Url": "https://www.facebook.com", "Description": "Social networking service." },
+            { "Name": "Twitter", "Url": "https://www.twitter.com", "Description": "Microblogging and social networking service." },
+            { "Name": "Snapchat", "Url": "https://www.snapchat.com", "Description": "Multimedia messaging app." },
+            { "Name": "LinkedIn", "Url": "https://www.linkedin.com", "Description": "Professional networking platform." }
+        ]
+    },
+    {
+        "Title": "Photography",
+        "Description": "Manage your photography content across multiple platforms.",
+        "Enabled": true,
+        "DigitalServiceProviders": [
+            { "Name": "Flickr", "Url": "https://www.flickr.com", "Description": "Image and video hosting service." },
+            { "Name": "500px", "Url": "https://www.500px.com", "Description": "Online photo sharing service." },
+            { "Name": "SmugMug", "Url": "https://www.smugmug.com", "Description": "Image sharing and storage." },
+            { "Name": "Unsplash", "Url": "https://www.unsplash.com", "Description": "Free high-resolution photos." }
+        ]
+    },
+    {
+        "Title": "Livestreaming",
+        "Description": "Manage your live streaming content across multiple platforms.",
+        "Enabled": true,
+        "DigitalServiceProviders": [
+            { "Name": "YouTube Live", "Url": "https://www.youtube.com/live", "Description": "Live streaming on YouTube." },
+            { "Name": "Facebook Live", "Url": "https://www.facebook.com/live", "Description": "Live streaming on Facebook." },
+            { "Name": "Twitch", "Url": "https://www.twitch.tv", "Description": "Live streaming for gamers." },
+            { "Name": "Instagram Live", "Url": "https://www.instagram.com/live", "Description": "Live streaming on Instagram." },
+            { "Name": "Periscope", "Url": "https://www.pscp.tv", "Description": "Live video streaming app." }
+        ]
+    },
+    {
+        "Title": "Courses/Education",
+        "Description": "Manage your educational content across multiple platforms.",
+        "Enabled": true,
+        "DigitalServiceProviders": [
+            { "Name": "Udemy", "Url": "https://www.udemy.com", "Description": "Online learning platform." },
+            { "Name": "Coursera", "Url": "https://www.coursera.org", "Description": "Online courses from top universities." },
+            { "Name": "Teachable", "Url": "https://www.teachable.com", "Description": "Create and sell online courses." },
+            { "Name": "Skillshare", "Url": "https://www.skillshare.com", "Description": "Online learning community." },
+            { "Name": "Thinkific", "Url": "https://www.thinkific.com", "Description": "Create and sell online courses." }
+        ]
+    },
+    {
+        "Title": "Art/Design",
+        "Description": "Manage your art and design content across multiple platforms.",
+        "Enabled": true,
+        "DigitalServiceProviders": [
+            { "Name": "Behance", "Url": "https://www.behance.net", "Description": "Showcase and discover creative work." },
+            { "Name": "Dribbble", "Url": "https://www.dribbble.com", "Description": "Showcase your design work." },
+            { "Name": "DeviantArt", "Url": "https://www.deviantart.com", "Description": "Online community for artists." },
+            { "Name": "ArtStation", "Url": "https://www.artstation.com", "Description": "Portfolio for artists." },
+            { "Name": "Society6", "Url": "https://www.society6.com", "Description": "Artwork and home decor marketplace." }
+        ]
+    },
+    {
+        "Title": "News/Journalism",
+        "Description": "Manage your news and journalism content across multiple platforms.",
+        "Enabled": true,
+        "DigitalServiceProviders": [
+            { "Name": "Medium", "Url": "https://www.medium.com", "Description": "Online publishing platform." },
+            { "Name": "Substack", "Url": "https://www.substack.com", "Description": "Newsletter platform." },
+            { "Name": "WordPress", "Url": "https://www.wordpress.com", "Description": "Website and blog hosting." },
+            { "Name": "LinkedIn Pulse", "Url": "https://www.linkedin.com/pulse", "Description": "Professional publishing platform." },
+            { "Name": "Blogger", "Url": "https://www.blogger.com", "Description": "Blog-publishing service." }
+        ]
+    }
+]

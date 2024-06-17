@@ -1,130 +1,51 @@
 @page "/content"
+@inject LocalDataService DataService
 
 <header>
-<h2 id="toc_1"><span class="oi oi-media-play mx-2 text-warning" aria-hidden="true"></span> Content</h2>
-
-<p>Manage your accounts on each Digital Service Provider (DSP) to maximize your content.</p>
+    <h2 id="toc_1"><span class="oi oi-media-play mx-2 text-warning" aria-hidden="true"></span> Content</h2>
+    <p>Manage your accounts on each Digital Service Provider (DSP) to maximize your content.</p>
 </header>
 
-  <div class="album py-2 bg-body-tertiary">
+<div class="album py-2">
     <div class="row py-2">
-      <div class="col-lg-6 col-md-8 mx-auto">
-          </div>
-      </div>
-    <div class="container">
-
-      <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
-        <div class="col">
-            <h5>Video</h5>
-            <ul class="list-unstyled small">
-                <li><a href="https://www.youtube.com" target="_blank">YouTube</a></li>
-                <li><a href="https://www.vimeo.com" target="_blank">Vimeo</a></li>
-                <li><a href="https://www.dailymotion.com" target="_blank">Dailymotion</a></li>
-                <li><a href="https://www.twitch.tv" target="_blank">Twitch</a></li>
-                <li><a href="https://www.tiktok.com" target="_blank">TikTok</a></li>
-            </ul>
+        <div class="col-lg-6 col-md-8 mx-auto">
         </div>
-        
-        <div class="col">
-            <h5>Audio</h5>
-            <ul class="list-unstyled small">
-                <li><a href="https://www.spotify.com" target="_blank">Spotify</a></li>
-                <li><a href="https://www.apple.com/music" target="_blank">Apple Music</a></li>
-                <li><a href="https://www.soundcloud.com" target="_blank">SoundCloud</a></li>
-                <li><a href="https://www.tidal.com" target="_blank">Tidal</a></li>
-                <li><a href="https://www.deezer.com" target="_blank">Deezer</a></li>
-            </ul>
-        </div>
-
-        <div class="col">
-            <h5>Podcast</h5>
-            <ul class="list-unstyled small">
-                <li><a href="https://www.apple.com/apple-podcasts/" target="_blank">Apple Podcasts</a></li>
-                <li><a href="https://podcasts.google.com" target="_blank">Google Podcasts</a></li>
-                <li><a href="https://www.spotify.com/podcasts" target="_blank">Spotify Podcasts</a></li>
-                <li><a href="https://www.stitcher.com" target="_blank">Stitcher</a></li>
-                <li><a href="https://www.pocketcasts.com" target="_blank">Pocket Casts</a></li>
-            </ul>
-        </div>
-
-        <div class="mb-3">
-            <h5>Blogging/Writing</h5>
-            <ul class="list-unstyled small">
-                <li><a href="https://www.medium.com" target="_blank">Medium</a></li>
-                <li><a href="https://www.substack.com" target="_blank">Substack</a></li>
-                <li><a href="https://www.wordpress.com" target="_blank">WordPress</a></li>
-                <li><a href="https://www.ghost.org" target="_blank">Ghost</a></li>
-                <li><a href="https://www.blogger.com" target="_blank">Blogger</a></li>
-            </ul>
-        </div>
-
-        <div class="mb-3">
-            <h5>Social Media</h5>
-            <ul class="list-unstyled small">
-                <li><a href="https://www.instagram.com" target="_blank">Instagram</a></li>
-                <li><a href="https://www.facebook.com" target="_blank">Facebook</a></li>
-                <li><a href="https://www.twitter.com" target="_blank">Twitter</a></li>
-                <li><a href="https://www.snapchat.com" target="_blank">Snapchat</a></li>
-                <li><a href="https://www.linkedin.com" target="_blank">LinkedIn</a></li>
-            </ul>
-        </div>
-
-        <div class="mb-3">
-            <h5>Photography</h5>
-            <ul class="list-unstyled small">
-                <li><a href="https://www.flickr.com" target="_blank">Flickr</a></li>
-                <li><a href="https://www.500px.com" target="_blank">500px</a></li>
-                <li><a href="https://www.smugmug.com" target="_blank">SmugMug</a></li>
-                <li><a href="https://www.unsplash.com" target="_blank">Unsplash</a></li>
-            </ul>
-        </div>
-
-        <div class="mb-3">
-            <h5>Livestreaming</h5>
-            <ul class="list-unstyled small">
-                <li><a href="https://www.youtube.com/live" target="_blank">YouTube Live</a></li>
-                <li><a href="https://www.facebook.com/live" target="_blank">Facebook Live</a></li>
-                <li><a href="https://www.twitch.tv" target="_blank">Twitch</a></li>
-                <li><a href="https://www.instagram.com/live" target="_blank">Instagram Live</a></li>
-                <li><a href="https://www.pscp.tv" target="_blank">Periscope</a></li>
-            </ul>
-        </div>
-
-        <div class="mb-3">
-            <h5>Courses/Education</h5>
-            <ul class="list-unstyled small">
-                <li><a href="https://www.udemy.com" target="_blank">Udemy</a></li>
-                <li><a href="https://www.coursera.org" target="_blank">Coursera</a></li>
-                <li><a href="https://www.teachable.com" target="_blank">Teachable</a></li>
-                <li><a href="https://www.skillshare.com" target="_blank">Skillshare</a></li>
-                <li><a href="https://www.thinkific.com" target="_blank">Thinkific</a></li>
-            </ul>
-        </div>
-
-        <div class="mb-3">
-            <h5>Art/Design</h5>
-            <ul class="list-unstyled small">
-                <li><a href="https://www.behance.net" target="_blank">Behance</a></li>
-                <li><a href="https://www.dribbble.com" target="_blank">Dribbble</a></li>
-                <li><a href="https://www.deviantart.com" target="_blank">DeviantArt</a></li>
-                <li><a href="https://www.artstation.com" target="_blank">ArtStation</a></li>
-                <li><a href="https://www.society6.com" target="_blank">Society6</a></li>
-            </ul>
-        </div>
-
-        <div class="mb-3">
-            <h5>News/Journalism</h5>
-            <ul class="list-unstyled small">
-                <li><a href="https://www.medium.com" target="_blank">Medium</a></li>
-                <li><a href="https://www.substack.com" target="_blank">Substack</a></li>
-                <li><a href="https://www.wordpress.com" target="_blank">WordPress</a></li>
-                <li><a href="https://www.linkedin.com/pulse" target="_blank">LinkedIn Pulse</a></li>
-                <li><a href="https://www.blogger.com" target="_blank">Blogger</a></li>
-            </ul>
-        </div>
-   
-      </div>
     </div>
-  </div>
+    <div class="container">
+        <div class="row row-cols-1 row-cols-md-1 row-cols-lg-2 row-cols-xxl-3 g-3">
+            @if (contentCategories != null)
+            {
+                @foreach (var category in contentCategories.Where(c => c.Enabled))
+                {
+                    <div class="col g-4">
+                        <h5>@category.Title</h5>
+                        <ul class="list-unstyled small">
+                            @foreach (var dataSource in category.DigitalServiceProviders)
+                            {
+                                <li>
+                                    <a href="@dataSource.Url" target="_blank">@dataSource.Name</a>
+                                    <span class="text-muted">- @dataSource.Description</span>
+                                </li>
+                            }
+                        </ul>
+                    </div>
+                }
+            }
+            else
+            {
+                <div class="col">
+                    <p>Loading content...</p>
+                </div>
+            }
+        </div>
+    </div>
+</div>
 
+@code {
+    private List<ContentCategory> contentCategories;
 
+    protected override async Task OnInitializedAsync()
+    {
+        contentCategories = await DataService.GetContentCategoriesAsync();
+    }
+}

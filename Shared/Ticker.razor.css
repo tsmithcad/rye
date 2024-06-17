@@ -2,7 +2,7 @@
     background-image: linear-gradient(90deg, #3e0b6f 0%, #3a24b9  70%);
     /* Bootstrap dark background color */
     color: #ffffff; /* Bootstrap dark text color */
-    padding: 15px;
+    padding: 10px;
     overflow: hidden;
     white-space: nowrap;
     display: flex;

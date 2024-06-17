@@ -1,0 +1,122 @@
+[
+    {
+        "Title": "Getting Started",
+        "Icon": "oi-aperture",
+        "Url": "getting-started",
+        "Enabled": false
+    },
+    {
+        "Title": "About",
+        "Icon": "oi-star",
+        "Url": "about",
+        "Enabled": false
+    },
+    {
+        "Title": "IP Protection",
+        "Icon": "oi-shield",
+        "Url": "/intellectual-property",
+        "Enabled": false
+    },
+    {
+        "Title": "Data Roadmap",
+        "Icon": "oi-transfer",
+        "Url": "/data-roadmap",
+        "Enabled": true
+    },
+    {
+        "Title": "Team",
+        "Icon": "oi-people",
+        "Url": "/team",
+        "Enabled": true
+    },
+    {
+        "Title": "Content",
+        "Icon": "oi-media-play",
+        "Url": "content",
+        "Enabled": true
+    },
+    {
+        "Title": "Music Production",
+        "Icon": "oi-audio-spectrum",
+        "Url": "music-production",
+        "Enabled": false
+    },
+    {
+        "Title": "Songwriting",
+        "Icon": "oi-pencil",
+        "Url": "song-writing",
+        "Enabled": false
+    },
+    {
+        "Title": "Artists",
+        "Icon": "oi-sun",
+        "Url": "artists",
+        "Enabled": false
+    },
+    {
+        "Title": "Producers",
+        "Icon": "oi-battery-full",
+        "Url": "producers",
+        "Enabled": false
+    },
+    {
+        "Title": "Copyright Reg.",
+        "Icon": "oi-shield",
+        "Url": "copyright",
+        "Enabled": false
+    },
+    {
+        "Title": "Music Publishing",
+        "Icon": "oi-book",
+        "Url": "publishing",
+        "Enabled": false
+    },
+    {
+        "Title": "Artwork",
+        "Icon": "oi-image",
+        "Url": "artwork",
+        "Enabled": false
+    },
+    {
+        "Title": "Legal Process",
+        "Icon": "oi-document",
+        "Url": "legal",
+        "Enabled": false
+    },
+    {
+        "Title": "Performance (PRO)",
+        "Icon": "oi-microphone",
+        "Url": "performance",
+        "Enabled": true
+    },
+    {
+        "Title": "Distribution",
+        "Icon": "oi-share",
+        "Url": "distribution",
+        "Enabled": false
+    },
+    {
+        "Title": "Events",
+        "Icon": "oi-calendar",
+        "Url": "events",
+        "Enabled": true
+    },
+    {
+        "Title": "Brand",
+        "Icon": "oi-tag",
+        "Url": "brand",
+        "Enabled": false
+    },
+    {
+        "Title": "Survey",
+        "Icon": "oi-question-mark",
+        "Url": "survey",
+        "Enabled": false
+    },
+    {
+        "Title": "Updates",
+        "Icon": "oi-bell",
+        "Url": "/updates",
+        "Enabled": true
+    }
+]

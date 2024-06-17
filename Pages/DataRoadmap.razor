@@ -1,18 +1,6 @@
 @page "/data-roadmap"
 @inject LocalDataService DataService
 
-<head>
-    <style>
-    .bg-dark {
-        background-color: #0e0222 !important;
-    }
-
-    .bg-light {
-        background-color: #3a24b9 !important;
-    }
-    </style>
-</head>
-
 <header>
 <h1 id="toc_1"><span class="oi oi-transfer mx-2 text-warning" aria-hidden="true"></span> Data Roadmap</h1>
 
@@ -21,7 +9,7 @@
  <div class="container mt-3">
        
         <div class="collapse" id="collapseContent">
-            <div class="container mt-5">
+            <div class="container mt-4">
             <h2 class="text-info">Getting Started</h2>
             <p>Welcome to the Data Roadmap page! This comprehensive guide is crafted to ensure you navigate and manage every facet of your creative journey with ease and efficiency. Whether you are a producer, artist, or any other role in the music industry, this roadmap will:</p>
             <ul>
@@ -32,7 +20,7 @@
             </ul>
             <p>Expect 100% satisfaction as this resource brings unparalleled value, simplifying complex processes and supporting your success at every step. Dive in and let us help you achieve your musical aspirations!</p>
 
-        <div class="album py-5">
+        <div class="album py-4">
             <div class="container">
                 <h5 class="text-info">The Power of Knowing File Extensions</h5>
                 <p>Understanding and recognizing file extensions is crucial for any professional in the music industry. On this page, you'll find:</p>
@@ -61,13 +49,13 @@
                 @foreach (var category in dataCategories)
                 {
                     <div class="col">
-                        <div class="card bg-dark text-light shadow-sm">
+                        <div class="card bg-dark text-light shadow-sm h-100">
                             <div class="card-body">
-                                <h5 class="card-title text-info">@GetCategoryIcon(category.Category) @category.Category</h5>
+                                <h5 class="card-title">@GetCategoryIcon(category.Category) @category.Category</h5>
                                 <ul class="list-unstyled">
                                     @foreach (var source in category.DataSources)
                                     {
-                                        <li>@source.SourceName: @string.Join(", ", source.FileExtensions)</li>
+                                        <li class="mx-4">@source.SourceName: @string.Join(", ", source.FileExtensions)</li>
                                     }
                                 </ul>
                             </div>

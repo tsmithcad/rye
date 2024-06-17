@@ -282,3 +282,11 @@ a:visited {
 .bg-deep{
 	background-color: #0e051b;
 }
+
+.bg-dark {
+	background-color: #0e0222 !important;
+}
+
+.bg-light {
+	background-color: #3a24b9 !important;
+}
