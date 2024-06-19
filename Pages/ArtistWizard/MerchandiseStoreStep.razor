@@ -1,0 +1,35 @@
+@page "/merchandise-store"
+@code {
+    [Parameter]
+    public ArtistOnboardingModel Model { get; set; }
+    private void HandleMerchandiseImageChange(InputFileChangeEventArgs e)
+    {
+        var file = e.File;
+        // Handle file upload for merchandise item
+    }
+    private void AddMerchandiseItem()
+    {
+        Model.Merchandise.Add(new MerchandiseItem());
+    }
+}
+
+@foreach (var item in Model.Merchandise)
+{
+    <div class="mb-3">
+        <label for="name" class="form-label">Item Name</label>
+        <InputText id="name" class="form-control" @bind-Value="item.Name" />
+    </div>
+    <div class="mb-3">
+        <label for="price" class="form-label">Price</label>
+        <InputNumber id="price" class="form-control" @bind-Value="item.Price" />
+    </div>
+    <div class="mb-3">
+        <label for="image" class="form-label">Image</label>
+        <InputFile id="image" class="form-control" OnChange="HandleMerchandiseImageChange" />
+    </div>
+    <div class="mb-3">
+        <label for="description" class="form-label">Description</label>
+        <InputTextArea id="description" class="form-control" @bind-Value="item.Description" />
+    </div>
+}
+<button type="button" class="btn btn-secondary" @onclick="AddMerchandiseItem">Add Item</button>

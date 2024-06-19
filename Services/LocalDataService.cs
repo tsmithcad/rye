@@ -14,13 +14,13 @@ public class LocalDataService
 
     public async Task<List<TeamMember>> GetTeamMembersAsync()
     {
-        var response = await _httpClient.GetStringAsync("Data/team_members.json");
+        var response = await _httpClient.GetStringAsync("Data/team.json");
         return JsonSerializer.Deserialize<List<TeamMember>>(response);
     }
 
     public async Task<List<DataCategory>> GetDataCategoriesAsync()
     {
-        var response = await _httpClient.GetStringAsync("Data/data_categories.json");
+        var response = await _httpClient.GetStringAsync("Data/data_roadmap.json");
         return JsonSerializer.Deserialize<List<DataCategory>>(response);
     }
 
@@ -45,6 +45,12 @@ public class LocalDataService
     public async Task<List<ContentCategory>> GetEventPlatformsAsync()
     {
         var response = await _httpClient.GetStringAsync("Data/event_platforms.json");
+        return JsonSerializer.Deserialize<List<ContentCategory>>(response);
+    }
+
+    public async Task<List<ContentCategory>> GetMetadataFieldsAsync()
+    {
+        var response = await _httpClient.GetStringAsync("Data/metadata_fields.json");
         return JsonSerializer.Deserialize<List<ContentCategory>>(response);
     }
 }

@@ -1,8 +1,10 @@
 @page "/data-roadmap"
 @inject LocalDataService DataService
 
+<title>Rhyme Engine | Data Roadmap</title>
+
 <header>
-<h1 id="toc_1"><span class="oi oi-transfer mx-2 text-warning" aria-hidden="true"></span> Data Roadmap</h1>
+<h1 id="toc_1">Data Roadmap</h1>
 
 <!-- <p>Come together to create, protect, and propel your creations.</p> -->
 
@@ -51,8 +53,8 @@
                     <div class="col">
                         <div class="card bg-dark text-light shadow-sm h-100">
                             <div class="card-body">
-                                <h5 class="card-title text-info"> @category.Category 
-                                @GetCategoryIcon(category.Category)</h5>
+                                <h5 class="card-title text-info">@GetCategoryIcon(category.Category) @category.Category 
+                                </h5>
                                 <ul class="list-unstyled">
                                     @foreach (var source in category.DataSources)
                                     {
@@ -86,7 +88,7 @@
     {
         return category switch
         {
-            "Album Artwork and Packaging" => "🎨",
+            "Artwork & Packaging" => "🎨",
             "Artists" => "🎤",
             "Audio Distribution and Licensing" => "📢",
             "Brand Development" => "🎨",

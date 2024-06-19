@@ -1,0 +1,587 @@
+[
+    {
+        "Title": "Video",
+        "Description": "Platforms for sharing and streaming video content.",
+        "Enabled": true,
+        "Platforms": [
+            {
+                "Name": "Title",
+                "Url": "",
+                "Description": "The name of the video."
+            },
+            {
+                "Name": "Description",
+                "Url": "",
+                "Description": "A brief summary of the video content."
+            },
+            {
+                "Name": "Author",
+                "Url": "",
+                "Description": "The creator or uploader of the video."
+            },
+            {
+                "Name": "Creation Date",
+                "Url": "",
+                "Description": "The date the video was created or uploaded."
+            },
+            {
+                "Name": "Duration",
+                "Url": "",
+                "Description": "The length of the video."
+            },
+            {
+                "Name": "Resolution",
+                "Url": "",
+                "Description": "The quality of the video, e.g., 1080p, 4K."
+            },
+            {
+                "Name": "Format",
+                "Url": "",
+                "Description": "The file format of the video, e.g., MP4, AVI."
+            },
+            {
+                "Name": "Tags",
+                "Url": "",
+                "Description": "Keywords associated with the video content."
+            },
+            {
+                "Name": "Categories",
+                "Url": "",
+                "Description": "The genre or category of the video."
+            },
+            {
+                "Name": "View Count",
+                "Url": "",
+                "Description": "The number of times the video has been viewed."
+            },
+            {
+                "Name": "Likes",
+                "Url": "",
+                "Description": "The number of likes the video has received."
+            },
+            {
+                "Name": "Dislikes",
+                "Url": "",
+                "Description": "The number of dislikes the video has received."
+            },
+            {
+                "Name": "Comments",
+                "Url": "",
+                "Description": "Viewer comments on the video."
+            }
+        ]
+    },
+    {
+        "Title": "Audio",
+        "Description": "Platforms for streaming and sharing audio content.",
+        "Enabled": true,
+        "Platforms": [
+            {
+                "Name": "Title",
+                "Url": "",
+                "Description": "The name of the audio track."
+            },
+            {
+                "Name": "Description",
+                "Url": "",
+                "Description": "A brief summary of the audio content."
+            },
+            {
+                "Name": "Author",
+                "Url": "",
+                "Description": "The creator or uploader of the audio track."
+            },
+            {
+                "Name": "Release Date",
+                "Url": "",
+                "Description": "The date the audio track was released."
+            },
+            {
+                "Name": "Duration",
+                "Url": "",
+                "Description": "The length of the audio track."
+            },
+            {
+                "Name": "Format",
+                "Url": "",
+                "Description": "The file format of the audio track, e.g., MP3, WAV."
+            },
+            {
+                "Name": "Album",
+                "Url": "",
+                "Description": "The album the audio track is part of."
+            },
+            {
+                "Name": "Genre",
+                "Url": "",
+                "Description": "The genre of the audio track."
+            },
+            {
+                "Name": "Tags",
+                "Url": "",
+                "Description": "Keywords associated with the audio content."
+            },
+            {
+                "Name": "Categories",
+                "Url": "",
+                "Description": "The genre or category of the audio track."
+            },
+            {
+                "Name": "Play Count",
+                "Url": "",
+                "Description": "The number of times the audio track has been played."
+            },
+            {
+                "Name": "Likes",
+                "Url": "",
+                "Description": "The number of likes the audio track has received."
+            },
+            {
+                "Name": "Comments",
+                "Url": "",
+                "Description": "Listener comments on the audio track."
+            }
+        ]
+    },
+    {
+        "Title": "Podcast",
+        "Description": "Platforms for listening to and sharing podcasts.",
+        "Enabled": true,
+        "Platforms": [
+            {
+                "Name": "Title",
+                "Url": "",
+                "Description": "The name of the podcast episode."
+            },
+            {
+                "Name": "Description",
+                "Url": "",
+                "Description": "A brief summary of the podcast episode content."
+            },
+            {
+                "Name": "Host",
+                "Url": "",
+                "Description": "The host of the podcast."
+            },
+            {
+                "Name": "Guests",
+                "Url": "",
+                "Description": "The guests featured in the podcast episode."
+            },
+            {
+                "Name": "Release Date",
+                "Url": "",
+                "Description": "The date the podcast episode was released."
+            },
+            {
+                "Name": "Duration",
+                "Url": "",
+                "Description": "The length of the podcast episode."
+            },
+            {
+                "Name": "Format",
+                "Url": "",
+                "Description": "The file format of the podcast episode, e.g., MP3, AAC."
+            },
+            {
+                "Name": "Tags",
+                "Url": "",
+                "Description": "Keywords associated with the podcast content."
+            },
+            {
+                "Name": "Categories",
+                "Url": "",
+                "Description": "The genre or category of the podcast."
+            },
+            {
+                "Name": "Play Count",
+                "Url": "",
+                "Description": "The number of times the podcast episode has been played."
+            },
+            {
+                "Name": "Likes",
+                "Url": "",
+                "Description": "The number of likes the podcast episode has received."
+            },
+            {
+                "Name": "Comments",
+                "Url": "",
+                "Description": "Listener comments on the podcast episode."
+            }
+        ]
+    },
+    {
+        "Title": "Blogging/Writing",
+        "Description": "Platforms for blogging and writing.",
+        "Enabled": true,
+        "Platforms": [
+            {
+                "Name": "Title",
+                "Url": "",
+                "Description": "The title of the blog post or article."
+            },
+            {
+                "Name": "Author",
+                "Url": "",
+                "Description": "The writer of the blog post or article."
+            },
+            {
+                "Name": "Publication Date",
+                "Url": "",
+                "Description": "The date the blog post or article was published."
+            },
+            {
+                "Name": "Tags",
+                "Url": "",
+                "Description": "Keywords associated with the blog post or article."
+            },
+            {
+                "Name": "Categories",
+                "Url": "",
+                "Description": "The genre or category of the blog post or article."
+            },
+            {
+                "Name": "Word Count",
+                "Url": "",
+                "Description": "The number of words in the blog post or article."
+            },
+            {
+                "Name": "Comments",
+                "Url": "",
+                "Description": "Reader comments on the blog post or article."
+            }
+        ]
+    },
+    {
+        "Title": "Social Media",
+        "Description": "Platforms for social networking and media sharing.",
+        "Enabled": true,
+        "Platforms": [
+            {
+                "Name": "Post Content",
+                "Url": "",
+                "Description": "The content of the social media post."
+            },
+            {
+                "Name": "Author",
+                "Url": "",
+                "Description": "The creator of the social media post."
+            },
+            {
+                "Name": "Creation Date",
+                "Url": "",
+                "Description": "The date the social media post was created."
+            },
+            {
+                "Name": "Tags",
+                "Url": "",
+                "Description": "Keywords associated with the social media post."
+            },
+            {
+                "Name": "Categories",
+                "Url": "",
+                "Description": "The genre or category of the social media post."
+            },
+            {
+                "Name": "Likes",
+                "Url": "",
+                "Description": "The number of likes the social media post has received."
+            },
+            {
+                "Name": "Shares",
+                "Url": "",
+                "Description": "The number of times the social media post has been shared."
+            },
+            {
+                "Name": "Comments",
+                "Url": "",
+                "Description": "Comments on the social media post."
+            }
+        ]
+    },
+    {
+        "Title": "Photography",
+        "Description": "Platforms for sharing and hosting photos.",
+        "Enabled": true,
+        "Platforms": [
+            {
+                "Name": "Title",
+                "Url": "",
+                "Description": "The title of the photograph."
+            },
+            {
+                "Name": "Author",
+                "Url": "",
+                "Description": "The photographer."
+            },
+            {
+                "Name": "Creation Date",
+                "Url": "",
+                "Description": "The date the photograph was taken."
+            },
+            {
+                "Name": "Resolution",
+                "Url": "",
+                "Description": "The quality of the photograph, e.g., 1080p, 4K."
+            },
+            {
+                "Name": "Format",
+                "Url": "",
+                "Description": "The file format of the photograph, e.g., JPG, PNG."
+            },
+            {
+                "Name": "Tags",
+                "Url": "",
+                "Description": "Keywords associated with the photograph."
+            },
+            {
+                "Name": "Categories",
+                "Url": "",
+                "Description": "The genre or category of the photograph."
+            },
+            {
+                "Name": "View Count",
+                "Url": "",
+                "Description": "The number of times the photograph has been viewed."
+            },
+            {
+                "Name": "Likes",
+                "Url": "",
+                "Description": "The number of likes the photograph has received."
+            },
+            {
+                "Name": "Comments",
+                "Url": "",
+                "Description": "Viewer comments on the photograph."
+            }
+        ]
+    },
+    {
+        "Title": "Livestreaming",
+        "Description": "Platforms for live streaming content.",
+        "Enabled": true,
+        "Platforms": [
+            {
+                "Name": "Title",
+                "Url": "",
+                "Description": "The title of the livestream."
+            },
+            {
+                "Name": "Host",
+                "Url": "",
+                "Description": "The host of the livestream."
+            },
+            {
+                "Name": "Creation Date",
+                "Url": "",
+                "Description": "The date the livestream was created."
+            },
+            {
+                "Name": "Duration",
+                "Url": "",
+                "Description": "The length of the livestream."
+            },
+            {
+                "Name": "Resolution",
+                "Url": "",
+                "Description": "The quality of the livestream, e.g., 1080p, 4K."
+            },
+            {
+                "Name": "Format",
+                "Url": "",
+                "Description": "The file format of the livestream, e.g., MP4, AVI."
+            },
+            {
+                "Name": "Tags",
+                "Url": "",
+                "Description": "Keywords associated with the livestream."
+            },
+            {
+                "Name": "Categories",
+                "Url": "",
+                "Description": "The genre or category of the livestream."
+            },
+            {
+                "Name": "View Count",
+                "Url": "",
+                "Description": "The number of times the livestream has been viewed."
+            },
+            {
+                "Name": "Likes",
+                "Url": "",
+                "Description": "The number of likes the livestream has received."
+            },
+            {
+                "Name": "Comments",
+                "Url": "",
+                "Description": "Viewer comments on the livestream."
+            }
+        ]
+    },
+    {
+        "Title": "Courses/Education",
+        "Description": "Platforms for online learning and courses.",
+        "Enabled": true,
+        "Platforms": [
+            {
+                "Name": "Title",
+                "Url": "",
+                "Description": "The title of the course."
+            },
+            {
+                "Name": "Instructor",
+                "Url": "",
+                "Description": "The instructor of the course."
+            },
+            {
+                "Name": "Creation Date",
+                "Url": "",
+                "Description": "The date the course was created."
+            },
+            {
+                "Name": "Duration",
+                "Url": "",
+                "Description": "The length of the course."
+            },
+            {
+                "Name": "Format",
+                "Url": "",
+                "Description": "The file format of the course content, e.g., MP4, PDF."
+            },
+            {
+                "Name": "Tags",
+                "Url": "",
+                "Description": "Keywords associated with the course content."
+            },
+            {
+                "Name": "Categories",
+                "Url": "",
+                "Description": "The genre or category of the course."
+            },
+            {
+                "Name": "View Count",
+                "Url": "",
+                "Description": "The number of times the course has been viewed."
+            },
+            {
+                "Name": "Ratings",
+                "Url": "",
+                "Description": "The average rating of the course."
+            },
+            {
+                "Name": "Reviews",
+                "Url": "",
+                "Description": "Student reviews of the course."
+            }
+        ]
+    },
+    {
+        "Title": "Art/Design",
+        "Description": "Platforms for sharing and discovering art and design work.",
+        "Enabled": true,
+        "Platforms": [
+            {
+                "Name": "Title",
+                "Url": "",
+                "Description": "The title of the artwork or design."
+            },
+            {
+                "Name": "Artist",
+                "Url": "",
+                "Description": "The creator of the artwork or design."
+            },
+            {
+                "Name": "Creation Date",
+                "Url": "",
+                "Description": "The date the artwork or design was created."
+            },
+            {
+                "Name": "Resolution",
+                "Url": "",
+                "Description": "The quality of the artwork or design, e.g., 1080p, 4K."
+            },
+            {
+                "Name": "Format",
+                "Url": "",
+                "Description": "The file format of the artwork or design, e.g., JPG, PNG, PSD."
+            },
+            {
+                "Name": "Tags",
+                "Url": "",
+                "Description": "Keywords associated with the artwork or design."
+            },
+            {
+                "Name": "Categories",
+                "Url": "",
+                "Description": "The genre or category of the artwork or design."
+            },
+            {
+                "Name": "View Count",
+                "Url": "",
+                "Description": "The number of times the artwork or design has been viewed."
+            },
+            {
+                "Name": "Likes",
+                "Url": "",
+                "Description": "The number of likes the artwork or design has received."
+            },
+            {
+                "Name": "Comments",
+                "Url": "",
+                "Description": "Viewer comments on the artwork or design."
+            }
+        ]
+    },
+    {
+        "Title": "News/Journalism",
+        "Description": "Platforms for news and journalism.",
+        "Enabled": true,
+        "Platforms": [
+            {
+                "Name": "Title",
+                "Url": "",
+                "Description": "The title of the news article or report."
+            },
+            {
+                "Name": "Author",
+                "Url": "",
+                "Description": "The writer or journalist of the news article or report."
+            },
+            {
+                "Name": "Publication Date",
+                "Url": "",
+                "Description": "The date the news article or report was published."
+            },
+            {
+                "Name": "Tags",
+                "Url": "",
+                "Description": "Keywords associated with the news article or report."
+            },
+            {
+                "Name": "Categories",
+                "Url": "",
+                "Description": "The genre or category of the news article or report."
+            },
+            {
+                "Name": "Word Count",
+                "Url": "",
+                "Description": "The number of words in the news article or report."
+            },
+            {
+                "Name": "Comments",
+                "Url": "",
+                "Description": "Reader comments on the news article or report."
+            },
+            {
+                "Name": "Likes",
+                "Url": "",
+                "Description": "The number of likes the news article or report has received."
+            },
+            {
+                "Name": "Shares",
+                "Url": "",
+                "Description": "The number of times the news article or report has been shared."
+            }
+        ]
+    }
+]

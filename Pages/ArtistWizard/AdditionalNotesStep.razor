@@ -1,0 +1,14 @@
+@page "/additional-notes"
+@code {
+    [Parameter]
+    public ArtistOnboardingModel Model { get; set; }
+}
+
+<div class="mb-3">
+    <label for="projectNotes" class="form-label">Project Notes</label>
+    <InputTextArea id="projectNotes" class="form-control" @bind-Value="Model.ProjectNotes" />
+</div>
+<div class="mb-3">
+    <label for="specialInstructions" class="form-label">Special Instructions</label>
+    <InputTextArea id="specialInstructions" class="form-control" @bind-Value="Model.SpecialInstructions" />
+</div>

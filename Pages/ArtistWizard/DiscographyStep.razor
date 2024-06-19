@@ -1,0 +1,31 @@
+@page "/discography"
+@code {
+    [Parameter]
+    public ArtistOnboardingModel Model { get; set; }
+    private void HandleDiscographyCoverArtChange(InputFileChangeEventArgs e)
+    {
+        var file = e.File;
+        // Handle file upload for discography item
+    }
+    private void AddDiscographyItem()
+    {
+        Model.Discography.Add(new DiscographyItem());
+    }
+}
+
+@foreach (var item in Model.Discography)
+{
+    <div class="mb-3">
+        <label for="title" class="form-label">Album Title</label>
+        <InputText id="title" class="form-control" @bind-Value="item.Title" />
+    </div>
+    <div class="mb-3">
+        <label for="releaseDate" class="form-label">Release Date</label>
+        <InputDate id="releaseDate" class="form-control" @bind-Value="item.ReleaseDate" />
+    </div>
+    <div class="mb-3">
+        <label for="coverArt" class="form-label">Cover Art</label>
+        <InputFile id="coverArt" class="form-control" OnChange="HandleDiscographyCoverArtChange" />
+    </div>
+}
+<button type="button" class="btn btn-secondary" @onclick="AddDiscographyItem">Add Album</button>

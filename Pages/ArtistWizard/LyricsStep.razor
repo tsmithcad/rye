@@ -1,0 +1,10 @@
+@page "/lyrics"
+@code {
+    [Parameter]
+    public ArtistOnboardingModel Model { get; set; }
+}
+
+<div class="mb-3">
+    <label for="lyrics" class="form-label">Song Lyrics</label>
+    <InputTextArea id="lyrics" class="form-control" @bind-Value="Model.Lyrics" Rows="5" />
+</div>

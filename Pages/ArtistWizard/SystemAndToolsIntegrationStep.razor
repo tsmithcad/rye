@@ -1,0 +1,22 @@
+@page "/system-and-tools-integration"
+@code {
+    [Parameter]
+    public ArtistOnboardingModel Model { get; set; }
+}
+
+<div class="mb-3">
+    <label for="daw" class="form-label">Digital Audio Workstation (DAW)</label>
+    <InputText id="daw" class="form-control" @bind-Value="Model.DAW" />
+</div>
+<div class="mb-3">
+    <label for="tempo" class="form-label">Tempo (BPM)</label>
+    <InputNumber id="tempo" class="form-control" @bind-Value="Model.Tempo" />
+</div>
+<div class="mb-3">
+    <label for="key" class="form-label">Key</label>
+    <InputText id="key" class="form-control" @bind-Value="Model.Key" />
+</div>
+<div class="mb-3">
+    <label for="externalTools" class="form-label">External Tools</label>
+    <!-- <InputTextArea id="externalTools" class="form-control" @bind-Value="Model.ExternalTools" /> -->
+</div>

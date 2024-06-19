@@ -1,0 +1,22 @@
+@page "/booking-info"
+@code {
+    [Parameter]
+    public ArtistOnboardingModel Model { get; set; }
+}
+
+<div class="mb-3">
+    <label for="bookingEmail" class="form-label">Booking Email</label>
+    <InputText id="bookingEmail" class="form-control" @bind-Value="Model.BookingEmail" />
+</div>
+<div class="mb-3">
+    <label for="bookingPhone" class="form-label">Booking Phone</label>
+    <InputText id="bookingPhone" class="form-control" @bind-Value="Model.BookingPhone" />
+</div>
+<div class="mb-3">
+    <label for="bookingWebsite" class="form-label">Booking Website</label>
+    <InputText id="bookingWebsite" class="form-control" @bind-Value="Model.BookingWebsite" />
+</div>
+<div class="mb-3">
+    <label for="additionalBookingInfo" class="form-label">Additional Booking Info</label>
+    <InputTextArea id="additionalBookingInfo" class="form-control" @bind-Value="Model.AdditionalBookingInfo" />
+</div>

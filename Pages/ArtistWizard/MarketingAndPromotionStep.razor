@@ -1,0 +1,56 @@
+@page "/marketing-and-promotion"
+@code {
+    [Parameter]
+    public ArtistOnboardingModel Model { get; set; }
+    private void AddAdCampaign()
+    {
+        Model.AdCampaigns.Add(new AdCampaign());
+    }
+    private void AddFeaturedArtistTier()
+    {
+        Model.FeaturedArtistTiers.Add(new FeaturedArtistTier());
+    }
+    private void AddPlaylistPlacement()
+    {
+        Model.PlaylistPlacements.Add(new PlaylistPlacement());
+    }
+}
+
+@foreach (var item in Model.AdCampaigns)
+{
+    <div class="mb-3">
+        <label for="campaignName" class="form-label">Campaign Name</label>
+        <InputText id="campaignName" class="form-control" @bind-Value="item.CampaignName" />
+    </div>
+    <div class="mb-3">
+        <label for="details" class="form-label">Details</label>
+        <InputTextArea id="details" class="form-control" @bind-Value="item.Details" />
+    </div>
+}
+<button type="button" class="btn btn-secondary" @onclick="AddAdCampaign">Add Campaign</button>
+
+@foreach (var item in Model.FeaturedArtistTiers)
+{
+    <div class="mb-3">
+        <label for="tierName" class="form-label">Tier Name</label>
+        <InputText id="tierName" class="form-control" @bind-Value="item.TierName" />
+    </div>
+    <div class="mb-3">
+        <label for="benefits" class="form-label">Benefits</label>
+        <InputTextArea id="benefits" class="form-control" @bind-Value="item.Benefits" />
+    </div>
+}
+<button type="button" class="btn btn-secondary" @onclick="AddFeaturedArtistTier">Add Tier</button>
+
+@foreach (var item in Model.PlaylistPlacements)
+{
+    <div class="mb-3">
+        <label for="playlistName" class="form-label">Playlist Name</label>
+        <InputText id="playlistName" class="form-control" @bind-Value="item.PlaylistName" />
+    </div>
+    <div class="mb-3">
+        <label for="details" class="form-label">Details</label>
+        <InputTextArea id="details" class="form-control" @bind-Value="item.Details" />
+    </div>
+}
+<button type="button" class="btn btn-secondary" @onclick="AddPlaylistPlacement">Add Playlist</button>

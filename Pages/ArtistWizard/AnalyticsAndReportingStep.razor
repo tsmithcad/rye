@@ -1,0 +1,30 @@
+@page "/analytics-and-reporting"
+@code {
+    [Parameter]
+    public ArtistOnboardingModel Model { get; set; }
+    private void AddSalesReport()
+    {
+        Model.SalesReports.Add(new SalesReport());
+    }
+}
+
+<div class="mb-3">
+    <label for="googleAnalyticsKey" class="form-label">Google Analytics Key</label>
+    <InputText id="googleAnalyticsKey" class="form-control" @bind-Value="Model.GoogleAnalyticsKey" />
+</div>
+<div class="mb-3">
+    <label for="socialMediaAnalyticsKey" class="form-label">Social Media Analytics Key</label>
+    <InputText id="socialMediaAnalyticsKey" class="form-control" @bind-Value="Model.SocialMediaAnalyticsKey" />
+</div>
+@foreach (var item in Model.SalesReports)
+{
+    <div class="mb-3">
+        <label for="reportType" class="form-label">Report Type</label>
+        <InputText id="reportType" class="form-control" @bind-Value="item.ReportType" />
+    </div>
+    <div class="mb-3">
+        <label for="details" class="form-label">Details</label>
+        <InputTextArea id="details" class="form-control" @bind-Value="item.Details" />
+    </div>
+}
+<button type="button" class="btn btn-secondary" @onclick="AddSalesReport">Add Sales Report</button>

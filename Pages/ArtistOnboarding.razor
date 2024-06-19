@@ -1,0 +1,572 @@
+@page "/artist-onboarding"
+
+<title>Rhyme Engine | Artist Onboarding</title>
+
+<h3 class="text-center mt-4">Artist Onboarding</h3>
+
+<div class="mt-4 text-light row row-cols-1 row-cols-md-1 row-cols-lg-2 row-cols-xxl-3 g-3">
+    <EditForm Model="@artistModel" OnValidSubmit="HandleValidSubmit">
+        <DataAnnotationsValidator />
+        <ValidationSummary />
+
+        <!-- Artist Details Section -->
+        <div class="mb-4">
+            <h4>Artist Details</h4>
+            <div class="mb-3">
+                <label for="artistName" class="form-label">Artist Name</label>
+                <InputText id="artistName" class="form-control" @bind-Value="artistModel.ArtistName" />
+            </div>
+            <div class="mb-3">
+                <label for="profilePicture" class="form-label">Profile Picture</label>
+                <InputFile id="profilePicture" class="form-control" OnChange="HandleProfilePictureChange" />
+            </div>
+            <div class="mb-3">
+                <label for="bio" class="form-label">Brief Bio</label>
+                <InputTextArea id="bio" class="form-control" @bind-Value="artistModel.Bio" />
+            </div>
+            <div class="mb-3">
+                <label for="twitter" class="form-label">Twitter</label>
+                <InputText id="twitter" class="form-control" @bind-Value="artistModel.Twitter" />
+            </div>
+            <div class="mb-3">
+                <label for="instagram" class="form-label">Instagram</label>
+                <InputText id="instagram" class="form-control" @bind-Value="artistModel.Instagram" />
+            </div>
+            <div class="mb-3">
+                <label for="facebook" class="form-label">Facebook</label>
+                <InputText id="facebook" class="form-control" @bind-Value="artistModel.Facebook" />
+            </div>
+            <div class="mb-3">
+                <label for="youtube" class="form-label">YouTube</label>
+                <InputText id="youtube" class="form-control" @bind-Value="artistModel.YouTube" />
+            </div>
+            <div class="mb-3">
+                <label for="tiktok" class="form-label">TikTok</label>
+                <InputText id="tiktok" class="form-control" @bind-Value="artistModel.TikTok" />
+            </div>
+            <div class="mb-3">
+                <label for="website" class="form-label">Website</label>
+                <InputText id="website" class="form-control" @bind-Value="artistModel.Website" />
+            </div>
+        </div>
+
+        <!-- Song Metadata Section -->
+        <div class="mb-4">
+            <h4>Song Metadata</h4>
+            <div class="mb-3">
+                <label for="songTitle" class="form-label">Song Title</label>
+                <InputText id="songTitle" class="form-control" @bind-Value="artistModel.SongTitle" />
+            </div>
+            <div class="mb-3">
+                <label for="producerName" class="form-label">Producer Name</label>
+                <InputText id="producerName" class="form-control" @bind-Value="artistModel.ProducerName" />
+            </div>
+            <div class="mb-3">
+                <label for="albumName" class="form-label">Album Name</label>
+                <InputText id="albumName" class="form-control" @bind-Value="artistModel.AlbumName" />
+            </div>
+            <div class="mb-3">
+                <label for="releaseDate" class="form-label">Release Date</label>
+                <InputDate id="releaseDate" class="form-control" @bind-Value="artistModel.ReleaseDate" />
+            </div>
+            <div class="mb-3">
+                <label for="genre" class="form-label">Genre</label>
+                <InputText id="genre" class="form-control" @bind-Value="artistModel.Genre" />
+            </div>
+            <div class="mb-3">
+                <label for="songDuration" class="form-label">Song Duration</label>
+                <!-- <InputTime id="songDuration" class="form-control" @bind-Value="artistModel.SongDuration" /> -->
+            </div>
+            <div class="mb-3">
+                <label for="coverArt" class="form-label">Cover Art</label>
+                <InputFile id="coverArt" class="form-control" OnChange="HandleCoverArtChange" />
+            </div>
+        </div>
+
+        <!-- Lyrics Section -->
+        <div class="mb-4">
+            <h4>Lyrics</h4>
+            <div class="mb-3">
+                <label for="lyrics" class="form-label">Song Lyrics</label>
+                <InputTextArea id="lyrics" class="form-control" @bind-Value="artistModel.Lyrics" Rows="5" />
+            </div>
+        </div>
+
+        <!-- Audio Files Section -->
+        <div class="mb-4">
+            <h4>Audio Files</h4>
+            <div class="mb-3">
+                <label for="featuredSong" class="form-label">Featured Song</label>
+                <InputFile id="featuredSong" class="form-control" OnChange="HandleFeaturedSongChange" />
+            </div>
+            <div class="mb-3">
+                <label for="acapella" class="form-label">Acapella Version</label>
+                <InputFile id="acapella" class="form-control" OnChange="HandleAcapellaChange" />
+            </div>
+            <div class="mb-3">
+                <label for="instrumental" class="form-label">Instrumental Version</label>
+                <InputFile id="instrumental" class="form-control" OnChange="HandleInstrumentalChange" />
+            </div>
+            <div class="mb-3">
+                <label for="cleanVersion" class="form-label">Clean Version</label>
+                <InputFile id="cleanVersion" class="form-control" OnChange="HandleCleanVersionChange" />
+            </div>
+            <div class="mb-3">
+                <label for="explicitVersion" class="form-label">Explicit Version</label>
+                <InputFile id="explicitVersion" class="form-control" OnChange="HandleExplicitVersionChange" />
+            </div>
+        </div>
+
+        <!-- Music Videos Section -->
+        <div class="mb-4">
+            <h4>Music Videos</h4>
+            <div class="mb-3">
+                <label for="musicVideoURL" class="form-label">Music Video URL</label>
+                <InputText id="musicVideoURL" class="form-control" @bind-Value="artistModel.MusicVideoURL" />
+            </div>
+            <div class="mb-3">
+                <label for="additionalVideos" class="form-label">Additional Videos</label>
+                <!-- <InputText id="additionalVideos" class="form-control" @bind-Value="artistModel.AdditionalVideos" Placeholder="Comma separated URLs" /> -->
+            </div>
+        </div>
+
+        <!-- Related Content Section -->
+        <div class="mb-4">
+            <h4>Related Content</h4>
+            <div class="mb-3">
+                <label for="relatedContentLinks" class="form-label">Related Content Links</label>
+                <!-- <InputText id="relatedContentLinks" class="form-control" @bind-Value="artistModel.RelatedContentLinks" Placeholder="Comma separated URLs" /> -->
+            </div>
+        </div>
+
+        <!-- Production and Songwriting Credits Section -->
+        <div class="mb-4">
+            <h4>Production and Songwriting Credits</h4>
+            <div class="mb-3">
+                <label for="songwriterName" class="form-label">Songwriter Name</label>
+                <InputText id="songwriterName" class="form-control" @bind-Value="artistModel.SongwriterName" />
+            </div>
+            <div class="mb-3">
+                <label for="recordingDetails" class="form-label">Recording Details</label>
+                <InputTextArea id="recordingDetails" class="form-control" @bind-Value="artistModel.RecordingDetails" Rows="3" />
+            </div>
+        </div>
+
+        <!-- Discography Section -->
+        <div class="mb-4">
+            <h4>Discography</h4>
+            <div class="mb-3" style="background-color: #333; padding: 15px; border-radius: 5px;">
+                @foreach (var item in artistModel.Discography)
+                {
+                    <div class="mb-3">
+                        <label class="form-label">Album Title</label>
+                        <InputText class="form-control" @bind-Value="item.Title" />
+                    </div>
+                    <div class="mb-3">
+                        <label class="form-label">Release Date</label>
+                        <InputDate class="form-control" @bind-Value="item.ReleaseDate" />
+                    </div>
+                    <div class="mb-3">
+                        <label class="form-label">Cover Art</label>
+                        <InputFile class="form-control" OnChange="HandleDiscographyCoverArtChange" />
+                    </div>
+                }
+                <button type="button" class="btn btn-secondary" @onclick="AddDiscographyItem">Add Album</button>
+            </div>
+        </div>
+
+        <!-- Upcoming Events Section -->
+        <div class="mb-4">
+            <h4>Upcoming Events</h4>
+            <div class="mb-3" style="background-color: #333; padding: 15px; border-radius: 5px;">
+                @foreach (var eventItem in artistModel.UpcomingEvents)
+                {
+                    <div class="mb-3">
+                        <label class="form-label">Event Name</label>
+                        <InputText class="form-control" @bind-Value="eventItem.Name" />
+                    </div>
+                    <div class="mb-3">
+                        <label for="eventDate" class="form-label">Event Date</label>
+                        <InputDate id="eventDate" class="form-control" @bind-Value="eventItem.Date" />
+                    </div>
+                    <div class="mb-3">
+                        <label for="eventLocation" class="form-label">Event Location</label>
+                        <InputText id="eventLocation" class="form-control" @bind-Value="eventItem.Location" />
+                    </div>
+                    <div class="mb-3">
+                        <label for="eventDescription" class="form-label">Event Description</label>
+                        <InputTextArea id="eventDescription" class="form-control" @bind-Value="eventItem.Description" Rows="3" />
+                    </div>
+                }
+                <button type="button" class="btn btn-secondary" @onclick="AddEventItem">Add Event</button>
+            </div>
+        </div>
+
+        <!-- Fan Interaction Section -->
+        <div class="mb-4">
+            <h4>Fan Interaction</h4>
+            <div class="mb-3">
+                <label for="socialMediaPosts" class="form-label">Social Media Posts</label>
+                <!-- <InputText id="socialMediaPosts" class="form-control" @bind-Value="artistModel.SocialMediaPosts" Placeholder="Comma separated URLs" /> -->
+            </div>
+        </div>
+
+        <!-- Merchandise Store Section -->
+        <div class="mb-4">
+            <h4>Merchandise Store</h4>
+            <div class="mb-3" style="background-color: #333; padding: 15px; border-radius: 5px;">
+                @foreach (var merchItem in artistModel.Merchandise)
+                {
+                    <div class="mb-3">
+                        <label class="form-label">Item Name</label>
+                        <InputText class="form-control" @bind-Value="merchItem.Name" />
+                    </div>
+                    <div class="mb-3">
+                        <label class="form-label">Price</label>
+                        <InputNumber class="form-control" @bind-Value="merchItem.Price" />
+                    </div>
+                    <div class="mb-3">
+                        <label for="merchImage" class="form-label">Image</label>
+                        <InputFile id="merchImage" class="form-control" OnChange="HandleMerchandiseImageChange" />
+                    </div>
+                    <div class="mb-3">
+                        <label for="merchDescription" class="form-label">Description</label>
+                        <InputTextArea id="merchDescription" class="form-control" @bind-Value="merchItem.Description" Rows="3" />
+                    </div>
+                }
+                <button type="button" class="btn btn-secondary" @onclick="AddMerchandiseItem">Add Item</button>
+            </div>
+        </div>
+
+        <!-- Press and Media Section -->
+        <div class="mb-4">
+            <h4>Press and Media</h4>
+            <div class="mb-3" style="background-color: #333; padding: 15px; border-radius: 5px;">
+                @foreach (var pressArticle in artistModel.PressArticles)
+                {
+                    <div class="mb-3">
+                        <label class="form-label">Article Title</label>
+                        <InputText class="form-control" @bind-Value="pressArticle.Title" />
+                    </div>
+                    <div class="mb-3">
+                        <label class="form-label">Publication</label>
+                        <InputText class="form-control" @bind-Value="pressArticle.Publication" />
+                    </div>
+                    <div class="mb-3">
+                        <label class="form-label">URL</label>
+                        <InputText class="form-control" @bind-Value="pressArticle.URL" />
+                    </div>
+                }
+                <button type="button" class="btn btn-secondary" @onclick="AddPressArticle">Add Article</button>
+            </div>
+        </div>
+
+        <!-- Collaborations Section -->
+        <div class="mb-4">
+            <h4>Collaborations</h4>
+            <div class="mb-3" style="background-color: #333; padding: 15px; border-radius: 5px;">
+                @foreach (var collaboration in artistModel.Collaborations)
+                {
+                    <div class="mb-3">
+                        <label class="form-label">Collaborator Name</label>
+                        <InputText class="form-control" @bind-Value="collaboration.CollaboratorName" />
+                    </div>
+                    <div class="mb-3">
+                        <label class="form-label">Project Title</label>
+                        <InputText class="form-control" @bind-Value="collaboration.ProjectTitle" />
+                    </div>
+                    <div class="mb-3">
+                        <label class="form-label">Description</label>
+                        <InputTextArea class="form-control" @bind-Value="collaboration.Description" Rows="3" />
+                    </div>
+                }
+                <button type="button" class="btn btn-secondary" @onclick="AddCollaborationItem">Add Collaboration</button>
+            </div>
+        </div>
+
+        <!-- Artist Booking Information Section -->
+        <div class="mb-4">
+            <h4>Artist Booking Information</h4>
+            <div class="mb-3">
+                <label for="bookingEmail" class="form-label">Booking Email</label>
+                <InputText id="bookingEmail" class="form-control" @bind-Value="artistModel.BookingEmail" />
+            </div>
+            <div class="mb-3">
+                <label for="bookingPhone" class="form-label">Booking Phone</label>
+                <InputText id="bookingPhone" class="form-control" @bind-Value="artistModel.BookingPhone" />
+            </div>
+            <div class="mb-3">
+                <label for="bookingWebsite" class="form-label">Booking Website</label>
+                <InputText id="bookingWebsite" class="form-control" @bind-Value="artistModel.BookingWebsite" />
+            </div>
+            <div class="mb-3">
+                <label for="bookingInfo" class="form-label">Additional Booking Info</label>
+                <!-- <InputTextArea id="bookingInfo" class="form-control" @bind-Value="artistModel.BookingInfo" Rows="3" /> -->
+            </div>
+        </div>
+
+        <!-- Visualizer and Graphics Section -->
+        <div class="mb-4">
+            <h4>Visualizer and Graphics</h4>
+            <div class="mb-3">
+                <label for="songVisualizer" class="form-label">Song Visualizer</label>
+                <InputText id="songVisualizer" class="form-control" @bind-Value="artistModel.SongVisualizer" />
+            </div>
+            <div class="mb-3">
+                <label for="promotionalGraphics" class="form-label">Promotional Graphics</label>
+                <!-- <InputTextArea id="promotionalGraphics" class="form-control" @bind-Value="artistModel.PromotionalGraphics" Placeholder="Comma separated URLs" Rows="3" /> -->
+            </div>
+        </div>
+
+        <!-- Performance and Tour Information Section -->
+        <div class="mb-4">
+            <h4>Performance and Tour Information</h4>
+            <div class="mb-3">
+                <label for="performanceTips" class="form-label">Performance Tips</label>
+                <InputText id="performanceTips" class="form-control" @bind-Value="artistModel.PerformanceTips" />
+            </div>
+            <div class="mb-3">
+                <label for="tourSchedule" class="form-label">Tour Schedule</label>
+                <!-- <InputTextArea id="tourSchedule" class="form-control" @bind-Value="artistModel.TourSchedule" Placeholder="Comma separated event names" Rows="3" /> -->
+            </div>
+            <div class="mb-3" style="background-color: #333; padding: 15px; border-radius: 5px;">
+                @foreach (var crewMember in artistModel.CrewMembers)
+                {
+                    <div class="mb-3">
+                        <label class="form-label">Crew Member Name</label>
+                        <InputText class="form-control" @bind-Value="crewMember.Name" />
+                    </div>
+                    <div class="mb-3">
+                        <label class="form-label">Role</label>
+                        <InputText class="form-control" @bind-Value="crewMember.Role" />
+                    </div>
+                }
+                <button type="button" class="btn btn-secondary" @onclick="AddCrewMember">Add Crew Member</button>
+            </div>
+        </div>
+
+        <!-- System and Tools Integration Section -->
+        <div class="mb-4">
+            <h4>System and Tools Integration</h4>
+            <div class="mb-3">
+                <label for="daw" class="form-label">Digital Audio Workstation (DAW)</label>
+                <InputText id="daw" class="form-control" @bind-Value="artistModel.DAW" />
+            </div>
+            <div class="mb-3">
+                <label for="tempo" class="form-label">Tempo (BPM)</label>
+                <InputNumber id="tempo" class="form-control" @bind-Value="artistModel.Tempo" />
+            </div>
+            <div class="mb-3">
+                <label for="key" class="form-label">Key</label>
+                <InputText id="key" class="form-control" @bind-Value="artistModel.Key" />
+            </div>
+            <div class="mb-3">
+                <label for="externalTools" class="form-label">External Tools</label>
+                <!-- <InputTextArea id="externalTools" class="form-control" @bind-Value="artistModel.ExternalTools" Placeholder="Comma separated tool names" Rows="3" /> -->
+            </div>
+        </div>
+
+        <!-- Analytics and Reporting Section -->
+        <div class="mb-4">
+            <h4>Analytics and Reporting</h4>
+            <div class="mb-3">
+                <label for="googleAnalyticsKey" class="form-label">Google Analytics Key</label>
+                <InputText id="googleAnalyticsKey" class="form-control" @bind-Value="artistModel.GoogleAnalyticsKey" />
+            </div>
+            <div class="mb-3">
+                <label for="socialMediaAnalyticsKey" class="form-label">Social Media Analytics Key</label>
+                <InputText id="socialMediaAnalyticsKey" class="form-control" @bind-Value="artistModel.SocialMediaAnalyticsKey" />
+            </div>
+            <div class="mb-3" style="background-color: #333; padding: 15px; border-radius: 5px;">
+                @foreach (var salesReport in artistModel.SalesReports)
+                {
+                    <div class="mb-3">
+                        <label class="form-label">Report Type</label>
+                        <InputText class="form-control" @bind-Value="salesReport.ReportType" />
+                    </div>
+                    <div class="mb-3">
+                        <label class="form-label">Details</label>
+                        <InputTextArea class="form-control" @bind-Value="salesReport.Details" Rows="3" />
+                    </div>
+                }
+                <button type="button" class="btn btn-secondary" @onclick="AddSalesReport">Add Sales Report</button>
+            </div>
+        </div>
+
+        <!-- Marketing and Promotion Section -->
+        <div class="mb-4">
+            <h4>Marketing and Promotion</h4>
+            <div class="mb-3" style="background-color: #333; padding: 15px; border-radius: 5px;">
+                @foreach (var adCampaign in artistModel.AdCampaigns)
+                {
+                    <div class="mb-3">
+                        <label class="form-label">Campaign Name</label>
+                        <InputText class="form-control" @bind-Value="adCampaign.CampaignName" />
+                    </div>
+                    <div class="mb-3">
+                        <label class="form-label">Details</label>
+                        <InputTextArea class="form-control" @bind-Value="adCampaign.Details" Rows="3" />
+                    </div>
+                }
+                <button type="button" class="btn btn-secondary" @onclick="AddAdCampaign">Add Campaign</button>
+            </div>
+            <div class="mb-3" style="background-color: #333; padding: 15px; border-radius: 5px;">
+                @foreach (var featuredArtistTier in artistModel.FeaturedArtistTiers)
+                {
+                    <div class="mb-3">
+                        <label class="form-label">Tier Name</label>
+                        <InputText class="form-control" @bind-Value="featuredArtistTier.TierName" />
+                    </div>
+                    <div class="mb-3">
+                        <label class="form-label">Benefits</label>
+                        <InputTextArea class="form-control" @bind-Value="featuredArtistTier.Benefits" Rows="3" />
+                    </div>
+                }
+                <button type="button" class="btn btn-secondary" @onclick="AddFeaturedArtistTier">Add Tier</button>
+            </div>
+            <div class="mb-3" style="background-color: #333; padding: 15px; border-radius: 5px;">
+                @foreach (var playlistPlacement in artistModel.PlaylistPlacements)
+                {
+                    <div class="mb-3">
+                        <label class="form-label">Playlist Name</label>
+                        <InputText class="form-control" @bind-Value="playlistPlacement.PlaylistName" />
+                    </div>
+                    <div class="mb-3">
+                        <label class="form-label">Details</label>
+                        <InputTextArea class="form-control" @bind-Value="playlistPlacement.Details" Rows="3" />
+                    </div>
+                }
+                <button type="button" class="btn btn-secondary" @onclick="AddPlaylistPlacement">Add Playlist</button>
+            </div>
+        </div>
+
+        <!-- Additional Notes Section -->
+        <div class="mb-4">
+            <h4>Additional Notes</h4>
+            <div class="mb-3">
+                <label for="projectNotes" class="form-label">Project Notes</label>
+                <InputTextArea id="projectNotes" class="form-control" @bind-Value="artistModel.ProjectNotes" Rows="3" />
+            </div>
+            <div class="mb-3">
+                <label for="specialInstructions" class="form-label">Special Instructions</label>
+                <InputTextArea id="specialInstructions" class="form-control" @bind-Value="artistModel.SpecialInstructions" Rows="3" />
+            </div>
+        </div>
+
+        <button type="submit" class="btn btn-primary">Submit</button>
+    </EditForm>
+</div>
+
+@code {
+    private ArtistOnboardingModel artistModel = new ArtistOnboardingModel();
+
+    private async Task HandleValidSubmit()
+    {
+        // Handle form submission
+        // Example: Save to database, navigate to another page, etc.
+    }
+
+    private void HandleProfilePictureChange(InputFileChangeEventArgs e)
+    {
+        var file = e.File;
+        // Handle file upload
+    }
+
+    private void HandleCoverArtChange(InputFileChangeEventArgs e)
+    {
+        var file = e.File;
+        // Handle file upload
+    }
+
+    private void HandleFeaturedSongChange(InputFileChangeEventArgs e)
+    {
+        var file = e.File;
+        // Handle file upload
+    }
+
+    private void HandleAcapellaChange(InputFileChangeEventArgs e)
+    {
+        var file = e.File;
+        // Handle file upload
+    }
+
+    private void HandleInstrumentalChange(InputFileChangeEventArgs e)
+    {
+        var file = e.File;
+        // Handle file upload
+    }
+
+    private void HandleCleanVersionChange(InputFileChangeEventArgs e)
+    {
+        var file = e.File;
+        // Handle file upload
+    }
+
+    private void HandleExplicitVersionChange(InputFileChangeEventArgs e)
+    {
+        var file = e.File;
+        // Handle file upload
+    }
+
+    private void HandleDiscographyCoverArtChange(InputFileChangeEventArgs e)
+    {
+        var file = e.File;
+        // Handle file upload for discography item
+    }
+
+    private void AddDiscographyItem()
+    {
+        artistModel.Discography.Add(new DiscographyItem());
+    }
+
+    private void AddEventItem()
+    {
+        artistModel.UpcomingEvents.Add(new EventItem());
+    }
+
+    private void HandleMerchandiseImageChange(InputFileChangeEventArgs e)
+    {
+        var file = e.File;
+        // Handle file upload for merchandise item
+    }
+
+    private void AddMerchandiseItem()
+    {
+        artistModel.Merchandise.Add(new MerchandiseItem());
+    }
+
+    private void AddPressArticle()
+    {
+        artistModel.PressArticles.Add(new PressArticle());
+    }
+
+    private void AddCollaborationItem()
+    {
+        artistModel.Collaborations.Add(new Collaboration());
+    }
+
+    private void AddCrewMember()
+    {
+        artistModel.CrewMembers.Add(new CrewMember());
+    }
+
+    private void AddSalesReport()
+    {
+        artistModel.SalesReports.Add(new SalesReport());
+    }
+
+    private void AddAdCampaign()
+    {
+        artistModel.AdCampaigns.Add(new AdCampaign());
+    }
+
+    private void AddFeaturedArtistTier()
+    {
+        artistModel.FeaturedArtistTiers.Add(new FeaturedArtistTier());
+    }
+
+    private void AddPlaylistPlacement()
+    {
+        artistModel.PlaylistPlacements.Add(new PlaylistPlacement());
+    }
+}

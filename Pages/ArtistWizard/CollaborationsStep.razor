@@ -1,0 +1,26 @@
+@page "/collaborations"
+@code {
+    [Parameter]
+    public ArtistOnboardingModel Model { get; set; }
+    private void AddCollaborationItem()
+    {
+        Model.Collaborations.Add(new Collaboration());
+    }
+}
+
+@foreach (var item in Model.Collaborations)
+{
+    <div class="mb-3">
+        <label for="collaboratorName" class="form-label">Collaborator Name</label>
+        <InputText id="collaboratorName" class="form-control" @bind-Value="item.CollaboratorName" />
+    </div>
+    <div class="mb-3">
+        <label for="projectTitle" class="form-label">Project Title</label>
+        <InputText id="projectTitle" class="form-control" @bind-Value="item.ProjectTitle" />
+    </div>
+    <div class="mb-3">
+        <label for="description" class="form-label">Description</label>
+        <InputTextArea id="description" class="form-control" @bind-Value="item.Description" />
+    </div>
+}
+<button type="button" class="btn btn-secondary" @onclick="AddCollaborationItem">Add Collaboration</button>

@@ -1,0 +1,31 @@
+@page "/audio-files"
+@code {
+    [Parameter]
+    public ArtistOnboardingModel Model { get; set; }
+    private void HandleFileChange(InputFileChangeEventArgs e, string fileType)
+    {
+        var file = e.File;
+        // Handle file upload based on fileType
+    }
+}
+
+<div class="mb-3">
+    <label for="featuredSong" class="form-label">Featured Song</label>
+    <InputFile id="featuredSong" class="form-control" OnChange="@(e => HandleFileChange(e, "FeaturedSong"))" />
+</div>
+<div class="mb-3">
+    <label for="acapella" class="form-label">Acapella Version</label>
+    <InputFile id="acapella" class="form-control" OnChange="@(e => HandleFileChange(e, "Acapella"))" />
+</div>
+<div class="mb-3">
+    <label for="instrumental" class="form-label">Instrumental Version</label>
+    <InputFile id="instrumental" class="form-control" OnChange="@(e => HandleFileChange(e, "Instrumental"))" />
+</div>
+<div class="mb-3">
+    <label for="cleanVersion" class="form-label">Clean Version</label>
+    <InputFile id="cleanVersion" class="form-control" OnChange="@(e => HandleFileChange(e, "CleanVersion"))" />
+</div>
+<div class="mb-3">
+    <label for="explicitVersion" class="form-label">Explicit Version</label>
+    <InputFile id="explicitVersion" class="form-control" OnChange="@(e => HandleFileChange(e, "ExplicitVersion"))" />
+</div>

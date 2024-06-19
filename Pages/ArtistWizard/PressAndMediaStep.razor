@@ -1,0 +1,26 @@
+@page "/press-and-media"
+@code {
+    [Parameter]
+    public ArtistOnboardingModel Model { get; set; }
+    private void AddPressArticle()
+    {
+        Model.PressArticles.Add(new PressArticle());
+    }
+}
+
+@foreach (var item in Model.PressArticles)
+{
+    <div class="mb-3">
+        <label for="title" class="form-label">Article Title</label>
+        <InputText id="title" class="form-control" @bind-Value="item.Title" />
+    </div>
+    <div class="mb-3">
+        <label for="publication" class="form-label">Publication</label>
+        <InputText id="publication" class="form-control" @bind-Value="item.Publication" />
+    </div>
+    <div class="mb-3">
+        <label for="url" class="form-label">URL</label>
+        <InputText id="url" class="form-control" @bind-Value="item.URL" />
+    </div>
+}
+<button type="button" class="btn btn-secondary" @onclick="AddPressArticle">Add Article</button>

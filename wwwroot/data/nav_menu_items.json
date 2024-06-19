@@ -24,6 +24,12 @@
         "Enabled": true
     },
     {
+        "Title": "Metadata",
+        "Icon": "oi-cog",
+        "Url": "meta-data",
+        "Enabled": false
+    },
+    {
         "Title": "Team",
         "Icon": "oi-people",
         "Url": "/team",
@@ -96,9 +102,9 @@
         "Enabled": false
     },
     {
-        "Title": "Events",
+        "Title": "Event Platforms",
         "Icon": "oi-calendar",
-        "Url": "events",
+        "Url": "event-platforms",
         "Enabled": true
     },
     {

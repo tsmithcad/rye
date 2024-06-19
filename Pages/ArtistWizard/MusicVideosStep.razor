@@ -1,0 +1,14 @@
+@page "/music-videos"
+@code {
+    [Parameter]
+    public ArtistOnboardingModel Model { get; set; }
+}
+
+<div class="mb-3">
+    <label for="musicVideoURL" class="form-label">Music Video URL</label>
+    <InputText id="musicVideoURL" class="form-control" @bind-Value="Model.MusicVideoURL" />
+</div>
+<div class="mb-3">
+    <label for="additionalVideos" class="form-label">Additional Videos</label>
+    <!-- <InputTextArea id="additionalVideos" class="form-control" @bind-Value="Model.AdditionalVideos" /> -->
+</div>

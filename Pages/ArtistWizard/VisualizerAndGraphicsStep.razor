@@ -1,0 +1,14 @@
+@page "/visualizer-and-graphics"
+@code {
+    [Parameter]
+    public ArtistOnboardingModel Model { get; set; }
+}
+
+<div class="mb-3">
+    <label for="songVisualizer" class="form-label">Song Visualizer</label>
+    <InputText id="songVisualizer" class="form-control" @bind-Value="Model.SongVisualizer" />
+</div>
+<div class="mb-3">
+    <label for="promotionalGraphics" class="form-label">Promotional Graphics</label>
+    <!-- <InputTextArea id="promotionalGraphics" class="form-control" @bind-Value="Model.PromotionalGraphics" /> -->
+</div>

@@ -1,6 +1,6 @@
 [
     {
-      "Category": "Album Artwork and Packaging",
+      "Category": "Artwork & Packaging",
       "DataSources": [
         { "SourceName": "Drafts", "FileExtensions": ["PSD", "AI"] },
         { "SourceName": "Final Versions", "FileExtensions": ["JPG", "PNG", "PDF"] },

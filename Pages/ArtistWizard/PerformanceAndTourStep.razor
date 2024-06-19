@@ -1,0 +1,47 @@
+@page "/performance-and-tour"
+@code {
+    [Parameter]
+    public ArtistOnboardingModel Model { get; set; }
+    private void AddCrewMember()
+    {
+        Model.CrewMembers.Add(new CrewMember());
+    }
+    private void AddTourScheduleItem()
+    {
+        Model.TourSchedule.Add(new EventItem());
+    }
+}
+
+<div class="mb-3">
+    <label for="performanceTips" class="form-label">Performance Tips</label>
+    <InputTextArea id="performanceTips" class="form-control" @bind-Value="Model.PerformanceTips" />
+</div>
+@foreach (var item in Model.TourSchedule)
+{
+    <div class="mb-3">
+        <label for="tourName" class="form-label">Tour Name</label>
+        <InputText id="tourName" class="form-control" @bind-Value="item.Name" />
+    </div>
+    <div class="mb-3">
+        <label for="tourDate" class="form-label">Tour Date</label>
+        <InputDate id="tourDate" class="form-control" @bind-Value="item.Date" />
+    </div>
+    <div class="mb-3">
+        <label for="tourLocation" class="form-label">Tour Location</label>
+        <InputText id="tourLocation" class="form-control" @bind-Value="item.Location" />
+    </div>
+}
+<button type="button" class="btn btn-secondary" @onclick="AddTourScheduleItem">Add Tour Schedule Item</button>
+
+@foreach (var crewMember in Model.CrewMembers)
+{
+    <div class="mb-3">
+        <label for="crewMemberName" class="form-label">Crew Member Name</label>
+        <InputText id="crewMemberName" class="form-control" @bind-Value="crewMember.Name" />
+    </div>
+    <div class="mb-3">
+        <label for="crewMemberRole" class="form-label">Role</label>
+        <InputText id="crewMemberRole" class="form-control" @bind-Value="crewMember.Role" />
+    </div>
+}
+<button type="button" class="btn btn-secondary" @onclick="AddCrewMember">Add Crew Member</button>

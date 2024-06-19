@@ -1,0 +1,47 @@
+@page "/artist-details"
+@code {
+    [Parameter]
+    public ArtistOnboardingModel Model { get; set; }
+    private void HandleProfilePictureChange(InputFileChangeEventArgs e)
+    {
+        var file = e.File;
+        // Handle file upload
+    }
+}
+
+<div class="mb-3">
+    <label for="artistName" class="form-label">Artist Name</label>
+    <InputText id="artistName" class="form-control" @bind-Value="Model.ArtistName" />
+</div>
+<div class="mb-3">
+    <label for="profilePicture" class="form-label">Profile Picture</label>
+    <InputFile id="profilePicture" class="form-control" OnChange="HandleProfilePictureChange" />
+</div>
+<div class="mb-3">
+    <label for="bio" class="form-label">Brief Bio</label>
+    <InputTextArea id="bio" class="form-control" @bind-Value="Model.Bio" />
+</div>
+<div class="mb-3">
+    <label for="twitter" class="form-label">Twitter</label>
+    <InputText id="twitter" class="form-control" @bind-Value="Model.Twitter" />
+</div>
+<div class="mb-3">
+    <label for="instagram" class="form-label">Instagram</label>
+    <InputText id="instagram" class="form-control" @bind-Value="Model.Instagram" />
+</div>
+<div class="mb-3">
+    <label for="facebook" class="form-label">Facebook</label>
+    <InputText id="facebook" class="form-control" @bind-Value="Model.Facebook" />
+</div>
+<div class="mb-3">
+    <label for="youtube" class="form-label">YouTube</label>
+    <InputText id="youtube" class="form-control" @bind-Value="Model.YouTube" />
+</div>
+<div class="mb-3">
+    <label for="tiktok" class="form-label">TikTok</label>
+    <InputText id="tiktok" class="form-control" @bind-Value="Model.TikTok" />
+</div>
+<div class="mb-3">
+    <label for="website" class="form-label">Website</label>
+    <InputText id="website" class="form-control" @bind-Value="Model.Website" />
+</div>

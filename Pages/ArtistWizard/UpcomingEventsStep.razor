@@ -1,0 +1,30 @@
+@page "/upcoming-events"
+@code {
+    [Parameter]
+    public ArtistOnboardingModel Model { get; set; }
+    private void AddEventItem()
+    {
+        Model.UpcomingEvents.Add(new EventItem());
+    }
+}
+
+@foreach (var item in Model.UpcomingEvents)
+{
+    <div class="mb-3">
+        <label for="name" class="form-label">Event Name</label>
+        <InputText id="name" class="form-control" @bind-Value="item.Name" />
+    </div>
+    <div class="mb-3">
+        <label for="date" class="form-label">Event Date</label>
+        <InputDate id="date" class="form-control" @bind-Value="item.Date" />
+    </div>
+    <div class="mb-3">
+        <label for="location" class="form-label">Event Location</label>
+        <InputText id="location" class="form-control" @bind-Value="item.Location" />
+    </div>
+    <div class="mb-3">
+        <label for="description" class="form-label">Event Description</label>
+        <InputTextArea id="description" class="form-control" @bind-Value="item.Description" />
+    </div>
+}
+<button type="button" class="btn btn-secondary" @onclick="AddEventItem">Add Event</button>

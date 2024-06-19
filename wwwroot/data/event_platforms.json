@@ -1,196 +1,14 @@
 [
     {
-        "Title": "Video",
-        "Description": "Platforms for sharing and streaming video content.",
-        "Enabled": true,
-        "Platforms": [
-            {
-                "Name": "YouTube",
-                "Url": "https://www.youtube.com",
-                "Description": "The largest video-sharing platform."
-            },
-            {
-                "Name": "Vimeo",
-                "Url": "https://www.vimeo.com",
-                "Description": "A platform for high-quality video content."
-            },
-            {
-                "Name": "Dailymotion",
-                "Url": "https://www.dailymotion.com",
-                "Description": "A popular video-sharing website."
-            },
-            {
-                "Name": "Twitch",
-                "Url": "https://www.twitch.tv",
-                "Description": "A live streaming platform for gamers."
-            },
-            {
-                "Name": "TikTok",
-                "Url": "https://www.tiktok.com",
-                "Description": "A platform for short-form mobile videos."
-            }
-        ]
-    },
-    {
-        "Title": "Audio",
-        "Description": "Platforms for streaming and sharing audio content.",
-        "Enabled": true,
-        "Platforms": [
-            {
-                "Name": "Spotify",
-                "Url": "https://www.spotify.com",
-                "Description": "A music streaming service."
-            },
-            {
-                "Name": "Apple Music",
-                "Url": "https://www.apple.com/music",
-                "Description": "Apple's music streaming service."
-            },
-            {
-                "Name": "SoundCloud",
-                "Url": "https://www.soundcloud.com",
-                "Description": "A platform for sharing and discovering music."
-            },
-            {
-                "Name": "Tidal",
-                "Url": "https://www.tidal.com",
-                "Description": "A high-fidelity music streaming service."
-            },
-            {
-                "Name": "Deezer",
-                "Url": "https://www.deezer.com",
-                "Description": "A music streaming service with a large catalog."
-            }
-        ]
-    },
-    {
-        "Title": "Podcast",
-        "Description": "Platforms for listening to and sharing podcasts.",
-        "Enabled": true,
-        "Platforms": [
-            {
-                "Name": "Apple Podcasts",
-                "Url": "https://www.apple.com/apple-podcasts/",
-                "Description": "Apple's podcast platform."
-            },
-            {
-                "Name": "Google Podcasts",
-                "Url": "https://podcasts.google.com",
-                "Description": "Google's podcast service."
-            },
-            {
-                "Name": "Spotify Podcasts",
-                "Url": "https://www.spotify.com/podcasts",
-                "Description": "Spotify's podcast service."
-            },
-            {
-                "Name": "Stitcher",
-                "Url": "https://www.stitcher.com",
-                "Description": "A podcast app with a large selection."
-            },
-            {
-                "Name": "Pocket Casts",
-                "Url": "https://www.pocketcasts.com",
-                "Description": "A podcast app for discovering and managing podcasts."
-            }
-        ]
-    },
-    {
-        "Title": "Blogging/Writing",
-        "Description": "Platforms for blogging and writing.",
-        "Enabled": true,
-        "Platforms": [
-            {
-                "Name": "Medium",
-                "Url": "https://www.medium.com",
-                "Description": "A platform for publishing and reading articles."
-            },
-            {
-                "Name": "Substack",
-                "Url": "https://www.substack.com",
-                "Description": "A platform for writing and sending newsletters."
-            },
-            {
-                "Name": "WordPress",
-                "Url": "https://www.wordpress.com",
-                "Description": "A popular content management system."
-            },
-            {
-                "Name": "Ghost",
-                "Url": "https://www.ghost.org",
-                "Description": "A professional publishing platform."
-            },
-            {
-                "Name": "Blogger",
-                "Url": "https://www.blogger.com",
-                "Description": "Google's blogging platform."
-            }
-        ]
-    },
-    {
-        "Title": "Social Media",
-        "Description": "Platforms for social networking and media sharing.",
-        "Enabled": true,
-        "Platforms": [
-            {
-                "Name": "Instagram",
-                "Url": "https://www.instagram.com",
-                "Description": "A social network for sharing photos and videos."
-            },
-            {
-                "Name": "Facebook",
-                "Url": "https://www.facebook.com",
-                "Description": "A social networking site."
-            },
-            {
-                "Name": "Twitter",
-                "Url": "https://www.twitter.com",
-                "Description": "A microblogging and social networking service."
-            },
-            {
-                "Name": "Snapchat",
-                "Url": "https://www.snapchat.com",
-                "Description": "A multimedia messaging app."
-            },
-            {
-                "Name": "LinkedIn",
-                "Url": "https://www.linkedin.com",
-                "Description": "A professional networking site."
-            }
-        ]
-    },
-    {
-        "Title": "Photography",
-        "Description": "Platforms for sharing and hosting photos.",
-        "Enabled": true,
-        "Platforms": [
-            {
-                "Name": "Flickr",
-                "Url": "https://www.flickr.com",
-                "Description": "An image and video hosting service."
-            },
-            {
-                "Name": "500px",
-                "Url": "https://www.500px.com",
-                "Description": "A community for photographers."
-            },
-            {
-                "Name": "SmugMug",
-                "Url": "https://www.smugmug.com",
-                "Description": "A platform for photo sharing and hosting."
-            },
-            {
-                "Name": "Unsplash",
-                "Url": "https://www.unsplash.com",
-                "Description": "A website for free high-resolution photos."
-            }
-        ]
-    },
-    {
         "Title": "Livestreaming",
         "Description": "Platforms for live streaming content.",
         "Enabled": true,
         "Platforms": [
+            {
+                "Name": "Twitch",
+                "Url": "https://www.twitch.tv",
+                "Description": "A platform for live streaming, primarily for gamers."
+            },
             {
                 "Name": "YouTube Live",
                 "Url": "https://www.youtube.com/live",
@@ -200,11 +18,6 @@
                 "Name": "Facebook Live",
                 "Url": "https://www.facebook.com/live",
                 "Description": "Facebook's live streaming service."
-            },
-            {
-                "Name": "Twitch",
-                "Url": "https://www.twitch.tv",
-                "Description": "A platform for live streaming, primarily for gamers."
             },
             {
                 "Name": "Instagram Live",
@@ -219,19 +32,83 @@
         ]
     },
     {
-        "Title": "Courses/Education",
-        "Description": "Platforms for online learning and courses.",
+        "Title": "Webinars",
+        "Description": "Platforms for hosting webinars.",
         "Enabled": true,
         "Platforms": [
             {
-                "Name": "Udemy",
-                "Url": "https://www.udemy.com",
-                "Description": "A platform for online courses."
+                "Name": "Zoom",
+                "Url": "https://www.zoom.us",
+                "Description": "A platform for video conferencing and webinars."
             },
             {
-                "Name": "Coursera",
-                "Url": "https://www.coursera.org",
-                "Description": "An online learning platform offering courses."
+                "Name": "Webex",
+                "Url": "https://www.webex.com",
+                "Description": "A web and video conferencing service."
+            },
+            {
+                "Name": "GoToMeeting",
+                "Url": "https://www.gotomeeting.com",
+                "Description": "A platform for online meetings and webinars."
+            },
+            {
+                "Name": "Microsoft Teams",
+                "Url": "https://www.microsoft.com/en-us/microsoft-teams/group-chat-software",
+                "Description": "A collaboration app for work groups and webinars."
+            },
+            {
+                "Name": "ClickMeeting",
+                "Url": "https://www.clickmeeting.com",
+                "Description": "A webinar hosting and online meeting platform."
+            }
+        ]
+    },
+    {
+        "Title": "Virtual Conferences",
+        "Description": "Platforms for hosting virtual conferences.",
+        "Enabled": true,
+        "Platforms": [
+            {
+                "Name": "Hopin",
+                "Url": "https://hopin.com",
+                "Description": "A platform for virtual events and conferences."
+            },
+            {
+                "Name": "Airmeet",
+                "Url": "https://www.airmeet.com",
+                "Description": "A platform for hosting virtual events and meetings."
+            },
+            {
+                "Name": "Bizzabo",
+                "Url": "https://www.bizzabo.com",
+                "Description": "An event management software for virtual conferences."
+            },
+            {
+                "Name": "vFairs",
+                "Url": "https://www.vfairs.com",
+                "Description": "A platform for virtual conferences and trade shows."
+            },
+            {
+                "Name": "ON24",
+                "Url": "https://www.on24.com",
+                "Description": "A platform for digital experiences and virtual events."
+            }
+        ]
+    },
+    {
+        "Title": "Workshops and Classes",
+        "Description": "Platforms for online workshops and classes.",
+        "Enabled": true,
+        "Platforms": [
+            {
+                "Name": "Skillshare",
+                "Url": "https://www.skillshare.com",
+                "Description": "An online learning community with thousands of classes."
+            },
+            {
+                "Name": "Udemy",
+                "Url": "https://www.udemy.com",
+                "Description": "A platform offering a wide range of online courses."
             },
             {
                 "Name": "Teachable",
@@ -239,78 +116,46 @@
                 "Description": "A platform for creating and selling online courses."
             },
             {
-                "Name": "Skillshare",
-                "Url": "https://www.skillshare.com",
-                "Description": "An online learning community."
+                "Name": "Coursera",
+                "Url": "https://www.coursera.org",
+                "Description": "An online learning platform with courses from top universities."
             },
             {
                 "Name": "Thinkific",
                 "Url": "https://www.thinkific.com",
-                "Description": "A platform for creating and selling online courses."
+                "Description": "A platform for creating, marketing, and selling online courses."
             }
         ]
     },
     {
-        "Title": "Art/Design",
-        "Description": "Platforms for sharing and discovering art and design work.",
+        "Title": "Networking Events",
+        "Description": "Platforms for organizing and participating in networking events.",
         "Enabled": true,
         "Platforms": [
             {
-                "Name": "Behance",
-                "Url": "https://www.behance.net",
-                "Description": "A platform to showcase and discover creative work."
+                "Name": "LinkedIn Events",
+                "Url": "https://www.linkedin.com",
+                "Description": "Professional networking events hosted on LinkedIn."
             },
             {
-                "Name": "Dribbble",
-                "Url": "https://www.dribbble.com",
-                "Description": "A community for designers to share their work."
+                "Name": "Meetup",
+                "Url": "https://www.meetup.com",
+                "Description": "A platform for finding and building local communities."
             },
             {
-                "Name": "DeviantArt",
-                "Url": "https://www.deviantart.com",
-                "Description": "An online community for artists and art enthusiasts."
+                "Name": "Shindig",
+                "Url": "https://www.shindig.com",
+                "Description": "A platform for large-scale online events and meetups."
             },
             {
-                "Name": "ArtStation",
-                "Url": "https://www.artstation.com",
-                "Description": "A platform for artists to showcase their work."
+                "Name": "Eventbrite",
+                "Url": "https://www.eventbrite.com",
+                "Description": "A platform for discovering and creating events."
             },
             {
-                "Name": "Society6",
-                "Url": "https://www.society6.com",
-                "Description": "A marketplace for independent artists."
-            }
-        ]
-    },
-    {
-        "Title": "News/Journalism",
-        "Description": "Platforms for news and journalism.",
-        "Enabled": true,
-        "Platforms": [
-            {
-                "Name": "Medium",
-                "Url": "https://www.medium.com",
-                "Description": "A platform for writers to share their stories."
-            },
-            {
-                "Name": "Substack",
-                "Url": "https://www.substack.com",
-                "Description": "A platform for writing and sending email newsletters."
-            },
-            {
-                "Name": "WordPress",
-                "Url": "https://www.wordpress.com",
-                "Description": "A platform for creating websites and blogs."
-            },
-            {
-                "Name": "LinkedIn Pulse",
-                "Url": "https://www.linkedin.com/pulse",
-                "Description": "LinkedIn's publishing platform."
-            },
-            {
-                "Name": "Blogger",
-                "Url": "https://www.blogger.com",
-                "Description": "Google's blogging platform."
+                "Name": "Braindate",
+                "Url": "https://www.braindate.com",
+                "Description": "A platform for knowledge sharing and networking events."
             }
         ]
     }

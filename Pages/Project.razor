@@ -1,0 +1,530 @@
+@page "/project"
+@inject LocalDataService DataService
+
+<title>Rhyme Engine | Project</title>
+
+<div class="container mt-4 text-light">
+    <!-- Profile Header -->
+    <div class="row">
+        <div class="col">
+            <div class="profile-header text-center">
+                <img src="artist-profile-picture.jpg" alt="Artist Profile Picture" class="profile-picture rounded-circle border border-secondary">
+                <h1 class="artist-name mt-2">Artist Name</h1>
+                <p class="artist-bio">Brief bio about the artist.</p>
+                <div class="social-links">
+                    <a href="https://twitter.com/artist" target="_blank" class="btn btn-outline-light btn-sm me-1">Twitter</a>
+                    <a href="https://instagram.com/artist" target="_blank" class="btn btn-outline-light btn-sm me-1">Instagram</a>
+                    <a href="https://facebook.com/artist" target="_blank" class="btn btn-outline-light btn-sm">Facebook</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="d-flex flex-row bd-highlight mb-3 row mt-4 row row-cols-1 row-cols-md-1 row-cols-lg-2 row-cols-xxl-3 g-3">
+    <!-- Featured Song -->
+        <div class="col">
+            <div class="card bg-dark">
+                <div class="card-header bg-light rounded-pill">
+                    <h5 class="mb-0"><strong>Featured Song</strong></h5>
+                </div>
+                <div class="card-body">
+                    <audio controls class="w-100">
+                        <source src="path-to-featured-song.mp3" type="audio/mp3">
+                        Your browser does not support the audio element.
+                    </audio>
+                    <div class="song-metadata mt-3">
+                        <p><strong>Title:</strong> Song Title</p>
+                        <p><strong>Producer:</strong> Producer Name</p>
+                        <p><strong>Album:</strong> Album Name</p>
+                        <p><strong>Release Date:</strong> Release Date</p>
+                        <p><strong>Genre:</strong> Genre</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    <!-- Additional Content -->
+        <div class="col">
+            <div class="card bg-dark">
+                <div class="card-header bg-light rounded-pill">
+                    <h5 class="mb-0"><strong>Additional Content</strong></h5>
+                </div>
+                <div class="card-body">
+                    <div class="music-videos mb-3">
+                        <h6><strong>Music Videos</strong></h6>
+                        <iframe src="path-to-music-video" frameborder="0" allowfullscreen class="w-100"></iframe>
+                    </div>
+                    <!-- <div class="interviews mb-3">
+                        <h6><strong>Interviews</strong></h6>
+                        <iframe src="path-to-interview-video" frameborder="0" allowfullscreen class="w-100"></iframe>
+                    </div> -->
+                    <div class="related-content">
+                        <h6><strong>Related Content</strong></h6>
+                        <a href="link-to-related-content">Related Content Title</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    <!-- Metadata Section -->
+        <div class="col">
+            <div class="card bg-dark">
+                <div class="card-header bg-light rounded-pill">
+                    <h5 class="mb-0"><strong>Metadata</strong></h5>
+                </div>
+                <div class="card-body">
+                    <p><strong>Production Credits:</strong> Producer Name</p>
+                    <p><strong>Songwriting Credits:</strong> Songwriter Name</p>
+                    <p><strong>Recording Information:</strong> Recording Details</p>
+                </div>
+            </div>
+        </div>
+
+    <!-- Social Media Reel -->
+        <div class="col">
+            <div class="card bg-dark">
+                <div class="card-header bg-light rounded-pill">
+                    <h5 class="mb-0"><strong>Social Media</strong></h5>
+                </div>
+                <div class="card-body">
+                    <blockquote class="instagram-media" data-instgrm-captioned data-instgrm-permalink="https://www.instagram.com/p/CtPTCz8uMsJ/?utm_source=ig_embed&amp;utm_campaign=loading" data-instgrm-version="14" style="background:#FFF; border:0; border-radius:3px; box-shadow:0 0 1px 0 rgba(0,0,0,0.5),0 1px 10px 0 rgba(0,0,0,0.15); margin: 1px; max-width:540px; min-width:326px; padding:0; width:99.375%; width:-webkit-calc(100% - 2px); width:calc(100% - 2px);">
+                        <div style="padding:16px;">
+                            <a href="https://www.instagram.com/p/CtPTCz8uMsJ/?utm_source=ig_embed&amp;utm_campaign=loading" style="background:#FFFFFF; line-height:0; padding:0 0; text-align:center; text-decoration:none; width:100%;" target="_blank">
+                                <div style="display: flex; flex-direction: row; align-items: center;">
+                                    <div style="background-color: #F4F4F4; border-radius: 50%; flex-grow: 0; height: 40px; margin-right: 14px; width: 40px;"></div>
+                                    <div style="display: flex; flex-direction: column; flex-grow: 1; justify-content: center;">
+                                        <div style="background-color: #F4F4F4; border-radius: 4px; flex-grow: 0; height: 14px; margin-bottom: 6px; width: 100px;"></div>
+                                        <div style="background-color: #F4F4F4; border-radius: 4px; flex-grow: 0; height: 14px; width: 60px;"></div>
+                                    </div>
+                                </div>
+                                <div style="padding: 19% 0;"></div>
+                                <div style="display:block; height:50px; margin:0 auto 12px; width:50px;">
+                                    <svg width="50px" height="50px" viewBox="0 0 60 60" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="https://www.w3.org/1999/xlink">
+                                        <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                                            <g transform="translate(-511.000000, -20.000000)" fill="#000000">
+                                                <g>
+                                                    <path d="M556.869,30.41 C554.814,30.41 553.148,32.076 553.148,34.131 C553.148,36.186 554.814,37.852 556.869,37.852 C558.924,37.852 560.59,36.186 560.59,34.131 C560.59,32.076 558.924,30.41 556.869,30.41 M541,60.657 C535.114,60.657 530.342,55.887 530.342,50 C530.342,44.114 535.114,39.342 541,39.342 C546.887,39.342 551.658,44.114 551.658,50 C551.658,55.887 546.887,60.657 541,60.657 M541,33.886 C532.1,33.886 524.886,41.1 524.886,50 C524.886,58.899 532.1,66.113 541,66.113 C549.9,66.113 557.115,58.899 557.115,50 C557.115,41.1 549.9,33.886 541,33.886 M565.378,62.101 C565.244,65.022 564.756,66.606 564.346,67.663 C563.803,69.06 563.154,70.057 562.106,71.106 C561.058,72.155 560.06,72.803 558.662,73.347 C557.607,73.757 556.021,74.244 553.102,74.378 C549.944,74.521 548.997,74.552 541,74.552 C533.003,74.552 532.056,74.521 528.898,74.378 C525.979,74.244 524.393,73.757 523.338,73.347 C521.94,72.803 520.942,72.155 519.894,71.106 C518.846,70.057 518.197,69.06 517.654,67.663 C517.244,66.606 516.755,65.022 516.623,62.101 C516.479,58.943 516.448,57.996 516.448,50 C516.448,42.003 516.479,41.056 516.623,37.899 C516.755,34.978 517.244,33.391 517.654,32.338 C518.197,30.938 518.846,29.942 519.894,28.894 C520.942,27.846 521.94,27.196 523.338,26.654 C524.393,26.244 525.979,25.756 528.898,25.623 C532.057,25.479 533.004,25.448 541,25.448 C548.997,25.448 549.943,25.479 553.102,25.623 C556.021,25.756 557.607,26.244 558.662,26.654 C560.06,27.196 561.058,27.846 562.106,28.894 C563.154,29.942 563.803,30.938 564.346,32.338 C564.756,33.391 565.244,34.978 565.378,37.899 C565.522,41.056 565.552,42.003 565.552,50 C565.552,57.996 565.522,58.943 565.378,62.101 M570.82,37.631 C570.674,34.438 570.167,32.258 569.425,30.349 C568.659,28.377 567.633,26.702 565.965,25.035 C564.297,23.368 562.623,22.342 560.652,21.575 C558.743,20.834 556.562,20.326 553.369,20.18 C550.169,20.033 549.148,20 541,20 C532.853,20 531.831,20.033 528.631,20.18 C525.438,20.326 523.257,20.834 521.349,21.575 C519.376,22.342 517.703,23.368 516.035,25.035 C514.368,26.702 513.342,28.377 512.574,30.349 C511.834,32.258 511.326,34.438 511.181,37.631 C511.035,40.831 511,41.851 511,50 C511,58.147 511.035,59.17 511.181,62.369 C511.326,65.562 511.834,67.743 512.574,69.651 C513.342,71.625 514.368,73.296 516.035,74.965 C517.703,76.634 519.376,77.658 521.349,78.425 C523.257,79.167 525.438,79.673 528.631,79.82 C531.831,79.965 532.853,80.001 541,80.001 C549.148,80.001 550.169,79.965 553.369,79.82 C556.562,79.673 558.743,79.167 560.652,78.425 C562.623,77.658 564.297,76.634 565.965,74.965 C567.633,73.296 568.659,71.625 569.425,69.651 C570.167,67.743 570.674,65.562 570.82,62.369 C570.966,59.17 571,58.147 571,50 C571,41.851 570.966,40.831 570.82,37.631"></path>
+                                                </g>
+                                            </g>
+                                        </g>
+                                    </svg>
+                                </div>
+                                <div style="padding-top: 8px;">
+                                    <div style="color:#3897f0; font-family:Arial,sans-serif; font-size:14px; font-style:normal; font-weight:550; line-height:18px;">View this post on Instagram</div>
+                                </div>
+                                <div style="padding: 12.5% 0;"></div>
+                                <div style="display: flex; flex-direction: row; margin-bottom: 14px; align-items: center;">
+                                    <div>
+                                        <div style="background-color: #F4F4F4; border-radius: 50%; height: 12.5px; width: 12.5px; transform: translateX(0px) translateY(7px);"></div>
+                                        <div style="background-color: #F4F4F4; height: 12.5px; transform: rotate(-45deg) translateX(3px) translateY(1px); width: 12.5px; flex-grow: 0; margin-right: 14px; margin-left: 2px;"></div>
+                                        <div style="background-color: #F4F4F4; border-radius: 50%; height: 12.5px; width: 12.5px; transform: translateX(9px) translateY(-18px);"></div>
+                                    </div>
+                                    <div style="margin-left: 8px;">
+                                        <div style=" background-color: #F4F4F4; border-radius: 50%; flex-grow: 0; height: 20px; width: 20px;"></div>
+                                        <div style="width: 0; height: 0; border-top: 2px solid transparent; border-left: 6px solid #f4f4f4; border-bottom: 2px solid transparent; transform: translateX(16px) translateY(-4px) rotate(30deg)"></div>
+                                    </div>
+                                    <div style="margin-left: auto;">
+                                        <div style=" width: 0px; border-top: 8px solid #F4F4F4; border-right: 8px solid transparent; transform: translateY(16px);"></div>
+                                        <div style=" background-color: #F4F4F4; flex-grow: 0; height: 12px; width: 16px; transform: translateY(-4px);"></div>
+                                        <div style="width: 0; height: 0; border-top: 8px solid #F4F4F4; border-left: 8px solid transparent; transform: translateY(-4px) translateX(8px);"></div>
+                                    </div>
+                                </div>
+                                <div style="display: flex; flex-direction: column; flex-grow: 1; justify-content: center; margin-bottom: 24px;">
+                                    <div style="background-color: #F4F4F4; border-radius: 4px; flex-grow: 0; height: 14px; margin-bottom: 6px; width: 224px;"></div>
+                                    <div style="background-color: #F4F4F4; border-radius: 4px; flex-grow: 0; height: 14px; width: 144px;"></div>
+                                </div>
+                            </a>
+                            <p style="color:#c9c8cd; font-family:Arial,sans-serif; font-size:14px; line-height:17px; margin-bottom:0; margin-top:8px; overflow:hidden; padding:8px 0 7px; text-align:center; text-overflow:ellipsis; white-space:nowrap;">
+                                <a href="https://www.instagram.com/p/CtPTCz8uMsJ/?utm_source=ig_embed&amp;utm_campaign=loading" style="color:#c9c8cd; font-family:Arial,sans-serif; font-size:14px; font-style:normal; font-weight:normal; line-height:17px; text-decoration:none;" target="_blank">A post shared by T Smith (freeinatlanta)</a>
+                            </p>
+                        </div>
+                    </blockquote>
+                    <script async src="//www.instagram.com/embed.js"></script>
+                </div>
+            </div>
+        </div>
+
+    
+
+    <!-- Song Review Section -->
+<div class="col">
+            <div class="card bg-dark">
+                <div class="card-header bg-light rounded-pill">
+                    <h5 class="mb-0"><strong>Song Review</strong></h5>
+                </div>
+                <div class="card-body">
+                    <p>You are the Senior Director of Time magazine's music review column. Provide me a review of this melodic hip hop song based on the following lyrics: ....</p>
+                </div>
+            </div>
+        </div>
+
+
+    <!-- Checklist Section -->
+        <!-- <div class="col">
+            <div class="card bg-dark">
+                <div class="card-header bg-light rounded-pill">
+                    <h5 class="mb-0"><strong>Checklist</strong></h5>
+                </div>
+                <div class="card-body">
+                    <table class="table text-light">
+                        <thead class="text-info">
+                            <tr>
+                                <th>Item</th>
+                                <th>Status</th>
+                                <th>Note</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Artist Bio</td>
+                                <td>❌</td>
+                                <td>Biography and headshot of artist</td>
+                            </tr>
+                            <tr>
+                                <td>Pro Tools Session</td>
+                                <td>❌</td>
+                                <td>Use template for efficiency, prevent clipping, turn off ac/heat/fan, close door, place bed mattress behind artist when when recording, identify song BPM, key and manage file size.</td>
+                            </tr>
+                            <tr>
+                                <td>Lyrics</td>
+                                <td>❌</td>
+                                <td>Adhere to standard karaoke formats, standards and conventions.</td>
+                            </tr>
+                            <tr>
+                                <td>Song Review</td>
+                                <td>❌</td>
+                                <td>❌</td>
+                            </tr>
+                            <tr>
+                                <td>Producer Agreement</td>
+                                <td>❌</td>
+                                <td>❌</td>
+                            </tr>
+                            <tr>
+                                <td>Audio files</td>
+                                <td>❌</td>
+                                <td>Protools session, music stems, songwriter reference track,acapella, performance, clean, explicit in MP3, WAV formats stored in shareable cloud storage.</td>
+                            </tr>
+                            <tr>
+                                <td>MP3 IDV3 Tag</td>
+                                <td>❌</td>
+                                <td>Genre, album, producer credit, bpm, date, cover art</td>
+                            </tr>
+                            <tr>
+                                <td>Split Sheets</td>
+                                <td>❌</td>
+                                <td>❌</td>
+                            </tr>
+                            <tr>
+                                <td>Reference Track</td>
+                                <td>Complete</td>
+                                <td>❌</td>
+                            </tr>
+                            <tr>
+                                <td>Artist Recording</td>
+                                <td>❌</td>
+                                <td>❌</td>
+                            </tr>
+                            <tr>
+                                <td>RIAA Submission/Compliance</td>
+                                <td>❌</td>
+                                <td>Qualify for plaque</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div> -->
+   
+
+    <!-- Discography Section -->
+        <div class="col">
+            <div class="card bg-dark">
+                <div class="card-header bg-light rounded-pill">
+                    <h5 class="mb-0"><strong>Discography</strong></h5>
+                </div>
+                <div class="card-body">
+                    <ul class="list-unstyled">
+                        <li class="media mb-3">
+                            <img src="album-cover.jpg" alt="Album Cover" class="mr-3" style="width: 64px;">
+                            <div class="media-body">
+                                <h6 class="mt-0 mb-1"><strong>Album Title</strong></h6>
+                                <p>Release Date</p>
+                            </div>
+                        </li>
+                        <!-- Repeat for other albums/singles -->
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+    <!-- Photo Gallery Section -->
+        <div class="col">
+            <div class="card bg-dark">
+                <div class="card-header bg-light rounded-pill">
+                    <h5 class="mb-0"><strong>Photo Gallery</strong></h5>
+                </div>
+                <div class="card-body">
+                    <div class="image-grid">
+                        <img src="photo1.jpg" alt="Photo 1" class="img-thumbnail me-2 mb-2">
+                        <img src="photo2.jpg" alt="Photo 2" class="img-thumbnail me-2 mb-2">
+                        <!-- Repeat for other photos -->
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    <!-- Upcoming Events Section -->
+        <div class="col">
+            <div class="card bg-dark">
+                <div class="card-header bg-light rounded-pill">
+                    <h5 class="mb-0"><strong>Upcoming Events</strong></h5>
+                </div>
+                <div class="card-body">
+                    <ul class="list-unstyled">
+                        <li class="mb-3">
+                            <h6><strong>Event Name</strong></h6>
+                            <p>Event Date</p>
+                            <p>Event Location</p>
+                        </li>
+                        <!-- Repeat for other events -->
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+    <!-- Fan Interaction Section -->
+        <div class="col">
+            <div class="card bg-dark">
+                <div class="card-header bg-light rounded-pill">
+                    <h5 class="mb-0"><strong>Fan Interaction</strong></h5>
+                </div>
+                <div class="card-body">
+                    <!-- Embed social media posts or add comment section -->
+                </div>
+            </div>
+        </div>
+
+    <!-- Merchandise Store Section -->
+        <div class="col">
+            <div class="card bg-dark">
+                <div class="card-header bg-light rounded-pill">
+                    <h5 class="mb-0"><strong>Merchandise Store</strong></h5>
+                </div>
+                <div class="card-body">
+                    <ul class="list-unstyled">
+                        <li class="media mb-3">
+                            <img src="merch-item1.jpg" alt="Merch Item 1" class="mr-3" style="width: 64px;">
+                            <div class="media-body">
+                                <h6 class="mt-0 mb-1"><strong>Item Name</strong></h6>
+                                <p>Price</p>
+                                <button class="btn btn-primary btn-sm">Buy Now</button>
+                            </div>
+                        </li>
+                        <!-- Repeat for other merch items -->
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+    <!-- Press and Media Section -->
+        <div class="col">
+            <div class="card bg-dark">
+                <div class="card-header bg-light rounded-pill">
+                    <h5 class="mb-0"><strong>Press and Media</strong></h5>
+                </div>
+                <div class="card-body">
+                    <ul class="list-unstyled">
+                        <li class="mb-3">
+                            <a href="article-link" target="_blank"><strong>Article Title</strong></a>
+                            <p>Publication Name</p>
+                        </li>
+                        <!-- Repeat for other media items -->
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+    <!-- Collaborations Section -->
+        <div class="col">
+            <div class="card bg-dark">
+                <div class="card-header bg-light rounded-pill">
+                    <h5 class="mb-0"><strong>Collaborations</strong></h5>
+                </div>
+                <div class="card-body">
+                    <ul class="list-unstyled">
+                        <li class="mb-3">
+                            <h6><strong>Collaborator Name</strong></h6>
+                            <p>Project Title</p>
+                        </li>
+                        <!-- Repeat for other collaborations -->
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+    <!-- Artist Booking Section -->
+        <div class="col">
+            <div class="card bg-dark">
+                <div class="card-header bg-light rounded-pill">
+                    <h5 class="mb-0"><strong>Artist Booking</strong></h5>
+                </div>
+                <div class="card-body">
+                    <form>
+                        <div class="mb-3">
+                            <label for="bookingEmail" class="form-label">Booking Email</label>
+                            <input type="email" class="form-control" id="bookingEmail" placeholder="Enter your booking email">
+                        </div>
+                        <div class="mb-3">
+                            <label for="bookingPhone" class="form-label">Booking Phone</label>
+                            <input type="tel" class="form-control" id="bookingPhone" placeholder="Enter your booking phone number">
+                        </div>
+                        <div class="mb-3">
+                            <label for="bookingWebsite" class="form-label">Booking Website</label>
+                            <input type="url" class="form-control" id="bookingWebsite" placeholder="Enter your booking website URL">
+                        </div>
+                        <div class="mb-3">
+                            <label for="bookingInfo" class="form-label">Additional Booking Info</label>
+                            <textarea class="form-control" id="bookingInfo" rows="3" placeholder="Enter any additional booking information"></textarea>
+                        </div>
+                        <button type="button" class="btn btn-primary" @onclick="ShowBookingSuccess">Save Booking Info</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+
+        <!-- Lyrics Section -->
+        <div class="col">
+            <div class="card bg-dark">
+                <div class="card-header bg-light rounded-pill">
+                    <h5 class="mb-0"><strong>Lyrics</strong></h5>
+                </div>
+                <div class="card-body ">
+                    <pre class="text-light">
+<code>
+Verse 1
+It be the closest ones around you that drain you
+I just thought I'd take a lil time to retrain you
+
+energy vampires seeking out angels
+misery love company
+now wonder I'm single
+
+She tailored her body 
+like a blazer miami
+now i call her soul food
+cuz she went bought some yamis
+
+I aint even get my rapper kit yet
+I need a chain
+I need a watch
+I need a sick vette
+yes
+
+I need to relieve
+relieve stress
+
+Riding round with them jiggas
+if i gets stopped
+It is what it is
+
+When Im on my trap phone
+and my son in the car
+I tell him to cover his ears
+
+Naw for real
+I had been covered for real
+Jesus had took the wheel
+Paid the bills
+gave me some time to chill
+
+Bridge
+
+Seeking a lil fortitude
+in my solitude
+Got it running smooth
+And it's solid too
+
+Through the ups and down
+I'm still choosing you
+Got no time to waste
+I'm gonna see it through
+
+Verse 2
+
+It be ya closest one
+But I am the chosen one
+I get to them racks
+like what you put clothing on
+Before I put clothing on
+
+I been at this shit
+Since oprah on
+And I put both us on
+
+You aint no hustler
+You peewee with that green
+I'm calling you bulbasaur
+
+What you staying sober for?
+memory ever been on low before?
+I can't seem to remember nothing
+Had a discussion you was bluffin
+
+Communicate your thoughts
+Cause I can't read em
+Let em go cause I aint need him
+
+I hurt him
+I hurt myself
+So how I'm pose to beat him?
+
+It be the closest ones
+Say that they gone fight
+And they be the first to run
+
+It be the closest ones
+That go and steal your bread
+And have you feeling dumb
+
+It be ya closest ones
+That wanna hear you say it
+but not do it
+Put that block up
+Things get shakey
+Just like jenga they gone pull it
+
+Bridge
+
+Seeking a lil fortitude
+in my solitude
+Got it running smooth
+And it's solid too
+
+Through the ups and down
+I'm still choosing you
+Got no time to waste
+I'm gonna see it through
+
+Hook 1
+
+It's cold outside
+It aint nobody round to save you
+Cause even when it's hot outside
+it be the closest ones around you that drain you
+
+End
+</code>
+                    </pre>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+@code {
+    private void ShowBookingSuccess()
+    {
+        
+    }
+}

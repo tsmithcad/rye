@@ -1,0 +1,39 @@
+@page "/song-metadata"
+@code {
+    [Parameter]
+    public ArtistOnboardingModel Model { get; set; }
+    private void HandleCoverArtChange(InputFileChangeEventArgs e)
+    {
+        var file = e.File;
+        // Handle file upload
+    }
+}
+
+<div class="mb-3">
+    <label for="songTitle" class="form-label">Song Title</label>
+    <InputText id="songTitle" class="form-control" @bind-Value="Model.SongTitle" />
+</div>
+<div class="mb-3">
+    <label for="producerName" class="form-label">Producer Name</label>
+    <InputText id="producerName" class="form-control" @bind-Value="Model.ProducerName" />
+</div>
+<div class="mb-3">
+    <label for="albumName" class="form-label">Album Name</label>
+    <InputText id="albumName" class="form-control" @bind-Value="Model.AlbumName" />
+</div>
+<div class="mb-3">
+    <label for="releaseDate" class="form-label">Release Date</label>
+    <InputDate id="releaseDate" class="form-control" @bind-Value="Model.ReleaseDate" />
+</div>
+<div class="mb-3">
+    <label for="genre" class="form-label">Genre</label>
+    <InputText id="genre" class="form-control" @bind-Value="Model.Genre" />
+</div>
+<div class="mb-3">
+    <label for="songDuration" class="form-label">Song Duration</label>
+    <!-- <InputTime id="songDuration" class="form-control" @bind-Value="Model.SongDuration" /> -->
+</div>
+<div class="mb-3">
+    <label for="coverArt" class="form-label">Cover Art</label>
+    <InputFile id="coverArt" class="form-control" OnChange="HandleCoverArtChange" />
+</div>

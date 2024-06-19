@@ -1,0 +1,14 @@
+@page "/credits"
+@code {
+    [Parameter]
+    public ArtistOnboardingModel Model { get; set; }
+}
+
+<div class="mb-3">
+    <label for="songwriterName" class="form-label">Songwriter Name</label>
+    <InputText id="songwriterName" class="form-control" @bind-Value="Model.SongwriterName" />
+</div>
+<div class="mb-3">
+    <label for="recordingDetails" class="form-label">Recording Details</label>
+    <InputTextArea id="recordingDetails" class="form-control" @bind-Value="Model.RecordingDetails" />
+</div>

@@ -1,21 +1,21 @@
-@page "/content"
+@page "/meta-data"
 @inject LocalDataService DataService
 
-<title>Rhyme Engine | Content</title>
+<title>Rhyme Engine | Metadata</title>
 
 <header>
     <p>Manage your accounts on each Digital Service Provider (DSP) to maximize your content.</p>
 </header>
 
-<ContentCategoryDisplay Title="Content" ContentCategories="@contentCategories" />
+<ContentCategoryDisplay Title="Meta Data" ContentCategories="@contentCategories" />
 
-<ContentChecklist />
+
 
 @code {
     private List<ContentCategory> contentCategories;
 
     protected override async Task OnInitializedAsync()
     {
-        contentCategories = await DataService.GetContentCategoriesAsync();
+        contentCategories = await DataService.GetMetadataFieldsAsync();
     }
 }
