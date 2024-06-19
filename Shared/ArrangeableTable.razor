@@ -1,4 +1,4 @@
-@inject HttpClient HttpClient
+@inject LocalDataService DataService
 
 @code {
     private List<PageData> pageDataList = new List<PageData>();
@@ -7,8 +7,8 @@
     {
         try
         {
-            string json = await HttpClient.GetStringAsync("/data/futurePages.json");
-            pageDataList = JsonSerializer.Deserialize<List<PageData>>(json);
+            pageDataList = await DataService.GetPageDataAsync();
+            pageDataList = pageDataList.OrderBy(p => p.PageName).ToList();
         }
         catch (Exception ex)
         {
@@ -16,6 +16,7 @@
         }
     }
 }
+
 
 <div class="table-responsive small">
     <table class="table table-borderless table-sm text-light">

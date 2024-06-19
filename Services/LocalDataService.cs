@@ -63,4 +63,9 @@ public class LocalDataService
         var response = await _httpClient.GetStreamAsync("data/products.json");
         return await JsonSerializer.DeserializeAsync<List<Product>>(response);
     }
+    public async Task<List<PageData>> GetPageDataAsync()
+    {
+        string json = await _httpClient.GetStringAsync("/data/futurePages.json");
+        return JsonSerializer.Deserialize<List<PageData>>(json);
+    }
 }

@@ -9,5 +9,6 @@ public interface ILocalDataService
     Task<List<ContentCategory>> GetMetadataFieldsAsync();
     Task<List<UpdateItem>> GetUpdatesAsync();
     Task<IEnumerable<Product>> GetProductsAsync();
+    Task<List<PageData>> GetPageDataAsync();
 }
 
