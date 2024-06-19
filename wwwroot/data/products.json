@@ -1,0 +1,146 @@
+[
+    {
+        "ProductID": "1",
+        "ProductName": "Single Lesson Plan",
+        "Description": "Access to a detailed lesson plan on a specific music topic.",
+        "Price": 1,
+        "PurchaseType": "One-Time Purchase",
+        "MarketingMessage": "Master a new music skill today with a detailed lesson plan for just $1!",
+        "SubscriptionDuration": ""
+    },
+    {
+        "ProductID": "2",
+        "ProductName": "Music Theory Cheat Sheet",
+        "Description": "Downloadable cheat sheet covering key music theory concepts.",
+        "Price": 1,
+        "PurchaseType": "One-Time Purchase",
+        "MarketingMessage": "Get essential music theory tips at your fingertips for only $1!",
+        "SubscriptionDuration": ""
+    },
+    {
+        "ProductID": "3",
+        "ProductName": "Complete Song Tutorial",
+        "Description": "Step-by-step tutorial for learning to play or sing a specific song.",
+        "Price": 10,
+        "PurchaseType": "One-Time Purchase",
+        "MarketingMessage": "Learn your favorite song with a comprehensive tutorial for just $10!",
+        "SubscriptionDuration": ""
+    },
+    {
+        "ProductID": "4",
+        "ProductName": "Instrument-Specific Warm-Up Exercises",
+        "Description": "Exercises to improve your skills on a specific instrument.",
+        "Price": 10,
+        "PurchaseType": "One-Time Purchase",
+        "MarketingMessage": "Enhance your playing with targeted warm-up exercises for $10!",
+        "SubscriptionDuration": ""
+    },
+    {
+        "ProductID": "5",
+        "ProductName": "Mini-Course on Music Production",
+        "Description": "A concise course covering the basics of music production.",
+        "Price": 20,
+        "PurchaseType": "One-Time Purchase",
+        "MarketingMessage": "Kickstart your music production journey with a mini-course for $20!",
+        "SubscriptionDuration": ""
+    },
+    {
+        "ProductID": "6",
+        "ProductName": "Advanced Music Theory eBook",
+        "Description": "In-depth eBook covering advanced music theory topics.",
+        "Price": 20,
+        "PurchaseType": "One-Time Purchase",
+        "MarketingMessage": "Take your music theory knowledge to the next level for $20!",
+        "SubscriptionDuration": ""
+    },
+    {
+        "ProductID": "7",
+        "ProductName": "Full-Length Course",
+        "Description": "Comprehensive course on a major topic (e.g., songwriting, music production).",
+        "Price": 50,
+        "PurchaseType": "One-Time Purchase",
+        "MarketingMessage": "Become a music expert with our full-length course for $50!",
+        "SubscriptionDuration": ""
+    },
+    {
+        "ProductID": "8",
+        "ProductName": "Exclusive Masterclass Recording",
+        "Description": "Recording of an exclusive masterclass by a renowned musician.",
+        "Price": 50,
+        "PurchaseType": "One-Time Purchase",
+        "MarketingMessage": "Learn from the best with an exclusive masterclass for $50!",
+        "SubscriptionDuration": ""
+    },
+    {
+        "ProductID": "9",
+        "ProductName": "Professional Feedback on Your Music",
+        "Description": "Detailed feedback and critique on your music from a professional.",
+        "Price": 100,
+        "PurchaseType": "One-Time Purchase",
+        "MarketingMessage": "Get expert feedback to refine your music for $100!",
+        "SubscriptionDuration": ""
+    },
+    {
+        "ProductID": "10",
+        "ProductName": "VIP Access to Webinars and Workshops",
+        "Description": "Access to exclusive webinars and workshops for advanced learning.",
+        "Price": 100,
+        "PurchaseType": "One-Time Purchase",
+        "MarketingMessage": "Join elite musicians in exclusive webinars and workshops for $100!",
+        "SubscriptionDuration": ""
+    },
+    {
+        "ProductID": "11",
+        "ProductName": "Weekly Practice Routine",
+        "Description": "Access to a new practice routine every week.",
+        "Price": 1,
+        "PurchaseType": "Subscription",
+        "MarketingMessage": "Stay sharp with a new practice routine delivered weekly for just $1!",
+        "SubscriptionDuration": "Weekly"
+    },
+    {
+        "ProductID": "12",
+        "ProductName": "Weekly Song Breakdown",
+        "Description": "In-depth breakdown of a popular song each week.",
+        "Price": 10,
+        "PurchaseType": "Subscription",
+        "MarketingMessage": "Unlock the secrets of your favorite songs weekly for $10!",
+        "SubscriptionDuration": "Weekly"
+    },
+    {
+        "ProductID": "13",
+        "ProductName": "Monthly Lesson Package",
+        "Description": "Access to a package of new lessons every month.",
+        "Price": 20,
+        "PurchaseType": "Subscription",
+        "MarketingMessage": "Expand your skills with a monthly package of new lessons for $20!",
+        "SubscriptionDuration": "Monthly"
+    },
+    {
+        "ProductID": "14",
+        "ProductName": "Monthly Live Q&A Sessions",
+        "Description": "Join live Q&A sessions with professional musicians.",
+        "Price": 50,
+        "PurchaseType": "Subscription",
+        "MarketingMessage": "Get your questions answered by the pros every month for $50!",
+        "SubscriptionDuration": "Monthly"
+    },
+    {
+        "ProductID": "15",
+        "ProductName": "Annual Learning Path",
+        "Description": "Access to a structured learning path with courses and resources for the entire year.",
+        "Price": 100,
+        "PurchaseType": "Subscription",
+        "MarketingMessage": "Commit to your musical journey with a comprehensive annual learning path for $100!",
+        "SubscriptionDuration": "Annual"
+    },
+    {
+        "ProductID": "16",
+        "ProductName": "All-Access Pass",
+        "Description": "Unlimited access to all courses, resources, and live events.",
+        "Price": 500,
+        "PurchaseType": "Subscription",
+        "MarketingMessage": "Experience the ultimate music education with an all-access pass for $500/year!",
+        "SubscriptionDuration": "Annual"
+    }
+]

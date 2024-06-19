@@ -1,0 +1,30 @@
+<div class="col text-dark small">
+    <div class="card shadow-sm h-100">
+    <div class="card-header bg-light text-light">
+            <h6 class="card-title">@Product.ProductName</h6>
+
+    </div>
+        <img src="@(string.IsNullOrEmpty(Product.ImageUrl) ? "https://via.placeholder.com/150" : Product.ImageUrl)" class="bd-placeholder-img card-img-top" alt="@Product.ProductName">
+
+        <div class="card-body">
+            <h2>@($"${Product.Price}")</h2>
+            @if (Product.PurchaseType == "Subscription")
+            {
+                <p class="card-text text-muted"><small>@($"Subscription: {Product.SubscriptionDuration}")</small></p>
+            }
+
+            <!-- <p class="card-text">@Product.Description</p> -->
+            <p class="card-text">@Product.MarketingMessage</p>
+            
+            
+        </div>
+        <div class="card-footer d-flex justify-content-between align-items-center mt-3">
+                <button class="text-light btn btn-primary btn-sm bg-light">Buy Now</button>
+            </div>
+    </div>
+</div>
+
+@code {
+    [Parameter]
+    public Product Product { get; set; }
+}

@@ -7,5 +7,7 @@ public interface ILocalDataService
     Task<List<ContentCategory>> GetPerformanceRightsOrganizationsAsync();
     Task<List<ContentCategory>> GetEventPlatformsAsync();
     Task<List<ContentCategory>> GetMetadataFieldsAsync();
+    Task<List<UpdateItem>> GetUpdatesAsync();
+    Task<IEnumerable<Product>> GetProductsAsync();
 }
 

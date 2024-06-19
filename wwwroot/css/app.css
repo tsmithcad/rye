@@ -20,9 +20,7 @@
     --text-color: #FFFFFF;
 }
 
-/* #ff91fd
-#fbd7fc
-#e0dac5 */
+
 
 .border-primary{border-color:var(--secondary-color)!important}
 
@@ -289,4 +287,16 @@ a:visited {
 
 .bg-light {
 	background-color: #3a24b9 !important;
+}
+
+.bg-light-pink {
+	background-color: #fbd7fc !important;
+}
+
+.bg-dark-pink {
+	background-color: #ff91fd !important;
+}
+
+.bg-light-brown {
+	background-color: #e0dac5 !important;
 }

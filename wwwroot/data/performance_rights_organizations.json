@@ -55,5 +55,268 @@
         "Platforms": [
             { "Name": "CISAC", "Url": "https://www.cisac.org", "Description": "International Confederation of Societies of Authors and Composers" }
         ]
+    },{
+        "Title": "Japan",
+        "Description": "Organizations for managing performance rights in Japan.",
+        "Enabled": true,
+        "Platforms": [
+            { "Name": "JASRAC", "Url": "https://www.jasrac.or.jp", "Description": "Japanese Society for Rights of Authors, Composers and Publishers" }
+        ]
+    },
+    {
+        "Title": "Brazil",
+        "Description": "Organizations for managing performance rights in Brazil.",
+        "Enabled": true,
+        "Platforms": [
+            { "Name": "UBC", "Url": "https://www.ubc.org.br", "Description": "Brazilian Union of Composers" },
+            { "Name": "ECAD", "Url": "https://www.ecad.org.br", "Description": "Central Office of Collection and Distribution" }
+        ]
+    },
+    {
+        "Title": "South Korea",
+        "Description": "Organizations for managing performance rights in South Korea.",
+        "Enabled": true,
+        "Platforms": [
+            { "Name": "KOMCA", "Url": "https://www.komca.or.kr", "Description": "Korea Music Copyright Association" }
+        ]
+    },
+    {
+        "Title": "Mexico",
+        "Description": "Organizations for managing performance rights in Mexico.",
+        "Enabled": true,
+        "Platforms": [
+            { "Name": "SACM", "Url": "https://www.sacm.org.mx", "Description": "Society of Authors and Composers of Mexico" }
+        ]
+    },
+    {
+        "Title": "India",
+        "Description": "Organizations for managing performance rights in India.",
+        "Enabled": true,
+        "Platforms": [
+            { "Name": "IPRS", "Url": "https://www.iprs.org", "Description": "Indian Performing Right Society" }
+        ]
+    },
+    {
+        "Title": "Russia",
+        "Description": "Organizations for managing performance rights in Russia.",
+        "Enabled": true,
+        "Platforms": [
+            { "Name": "RAO", "Url": "https://www.rao.ru", "Description": "Russian Authors' Society" }
+        ]
+    },
+    {
+        "Title": "China",
+        "Description": "Organizations for managing performance rights in China.",
+        "Enabled": true,
+        "Platforms": [
+            { "Name": "MCSC", "Url": "https://www.mcsc.com.cn", "Description": "Music Copyright Society of China" }
+        ]
+    },
+    {
+        "Title": "South Africa",
+        "Description": "Organizations for managing performance rights in South Africa.",
+        "Enabled": true,
+        "Platforms": [
+            { "Name": "SAMRO", "Url": "https://www.samro.org.za", "Description": "South African Music Rights Organization" }
+        ]
+    },{
+        "Title": "Argentina",
+        "Description": "Organizations for managing performance rights in Argentina.",
+        "Enabled": true,
+        "Platforms": [
+            { "Name": "SADAIC", "Url": "https://www.sadaic.org.ar", "Description": "Argentine Society of Authors and Composers" }
+        ]
+    },
+    {
+        "Title": "Italy",
+        "Description": "Organizations for managing performance rights in Italy.",
+        "Enabled": true,
+        "Platforms": [
+            { "Name": "SIAE", "Url": "https://www.siae.it", "Description": "Society of Italian Authors and Publishers" }
+        ]
+    },
+    {
+        "Title": "France",
+        "Description": "Organizations for managing performance rights in France.",
+        "Enabled": true,
+        "Platforms": [
+            { "Name": "SACEM", "Url": "https://www.sacem.fr", "Description": "Society of Authors, Composers and Publishers of Music" }
+        ]
+    },
+    {
+        "Title": "Germany",
+        "Description": "Organizations for managing performance rights in Germany.",
+        "Enabled": true,
+        "Platforms": [
+            { "Name": "GEMA", "Url": "https://www.gema.de", "Description": "German Society for Musical Performing and Mechanical Reproduction Rights" }
+        ]
+    },
+    {
+        "Title": "Spain",
+        "Description": "Organizations for managing performance rights in Spain.",
+        "Enabled": true,
+        "Platforms": [
+            { "Name": "SGAE", "Url": "https://www.sgae.es", "Description": "Spanish Society of Authors and Publishers" }
+        ]
+    },
+    {
+        "Title": "Netherlands",
+        "Description": "Organizations for managing performance rights in the Netherlands.",
+        "Enabled": true,
+        "Platforms": [
+            { "Name": "BUMA/STEMRA", "Url": "https://www.bumastemra.nl", "Description": "Association for music authors and publishers" }
+        ]
+    },
+    {
+        "Title": "Sweden",
+        "Description": "Organizations for managing performance rights in Sweden.",
+        "Enabled": true,
+        "Platforms": [
+            { "Name": "STIM", "Url": "https://www.stim.se", "Description": "Swedish Performing Rights Society" }
+        ]
+    },
+    {
+        "Title": "Norway",
+        "Description": "Organizations for managing performance rights in Norway.",
+        "Enabled": true,
+        "Platforms": [
+            { "Name": "TONO", "Url": "https://www.tono.no", "Description": "Norwegian Performing Rights Society" }
+        ]
+    },
+    {
+        "Title": "Finland",
+        "Description": "Organizations for managing performance rights in Finland.",
+        "Enabled": true,
+        "Platforms": [
+            { "Name": "TEOSTO", "Url": "https://www.teosto.fi", "Description": "Finnish Composers' Copyright Society" }
+        ]
+    },
+    {
+        "Title": "Denmark",
+        "Description": "Organizations for managing performance rights in Denmark.",
+        "Enabled": true,
+        "Platforms": [
+            { "Name": "KODA", "Url": "https://www.koda.dk", "Description": "Danish Performing Rights Society" }
+        ]
+    },
+    {
+        "Title": "Portugal",
+        "Description": "Organizations for managing performance rights in Portugal.",
+        "Enabled": true,
+        "Platforms": [
+            { "Name": "SPA", "Url": "https://www.spautores.pt", "Description": "Portuguese Society of Authors" }
+        ]
+    },
+    {
+        "Title": "Ireland",
+        "Description": "Organizations for managing performance rights in Ireland.",
+        "Enabled": true,
+        "Platforms": [
+            { "Name": "IMRO", "Url": "https://www.imro.ie", "Description": "Irish Music Rights Organisation" }
+        ]
+    },
+    {
+        "Title": "Switzerland",
+        "Description": "Organizations for managing performance rights in Switzerland.",
+        "Enabled": true,
+        "Platforms": [
+            { "Name": "SUISA", "Url": "https://www.suisa.ch", "Description": "Swiss Society for the Rights of Authors of Musical Works" }
+        ]
+    },
+    {
+        "Title": "New Zealand",
+        "Description": "Organizations for managing performance rights in New Zealand.",
+        "Enabled": true,
+        "Platforms": [
+            { "Name": "APRA AMCOS", "Url": "https://www.apraamcos.co.nz", "Description": "Australasian Performing Right Association" }
+        ]
+    }, 
+    {
+        "Title": "Nigeria",
+        "Description": "Organizations for managing performance rights in Nigeria.",
+        "Enabled": true,
+        "Platforms": [
+            { "Name": "COSON", "Url": "https://www.cosonng.com", "Description": "Copyright Society of Nigeria" }
+        ]
+    },
+    {
+        "Title": "Kenya",
+        "Description": "Organizations for managing performance rights in Kenya.",
+        "Enabled": true,
+        "Platforms": [
+            { "Name": "MCSK", "Url": "https://www.mcsk.or.ke", "Description": "Music Copyright Society of Kenya" }
+        ]
+    },
+    {
+        "Title": "Ghana",
+        "Description": "Organizations for managing performance rights in Ghana.",
+        "Enabled": true,
+        "Platforms": [
+            { "Name": "GHAMRO", "Url": "https://www.ghamro.org", "Description": "Ghana Music Rights Organization" }
+        ]
+    },
+    {
+        "Title": "Tanzania",
+        "Description": "Organizations for managing performance rights in Tanzania.",
+        "Enabled": true,
+        "Platforms": [
+            { "Name": "COSOTA", "Url": "https://www.cosota.go.tz", "Description": "Copyright Society of Tanzania" }
+        ]
+    },
+    {
+        "Title": "Uganda",
+        "Description": "Organizations for managing performance rights in Uganda.",
+        "Enabled": true,
+        "Platforms": [
+            { "Name": "UPRS", "Url": "https://www.uprs.ug", "Description": "Uganda Performing Rights Society" }
+        ]
+    },
+    {
+        "Title": "Zimbabwe",
+        "Description": "Organizations for managing performance rights in Zimbabwe.",
+        "Enabled": true,
+        "Platforms": [
+            { "Name": "ZIMURA", "Url": "https://www.zimura.co.zw", "Description": "Zimbabwe Music Rights Association" }
+        ]
+    },
+    {
+        "Title": "Egypt",
+        "Description": "Organizations for managing performance rights in Egypt.",
+        "Enabled": true,
+        "Platforms": [
+            { "Name": "ESA", "Url": "https://www.esaegypt.com", "Description": "Egyptian Society of Authors" }
+        ]
+    },
+    {
+        "Title": "Morocco",
+        "Description": "Organizations for managing performance rights in Morocco.",
+        "Enabled": true,
+        "Platforms": [
+            { "Name": "BMDA", "Url": "https://www.bmda.ma", "Description": "Moroccan Bureau of Copyright" }
+        ]
+    },
+    {
+        "Title": "Senegal",
+        "Description": "Organizations for managing performance rights in Senegal.",
+        "Enabled": true,
+        "Platforms": [
+            { "Name": "BSDA", "Url": "https://www.bsda.sn", "Description": "Senegalese Copyright Office" }
+        ]
+    },
+    {
+        "Title": "Ivory Coast",
+        "Description": "Organizations for managing performance rights in Ivory Coast.",
+        "Enabled": true,
+        "Platforms": [
+            { "Name": "BURIDA", "Url": "https://www.burida.ci", "Description": "Ivorian Copyright Office" }
+        ]
+    },
+    {
+        "Title": "Liberia",
+        "Description": "Organizations for managing performance rights in Liberia.",
+        "Enabled": true,
+        "Platforms": [
+            { "Name": "LAPCOR", "Url": "https://www.lapcor.org", "Description": "Liberian Association of Performing Rights Collectors" }
+        ]
     }
 ]

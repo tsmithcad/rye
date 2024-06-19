@@ -3,11 +3,9 @@
 
 <title>Rhyme Engine | Team</title>
 
-<header class="text-light py-3">
-    <div class="container">
-        <h2 id="toc_1" class="mb-3">Team</h2>
+<header>
         <p>Roles and responsibilities of creatives. Partner or do it yourself.</p>
-    </div>
+        <h2 id="toc_1" class="mb-3">Team</h2>
 </header>
 
 <head>
@@ -64,7 +62,7 @@
                     @foreach (var member in teamMembers.Where(tm => tm.SectionName == sectionName))
                     {
                         <div class="col-md-12 col-lg-6 col-xxl-4 my-3">
-                            <h5 class="text-info">@member.Role</h5>
+                            <h6 class="text-info">@member.Role</h6>
                             <ul class="list-group">
                                 @foreach (var responsibility in member.Responsibilities)
                                 {
