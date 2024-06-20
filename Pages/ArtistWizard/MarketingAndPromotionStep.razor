@@ -1,7 +1,7 @@
 @page "/marketing-and-promotion"
 @code {
     [Parameter]
-    public ArtistOnboardingModel Model { get; set; }
+    public ArtistOnboardingModel? Model { get; set; }
     private void AddAdCampaign()
     {
         Model.AdCampaigns.Add(new AdCampaign());

@@ -1,0 +1,24 @@
+@inject IJSRuntime JS
+
+@code {
+    protected override void OnInitialized()
+    {
+        base.OnInitialized();
+        JS.InvokeVoidAsync("netlifyIdentity.init");
+    }
+
+    public void Login()
+    {
+        JS.InvokeVoidAsync("netlifyIdentity.open");
+    }
+
+    public void Register()
+    {
+        JS.InvokeVoidAsync("netlifyIdentity.open", "signup");
+    }
+
+    public void ChangePassword()
+    {
+        JS.InvokeVoidAsync("netlifyIdentity.open", "change-password");
+    }
+}

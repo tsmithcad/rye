@@ -1,5 +1,23 @@
 [
     {
+        "Title": "Login",
+        "Icon": "oi-lock-locked",
+        "Url": "login",
+        "Enabled": true
+    },
+    {
+        "Title": "Register",
+        "Icon": "oi-plus",
+        "Url": "register",
+        "Enabled": true
+    },
+    {
+        "Title": "Change Password",
+        "Icon": "oi-key",
+        "Url": "change-password",
+        "Enabled": true
+    },
+    {
         "Title": "Getting Started",
         "Icon": "oi-aperture",
         "Url": "getting-started",

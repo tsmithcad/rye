@@ -8,13 +8,10 @@
 <EventsChecklist />
 
 @code {
-    private List<ContentCategory> eventPlatforms;
-
+    private List<ContentCategory>? eventPlatforms = new List<ContentCategory>();
+    
     protected override async Task OnInitializedAsync()
     {
         eventPlatforms = await DataService.GetEventPlatformsAsync();
     }
 }
-
-
-

@@ -4,78 +4,78 @@ public class ArtistOnboardingModel
 {
     // Artist Details
     [Required, StringLength(100)]
-    public string ArtistName { get; set; }
+    public string? ArtistName { get; set; }
 
     [Required, Url]
-    public string ProfilePicture { get; set; }
+    public string? ProfilePicture { get; set; }
 
     [StringLength(500)]
-    public string Bio { get; set; }
+    public string? Bio { get; set; }
 
     [Url]
-    public string Twitter { get; set; }
+    public string? Twitter { get; set; }
 
     [Url]
-    public string Instagram { get; set; }
+    public string? Instagram { get; set; }
 
     [Url]
-    public string Facebook { get; set; }
+    public string? Facebook { get; set; }
 
     [Url]
-    public string YouTube { get; set; }
+    public string? YouTube { get; set; }
 
     [Url]
-    public string TikTok { get; set; }
+    public string? TikTok { get; set; }
 
     [Url]
-    public string Website { get; set; }
+    public string? Website { get; set; }
 
     // Song Metadata
     [Required, StringLength(100)]
-    public string SongTitle { get; set; }
+    public string? SongTitle { get; set; }
 
     [StringLength(100)]
-    public string ProducerName { get; set; }
+    public string? ProducerName { get; set; }
 
     [StringLength(100)]
-    public string AlbumName { get; set; }
+    public string? AlbumName { get; set; }
 
     [Required]
     public DateTime ReleaseDate { get; set; }
 
     [StringLength(50)]
-    public string Genre { get; set; }
+    public string? Genre { get; set; }
 
     public TimeSpan SongDuration { get; set; }
 
     [Required, Url]
-    public string CoverArt { get; set; }
+    public string? CoverArt { get; set; }
 
     // Lyrics
-    public string Lyrics { get; set; }
+    public string? Lyrics { get; set; }
 
     // Audio Files
     [Required, Url]
-    public string FeaturedSong { get; set; }
+    public string? FeaturedSong { get; set; }
 
     [Url]
-    public string Acapella { get; set; }
+    public string? Acapella { get; set; }
 
     [Url]
-    public string Instrumental { get; set; }
+    public string? Instrumental { get; set; }
 
     [Url]
-    public string CleanVersion { get; set; }
+    public string? CleanVersion { get; set; }
 
     [Url]
-    public string ExplicitVersion { get; set; }
+    public string? ExplicitVersion { get; set; }
 
     [Url]
-    public string PerformanceVersion { get; set; }
+    public string? PerformanceVersion { get; set; }
 
     // Music Videos
     [Url]
-    public string MusicVideoURL { get; set; }
+    public string? MusicVideoURL { get; set; }
 
     public List<string> AdditionalVideos { get; set; } = new List<string>();
 
@@ -84,10 +84,10 @@ public class ArtistOnboardingModel
 
     // Production and Songwriting Credits
     [StringLength(100)]
-    public string SongwriterName { get; set; }
+    public string? SongwriterName { get; set; }
 
     [StringLength(500)]
-    public string RecordingDetails { get; set; }
+    public string? RecordingDetails { get; set; }
 
     // Discography
     public List<DiscographyItem> Discography { get; set; } = new List<DiscographyItem>();
@@ -109,26 +109,26 @@ public class ArtistOnboardingModel
 
     // Artist Booking Information
     [Required, EmailAddress]
-    public string BookingEmail { get; set; }
+    public string? BookingEmail { get; set; }
 
     [Phone]
-    public string BookingPhone { get; set; }
+    public string? BookingPhone { get; set; }
 
     [Url]
-    public string BookingWebsite { get; set; }
+    public string? BookingWebsite { get; set; }
 
     [StringLength(500)]
-    public string AdditionalBookingInfo { get; set; }
+    public string? AdditionalBookingInfo { get; set; }
 
     // Visualizer and Graphics
     [Url]
-    public string SongVisualizer { get; set; }
+    public string? SongVisualizer { get; set; }
 
     public List<string> PromotionalGraphics { get; set; } = new List<string>();
 
     // Performance and Tour Information
     [StringLength(500)]
-    public string PerformanceTips { get; set; }
+    public string? PerformanceTips { get; set; }
 
     public List<EventItem> TourSchedule { get; set; } = new List<EventItem>();
 
@@ -136,21 +136,21 @@ public class ArtistOnboardingModel
 
     // System and Tools Integration
     [StringLength(50)]
-    public string DAW { get; set; }
+    public string? DAW { get; set; }
 
     public int Tempo { get; set; }
 
     [StringLength(10)]
-    public string Key { get; set; }
+    public string? Key { get; set; }
 
     public List<string> ExternalTools { get; set; } = new List<string>();
 
     // Analytics and Reporting
     [StringLength(50)]
-    public string GoogleAnalyticsKey { get; set; }
+    public string? GoogleAnalyticsKey { get; set; }
 
     [StringLength(50)]
-    public string SocialMediaAnalyticsKey { get; set; }
+    public string? SocialMediaAnalyticsKey { get; set; }
 
     public List<SalesReport> SalesReports { get; set; } = new List<SalesReport>();
 
@@ -162,118 +162,118 @@ public class ArtistOnboardingModel
     public List<PlaylistPlacement> PlaylistPlacements { get; set; } = new List<PlaylistPlacement>();
 
     // Additional Notes
-    public string ProjectNotes { get; set; }
+    public string? ProjectNotes { get; set; }
 
-    public string SpecialInstructions { get; set; }
+    public string? SpecialInstructions { get; set; }
 }
 
 public class DiscographyItem
 {
     [Required, StringLength(100)]
-    public string Title { get; set; }
+    public string? Title { get; set; }
 
     [Required]
     public DateTime ReleaseDate { get; set; }
 
     [Required, Url]
-    public string CoverArt { get; set; }
+    public string? CoverArt { get; set; }
 }
 
 public class EventItem
 {
     [Required, StringLength(100)]
-    public string Name { get; set; }
+    public string? Name { get; set; }
 
     [Required]
     public DateTime Date { get; set; }
 
     [Required, StringLength(100)]
-    public string Location { get; set; }
+    public string? Location { get; set; }
 
     [StringLength(500)]
-    public string Description { get; set; }
+    public string? Description { get; set; }
 }
 
 public class MerchandiseItem
 {
     [Required, StringLength(100)]
-    public string Name { get; set; }
+    public string? Name { get; set; }
 
     [Required, Range(0.01, 10000.00)]
     public decimal Price { get; set; }
 
     [Required, Url]
-    public string Image { get; set; }
+    public string? Image { get; set; }
 
     [StringLength(500)]
-    public string Description { get; set; }
+    public string? Description { get; set; }
 }
 
 public class PressArticle
 {
     [Required, StringLength(200)]
-    public string Title { get; set; }
+    public string? Title { get; set; }
 
     [Required, StringLength(100)]
-    public string Publication { get; set; }
+    public string? Publication { get; set; }
 
     [Required, Url]
-    public string URL { get; set; }
+    public string? URL { get; set; }
 }
 
 public class Collaboration
 {
     [Required, StringLength(100)]
-    public string CollaboratorName { get; set; }
+    public string? CollaboratorName { get; set; }
 
     [Required, StringLength(100)]
-    public string ProjectTitle { get; set; }
+    public string? ProjectTitle { get; set; }
 
     [StringLength(500)]
-    public string Description { get; set; }
+    public string? Description { get; set; }
 }
 
 public class CrewMember
 {
     [Required, StringLength(100)]
-    public string Role { get; set; }
+    public string? Role { get; set; }
 
     [Required, StringLength(100)]
-    public string Name { get; set; }
+    public string? Name { get; set; }
 }
 
 public class SalesReport
 {
     [Required, StringLength(100)]
-    public string ReportType { get; set; }
+    public string? ReportType { get; set; }
 
     [StringLength(500)]
-    public string Details { get; set; }
+    public string? Details { get; set; }
 }
 
 public class AdCampaign
 {
     [Required, StringLength(100)]
-    public string CampaignName { get; set; }
+    public string? CampaignName { get; set; }
 
     [StringLength(500)]
-    public string Details { get; set; }
+    public string? Details { get; set; }
 }
 
 public class FeaturedArtistTier
 {
     [Required, StringLength(100)]
-    public string TierName { get; set; }
+    public string? TierName { get; set; }
 
     [StringLength(500)]
-    public string Benefits { get; set; }
+    public string? Benefits { get; set; }
 }
 
 public class PlaylistPlacement
 {
     [Required, StringLength(100)]
-    public string PlaylistName { get; set; }
+    public string? PlaylistName { get; set; }
 
     [StringLength(500)]
-    public string Details { get; set; }
+    public string? Details { get; set; }
 }

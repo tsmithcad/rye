@@ -33,7 +33,7 @@
 
 @code {
     private bool collapseNavMenu = true;
-    private List<NavMenuItem> navMenuItems;
+    private List<NavMenuItem>? navMenuItems = new List<NavMenuItem>();
 
     private string? NavMenuCssClass => collapseNavMenu ? "collapse" : null;
 

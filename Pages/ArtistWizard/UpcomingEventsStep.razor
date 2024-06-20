@@ -1,7 +1,8 @@
 @page "/upcoming-events"
 @code {
     [Parameter]
-    public ArtistOnboardingModel Model { get; set; }
+    public ArtistOnboardingModel? Model { get; set; } = new ArtistOnboardingModel();
+    
     private void AddEventItem()
     {
         Model.UpcomingEvents.Add(new EventItem());

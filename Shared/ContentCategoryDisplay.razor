@@ -1,9 +1,9 @@
 @code {
     [Parameter]
-    public string Title { get; set; }
+    public string? Title { get; set; } = string.Empty;
 
     [Parameter]
-    public List<ContentCategory> ContentCategories { get; set; }
+    public List<ContentCategory>? ContentCategories { get; set; } = new List<ContentCategory>();
 }
 
 <div class="container">

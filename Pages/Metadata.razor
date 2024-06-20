@@ -10,9 +10,8 @@
 <ContentCategoryDisplay Title="Meta Data" ContentCategories="@contentCategories" />
 
 
-
 @code {
-    private List<ContentCategory> contentCategories;
+    private List<ContentCategory> contentCategories = new List<ContentCategory>();
 
     protected override async Task OnInitializedAsync()
     {

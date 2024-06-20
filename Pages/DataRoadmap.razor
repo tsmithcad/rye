@@ -58,7 +58,7 @@
                                 <ul class="list-unstyled">
                                     @foreach (var source in category.DataSources)
                                     {
-                                        <li class="mx-4 small">@source.SourceName: @string.Join(", ", source.FileExtensions)</li>
+                                        <li class="mx-4 small">@source.SourceName: @string.Join(", ", source.FileExtensions values ?? Array.Empty<string>())</li>
                                     }
                                 </ul>
                             </div>
@@ -77,7 +77,7 @@
 </div>
 
 @code {
-    private List<DataCategory> dataCategories;
+    private List<DataCategory>? dataCategories;
 
     protected override async Task OnInitializedAsync()
     {

@@ -61,7 +61,7 @@
 </main>
 
 @code {
-    private List<UpdateItem> updates;
+    private List<UpdateItem>? updates = new List<UpdateItem>();
 
     protected override async Task OnInitializedAsync()
     {

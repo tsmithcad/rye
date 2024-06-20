@@ -32,8 +32,13 @@
     </main>
 </div>
 
+<!-- Add the Authentication component -->
+<Authentication @ref="authComponent" />
+
 
 @code {
+    private Authentication? authComponent;
+
     private List<FeatureRelease> releaseData = new List<FeatureRelease>
     {
         new FeatureRelease { Date = DateTime.Now, FeatureName = "For the love of music ❤️", Description = " " },

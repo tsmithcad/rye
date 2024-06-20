@@ -1,7 +1,7 @@
 @page "/performance-and-tour"
 @code {
     [Parameter]
-    public ArtistOnboardingModel Model { get; set; }
+    public ArtistOnboardingModel? Model { get; set; }
     private void AddCrewMember()
     {
         Model.CrewMembers.Add(new CrewMember());

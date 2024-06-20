@@ -1,0 +1,13 @@
+@page "/login"
+@inject IJSRuntime JS
+
+<h3>Login</h3>
+
+<!-- <button @onclick="ShowLogin">Login with Netlify Identity</button> -->
+
+@code {
+    private void ShowLogin()
+    {
+        JS.InvokeVoidAsync("netlifyIdentity.open");
+    }
+}
